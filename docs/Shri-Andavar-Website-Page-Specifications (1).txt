@@ -1,0 +1,717 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║   SHRI ANDAVAR EYE CARE AND RETINA CENTRE                                     ║
+║   WEBSITE — CONTENT SPECIFICATION                                             ║
+║                                                                              ║
+║   Nine pages · English + Tamil                                                ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+
+HOW TO USE THIS DOCUMENT
+────────────────────────────────────────────────────────────────────────────────
+This is the content for every page — headings, body copy, button labels, card
+and list contents, in the order they appear. Visual design (colours, type,
+motion, layout, components) is not specified here; the site will be styled
+using a separate reference design system instead.
+
+The site is bilingual (English + Tamil). Tamil copy is included below wherever
+it already exists in this spec. Remaining body copy still needs a Tamil-
+speaking medical copywriter — do not machine-translate medical content.
+
+Copy marked "EXACT" is final and must be used verbatim.
+
+PART 1 is the shared shell — header, sticky call bar, footer. Identical on all
+nine pages.
+
+PARTS 2–10 are the nine pages, each with:
+   A · THE BRIEF     what the page is for and who is reading it
+   B · CONTENT        every section in order, with the exact copy
+   Some pages also carry a short PRODUCTION NOTE where something non-visual
+   (consent, verification, a page still to be built) needs flagging.
+
+
+════════════════════════════════════════════════════════════════════════════════
+PART 1 · THE SHARED SHELL — SAME ON ALL NINE PAGES
+════════════════════════════════════════════════════════════════════════════════
+
+HEADER
+────────────────────────────────────────────────────────────────────────────────
+  BRAND       "Shri Andavar"
+              "EYE CARE & RETINA CENTRE"
+
+  NAVIGATION  Treatments · Our Surgeon · Schemes · Visit Us · About
+
+  LANGUAGE    EN / த toggle. Switches the entire interface — navigation,
+              buttons, labels, body — not just articles. Choice persists
+              across visits.
+
+
+STICKY CALL BAR — PHONES
+────────────────────────────────────────────────────────────────────────────────
+  Two buttons: "Call the hospital" · "Directions"
+  Outside consulting hours the call button relabels itself, e.g.
+  "Call — opens 5:00 PM", rather than dialling a room with nobody in it.
+
+
+FOOTER
+────────────────────────────────────────────────────────────────────────────────
+  COL 1   "Shri Andavar"
+          "EYE CARE & RETINA CENTRE"
+          EXACT: "Cataract and retina care in Pollachi since 2013, by one
+          surgeon who sees you from the first examination to the last
+          follow-up."
+
+  COL 2   TREATMENTS — Cataract surgery · Retina care · Diabetic eye care ·
+          Glaucoma · Eye check-up
+
+  COL 3   THE HOSPITAL — Our surgeon · About · Patient stories ·
+          Schemes & insurance · Eye health tips
+
+  COL 4   VISIT US
+          No. 73, Palladam Road, Opposite LMHSS School,
+          T. Kottampatti, Pollachi 642002
+          04259 221 000
+          94420 56767
+          Get directions →
+          Mon–Sat · 10:00 AM – 2:00 PM and 5:00 – 7:00 PM. Sunday closed.
+
+  BOTTOM  © [year] Shri Andavar Eye Care and Retina Centre · Pollachi, Tamil Nadu
+
+
+════════════════════════════════════════════════════════════════════════════════
+PART 2 · PAGE 1 — HOME  (index.html)
+════════════════════════════════════════════════════════════════════════════════
+
+A · THE BRIEF
+────────────────────────────────────────────────────────────────────────────────
+Nine out of ten first-time visitors will see only this page, so it must be a
+complete answer on its own. The reader is worried, on a phone, often researching
+for a parent. In order, they want to know: are you open, who will see me, how do
+I reach you. The page answers in that order. Seven sections. The single job is to
+make the phone call happen.
+
+
+B · CONTENT
+────────────────────────────────────────────────────────────────────────────────
+
+  SECTION 1 — HERO
+    · Open-now indicator (live status, computed from consulting hours)
+    · Heading — EXACT: "Cataract and retina care in Pollachi, by the surgeon
+      who examines you."
+      TAMIL: "பொள்ளாச்சியில் கண்புரை மற்றும் விழித்திரை சிகிச்சை."
+    · Subheading — EXACT: "Dr. A. Raghuram has looked after this district's
+      eyes since 2013. He examines you, he operates, and he is the one who
+      sees you at your follow-up."
+    · Buttons: "Call 04259 221 000" (primary) · "Get directions" (secondary)
+    · Caption — EXACT: "Opposite LMHSS School, Palladam Road. Walk in, or
+      call and we will give you a time."
+
+  SECTION 2 — THE SURGEON
+    Eyebrow: "Your surgeon"
+    Heading: "Dr. A. Raghuram"
+    Subheading — EXACT: "At a large chain you are seen by whoever is on duty
+    that day. Here there is one surgeon, and he will still be here at your
+    follow-up next year."
+    Link: "More about Dr. Raghuram" → our-surgeon.html
+    Card — label "QUALIFICATIONS, IN PLAIN WORDS", four rows:
+      MBBS, DO — "Medical degree, then a diploma in ophthalmology — eyes only."
+      DNB (Ophthalmology) — "The national board qualification for eye
+        specialists in India."
+      FICO (United Kingdom) — "Fellowship of the International Council of
+        Ophthalmology."
+      FRCS (Glasgow) — "A surgical fellowship of the Royal College of
+        Surgeons — unusual in a town this size."
+
+  SECTION 3 — WHAT WE TREAT
+    Eyebrow: "What we treat"
+    Heading — EXACT: "Start with what you have noticed."
+    Four cards — each: symptom line → procedure name → body → "Read more" link:
+      1  "Things look cloudy, faded or washed out" / Cataract surgery
+         "..." → cataract-surgery.html
+      2  "A shadow, floaters or sudden blurring" / Retina care
+      3  "You have diabetes and have not had your eyes checked" /
+         Diabetic eye care
+      4  "Headaches, or glaucoma in the family" / Glaucoma & check-ups
+    Link: "See everything we treat" → treatments.html
+
+  SECTION 4 — COST
+    Eyebrow: "Cost"
+    Heading — EXACT: "Ask about the money. Everybody does."
+    Subheading — EXACT: "It is the question people are most embarrassed to ask
+    and most worried about. Here are the schemes we accept, stated plainly."
+    Button: "Schemes & insurance" (secondary) → schemes.html
+    Card, three items:
+      · Chief Minister's Comprehensive Health Insurance Scheme —
+        "CMCHIS — bring your scheme card and Aadhaar."
+      · Pensioners Health Scheme —
+        "For retired government employees and their dependants."
+      · Star Health Insurance —
+        "Cashless, subject to your policy terms."
+    Caption — EXACT: "Not sure whether yours is covered? Call and ask — it
+    takes a minute and costs nothing."
+
+  SECTION 5 — FACT STRIP
+    Four facts (number first, label after):
+      13 yrs — In Pollachi since 2013
+      1     — Surgeon, from first visit to last follow-up
+      2     — Sessions a day — morning and evening
+      3     — Schemes and insurances accepted
+
+  SECTION 6 — IN THEIR WORDS
+    Eyebrow: "In their words"
+    Quote — EXACT: "Patients must feel safe and reassured that they will be
+    treated with the utmost care."
+    Attribution: Dr. A. Raghuram
+    Body — EXACT: "Most people who come here were sent by someone they trust
+    — a neighbour, a relative, the doctor down the road. That is how a
+    practice lasts thirteen years in a town this size."
+    Link: "Read patient stories" → patient-stories.html
+
+  SECTION 7 — VISIT
+    Eyebrow: "Come and see us"
+    Heading — EXACT: "Opposite LMHSS School, on Palladam Road."
+    Subheading — EXACT: "In a town, the landmark does more work than the
+    postcode. If you know the school, you know where we are."
+    Buttons: "Open in Maps" (primary) · "Visiting details" (secondary)
+    Panel: Address · Consulting hours · Telephone
+
+
+════════════════════════════════════════════════════════════════════════════════
+PART 3 · PAGE 2 — OUR SURGEON  (our-surgeon.html)
+════════════════════════════════════════════════════════════════════════════════
+
+A · THE BRIEF
+────────────────────────────────────────────────────────────────────────────────
+This is the page that converts the adult child researching on a parent's behalf.
+It is also the one page no chain can replicate. Four sections. Its job is to turn
+a list of post-nominals into a person you would trust with your mother's eyes,
+and to remove the fear of a first visit by describing exactly what happens.
+
+
+B · CONTENT
+────────────────────────────────────────────────────────────────────────────────
+
+  SECTION 1 — PAGE HERO
+    Breadcrumb: Home / Our surgeon
+    Heading: "Dr. A. Raghuram"
+    Subheading — EXACT: "MBBS · DO · DNB (Ophthalmology) · FICO (UK) ·
+    FRCS (Glasgow)"
+
+  SECTION 2 — WHO HE IS
+    Paragraph 1 — EXACT: "Dr. Raghuram founded this practice in 2013 and has
+    run it since. He performs the examinations, he performs the surgery, and
+    he conducts the follow-ups himself."
+    Paragraph 2 — EXACT: "That continuity is not a small thing. A cataract
+    operation is a conversation before it is a procedure — about what you
+    will be able to see afterwards, what lens suits the life you actually
+    lead, and what the recovery will really be like. Those conversations
+    work better when the person having them with you is the person holding
+    the instrument."
+    Paragraph 3 — EXACT: "His specialist interest is the retina — which is
+    why the hospital carries 'and Retina Centre' in its name — alongside a
+    high volume of cataract surgery for patients across Pollachi and the
+    villages around it."
+    Card — eyebrow "What this means for you", three blocks:
+      · One face, start to finish — "You will not have to explain your
+        history again to a new doctor at each visit."
+      · Surgery decided with you — "Lens options and timing are explained
+        in plain Tamil or English before anything is booked."
+      · Follow-up with the same surgeon — "The person who operated is the
+        person who checks the result."
+
+  SECTION 3 — A FIRST VISIT
+    Eyebrow: "A first visit"
+    Heading — EXACT: "What actually happens when you come in."
+    Five steps:
+      01 You arrive — "Walk in during consulting hours, or call ahead and we
+         will give you a time. Bring your glasses, any previous
+         prescriptions, and your scheme card if you have one."
+      02 Vision and pressure — "An optometrist checks your vision and the
+         pressure inside your eye. This part is quick and nothing touches
+         the eye itself."
+      03 Drops, then a wait — "If the retina needs looking at, drops widen
+         the pupil. They take about thirty minutes to work and leave your
+         vision blurry for a few hours — so do not plan to drive yourself
+         home."
+      04 The examination — "Dr. Raghuram examines both eyes and explains
+         what he finds, in the language you are most comfortable in."
+      05 What next — "If nothing needs doing, you are told so plainly. If
+         something does, you will know what it costs and what your scheme
+         covers before you leave."
+
+  SECTION 4 — CLOSING CALL
+    Heading — EXACT: "Come and have your eyes looked at."
+    Subheading — EXACT: "No appointment is needed. If you would rather have
+    a set time, call and we will arrange one."
+    Buttons: "Call 04259 221 000" (primary) · "How to find us" (secondary)
+
+PRODUCTION NOTE
+────────────────────────────────────────────────────────────────────────────────
+When the surgeon's portrait is available, it is added to Section 2.
+
+
+════════════════════════════════════════════════════════════════════════════════
+PART 4 · PAGE 3 — TREATMENTS  (treatments.html)
+════════════════════════════════════════════════════════════════════════════════
+
+A · THE BRIEF
+────────────────────────────────────────────────────────────────────────────────
+A hub. Its only job is to route. The organising principle is the reason the page
+exists: patients search for symptoms, not procedures, so every entry leads with
+what the person noticed, above the medical name. Three sections.
+
+
+B · CONTENT
+────────────────────────────────────────────────────────────────────────────────
+
+  SECTION 1 — PAGE HERO
+    Breadcrumb: Home / Treatments
+    Heading: "What we treat"
+    Subheading — EXACT: "Listed by what you have noticed rather than by its
+    medical name — because nobody arrives knowing they have posterior
+    subcapsular cataract."
+
+  SECTION 2 — THE SIX
+    Six cards, identical anatomy to the home page cards:
+      1  "Things look cloudy, faded, or washed out" / Cataract surgery
+         "The lens inside your eye has clouded. It is replaced with a clear
+         artificial one in a day-care procedure — in by morning, home by
+         evening." → cataract-surgery.html
+      2  "A shadow, floaters, or sudden blurring" / Retina care
+         "Retinal detachment, macular disease and laser treatment. The
+         retina is Dr. Raghuram's specialist interest and the reason for
+         the hospital's name."
+      3  "You have diabetes, and your eyes have not been checked this year"
+         / Diabetic eye care
+         "Diabetes damages the back of the eye long before you notice
+         anything. A yearly screening takes twenty minutes and is the
+         single most useful thing you can do."
+      4  "Glaucoma in the family, or pressure already found" / Glaucoma
+         "Pressure testing, visual field analysis and long-term monitoring.
+         Glaucoma takes sight quietly, which is why regular checks matter
+         more than symptoms."
+      5  "It has simply been a while" / Full eye examination
+         "Vision, pressure, retina and a prescription — all in one sitting,
+         usually under an hour."
+      6  "You need glasses, or your old ones no longer work" /
+         Spectacles & lenses
+         "Testing and dispensing on site, with honest advice about what you
+         need and what you do not."
+
+  SECTION 3 — NOT SURE
+    Heading — EXACT: "Not sure which of these is you?"
+    Subheading — EXACT: "That is normal, and it is what the first
+    examination is for. Come in, or call and describe what you have noticed
+    — nobody will make you feel foolish for asking."
+    Buttons: "Call 04259 221 000" (primary) · "What it costs" (secondary) →
+    schemes.html
+
+PRODUCTION NOTE
+────────────────────────────────────────────────────────────────────────────────
+Only "Cataract surgery" currently links to its own page. The other five
+entries link back to this hub until their detail pages exist — build them
+from the Cataract Surgery page (Part 5), which is their template.
+
+
+════════════════════════════════════════════════════════════════════════════════
+PART 5 · PAGE 4 — CATARACT SURGERY  (cataract-surgery.html)
+════════════════════════════════════════════════════════════════════════════════
+                  ★ THIS IS THE TEMPLATE FOR ALL TREATMENT PAGES ★
+
+A · THE BRIEF
+────────────────────────────────────────────────────────────────────────────────
+The long-tail search engine of the site: written once, ranks for years. It is
+also where fear is dismantled. The structure is fixed — what it is, what happens
+on the day, the choices you will be asked to make, the myths, the call — and the
+other five treatment pages must follow the same five sections in the same order
+so the site teaches the reader how to read it.
+
+
+B · CONTENT
+────────────────────────────────────────────────────────────────────────────────
+
+  SECTION 1 — PAGE HERO
+    Breadcrumb: Home / Treatments / Cataract surgery
+    Heading: "Cataract surgery"
+    Subheading — EXACT: "In by morning, home by evening, seeing better. The
+    most common operation we perform, and the one people worry about most
+    unnecessarily."
+
+  SECTION 2 — WHAT IT ACTUALLY IS
+    Heading: "What a cataract actually is"
+    Paragraph — EXACT: "Behind your pupil sits a clear lens, about the size
+    of a lentil, that focuses light onto the back of the eye. With age it
+    slowly turns cloudy. Light scatters instead of focusing, and the world
+    looks faded, hazy, or as though you are looking through a dirty window."
+    Paragraph — EXACT: "It is not a growth, it is not a film over the eye,
+    and no drop will clear it. The only treatment that works is to replace
+    the lens — which is a fifteen-minute, day-care procedure."
+    Diagram (eye cross-section), labelled: Cornea · Clouded lens · Retina
+    ("where the image forms")
+
+  SECTION 3 — THE DAY ITSELF
+    Eyebrow: "The day itself"
+    Heading: "What happens, hour by hour."
+    Six steps:
+      01 You arrive in the morning — "Fasting is usually not required — you
+         will be told beforehand if anything is different in your case.
+         Bring someone with you; you will not be able to drive home."
+      02 Drops and preparation — "Drops widen the pupil and numb the eye.
+         There is no injection and no general anaesthetic for a routine
+         cataract."
+      03 The operation — about fifteen minutes — "A very small opening is
+         made, the cloudy lens is broken up and removed, and a clear
+         artificial lens is placed where it was. You are awake, you feel no
+         pain, and there is usually no stitch."
+      04 Rest, then home — "You rest for a short while and go home the same
+         day with a shield over the eye and a schedule of drops."
+      05 The day after — "You come back the next morning so Dr. Raghuram can
+         check the eye. Most people notice the difference by then."
+      06 The weeks after — "Drops continue for a few weeks. Avoid dust,
+         swimming and rubbing the eye. A final prescription for glasses is
+         given once the eye has settled, usually around four weeks."
+
+  SECTION 4 — CHOICES AND MYTHS
+    Card 1 — eyebrow "Lens options":
+      Intro: "The artificial lens is a permanent part of the eye, so the
+      choice is worth a proper conversation. In broad terms:"
+        Monofocal — "Sharp at one distance, usually far. You will still
+          need reading glasses. Covered by most schemes."
+        Toric — "Corrects astigmatism at the same time, for eyes that have
+          it."
+        Multifocal — "Aims to reduce dependence on glasses at more than one
+          distance. Suits some eyes and some lifestyles, not all."
+      Closing line: "Which one suits you depends on your eye and on the
+      life you actually lead. Dr. Raghuram will go through it with you
+      before anything is decided."
+    Card 2 — eyebrow "Worth knowing", three myths:
+      "Should I wait until it is ripe?" — "That advice is out of date. A
+      cataract does not need to be mature before it is removed, and waiting
+      too long makes surgery harder. The right time is when it starts to
+      interfere with what you want to do."
+      "Will it come back?" — "The cataract itself does not. Some people
+      develop a cloudy film behind the new lens months or years later —
+      that is cleared in a few minutes with a laser, in the clinic, no
+      cutting."
+      "Is it covered?" — "Cataract surgery is covered under the schemes we
+      accept, subject to their terms. Ask us before you decide — see
+      schemes and insurance." (link: "schemes and insurance" → schemes.html)
+
+  SECTION 5 — CLOSING CALL
+    Heading — EXACT: "Have it looked at before it starts deciding things
+    for you."
+    Subheading — EXACT: "Giving up night driving, reading, or the newspaper
+    is not something you have to accept."
+    Buttons: "Call 04259 221 000" (primary) · "Meet the surgeon" (secondary)
+    → our-surgeon.html
+
+PRODUCTION NOTE — HOW TO CLONE THIS PAGE
+────────────────────────────────────────────────────────────────────────────────
+Retina care, Diabetic eye care, Glaucoma, Full eye examination and
+Spectacles & lenses should each be built from this page, keeping:
+  · the same five sections, in this order
+  · a numbered "hour by hour" or "step by step" list in section 3
+  · one card of options/facts and one "Worth knowing" myths card in section 4
+Each page needs its own diagram in section 2 — diabetic eye care should show
+the retina with microaneurysms, glaucoma should show the optic nerve head.
+
+MEDICAL ACCURACY: every clinical statement on this page and its siblings must
+be confirmed by Dr. Raghuram before publication. Do not add a procedure the
+practice does not perform.
+
+
+════════════════════════════════════════════════════════════════════════════════
+PART 6 · PAGE 5 — SCHEMES AND INSURANCE  (schemes.html)
+════════════════════════════════════════════════════════════════════════════════
+
+A · THE BRIEF
+────────────────────────────────────────────────────────────────────────────────
+The sleeper page. Neither competing chain publishes its scheme list clearly, so
+this is unclaimed high-intent search traffic. It is also the page that removes
+the fear that stops people telephoning at all. Four sections. Tone: matter-of-
+fact, never apologetic about money.
+
+
+B · CONTENT
+────────────────────────────────────────────────────────────────────────────────
+
+  SECTION 1 — PAGE HERO
+    Breadcrumb: Home / Schemes & insurance
+    Heading: "Schemes and insurance"
+    Subheading — EXACT: "The question people are most embarrassed to ask and
+    most worried about. So here it is in plain language, before you have to
+    ask anyone."
+
+  SECTION 2 — THE THREE SCHEMES
+    Three cards, each: scheme name → tag → body → "BRING WITH YOU" list:
+      1  Chief Minister's Comprehensive Health Insurance Scheme
+         tag: CMCHIS · அரசு காப்பீட்டுத் திட்டம்
+         "The Tamil Nadu government scheme. Cataract surgery and a number
+         of other eye procedures are covered."
+         Bring: Your CMCHIS card · Aadhaar card · Ration card, if you have it
+      2  Pensioners Health Scheme
+         tag: For retired government employees · ஓய்வூதியர் சுகாதாரத் திட்டம்
+         "Covers retired state government employees and their dependants
+         under the scheme's terms."
+         Bring: Your pensioner ID · Scheme card · A recent pension slip
+      3  Star Health Insurance
+         tag: Private cover · தனியார் காப்பீடு
+         "Cashless treatment subject to your policy terms and prior
+         approval where required."
+         Bring: Policy card or number · A photo ID · Any referral letter
+
+  SECTION 3 — IF YOU HAVE NO SCHEME
+    Eyebrow: "If you have no scheme"
+    Heading — EXACT: "You will be told the cost before anything is booked."
+    Subheading — EXACT: "Not after. Not on the day. The consultation fee,
+    what the procedure would cost, and what is included — stated up front
+    so you can decide without pressure."
+    Card — heading "Two minutes on the phone settles it":
+      "Tell us which scheme you hold, or that you hold none, and what you
+      have noticed about your eyes. We will tell you what a first visit
+      costs and what is likely to be covered."
+      Button: "Call 04259 221 000" (primary)
+
+  SECTION 4 — COUNTER QUESTIONS
+    Heading — EXACT: "Questions people actually ask at the counter"
+    Five items (not numbered — a set, not a sequence):
+      · Do I need a referral to use my scheme?
+      · Will I have to pay and claim it back?
+      · Does the scheme cover both eyes?
+      · What about spectacles afterwards?
+      · I am not from Pollachi. Can I still use my scheme?
+    Closing caption — EXACT: "Scheme rules change. If anything here does not
+    match what you have been told, call us — we would rather correct it
+    than have you turned away at the counter."
+
+PRODUCTION NOTE
+────────────────────────────────────────────────────────────────────────────────
+VERIFY WITH THE HOSPITAL before publishing. Scheme coverage came from the
+discovery form and contradicts one directory listing.
+
+
+════════════════════════════════════════════════════════════════════════════════
+PART 7 · PAGE 6 — VISIT US  (visit-us.html)
+════════════════════════════════════════════════════════════════════════════════
+
+A · THE BRIEF
+────────────────────────────────────────────────────────────────────────────────
+Job three of the site's four: get them through the door. In a town the landmark
+does more work than the postcode, so the landmark is the headline. Three
+sections. Shortest page on the site, deliberately.
+
+
+B · CONTENT
+────────────────────────────────────────────────────────────────────────────────
+
+  SECTION 1 — PAGE HERO
+    Breadcrumb: Home / Visit us
+    Heading — EXACT: "Opposite LMHSS School, Palladam Road."
+    Open-now indicator directly beneath the heading.
+    Buttons: "Open in Maps" (primary) · "Call 04259 221 000" (secondary)
+
+  SECTION 2 — THE THREE FACTS
+    Three cards:
+      ADDRESS  No. 73, Palladam Road, Opposite LMHSS School,
+               T. Kottampatti, Pollachi 642002
+               caption: "The landmark is the school — everyone local knows
+               it. We are directly opposite."
+      CONSULTING HOURS  Monday to Saturday / Morning 10:00 AM – 2:00 PM /
+               Evening 5:00 – 7:00 PM / Sunday closed
+      TELEPHONE  04259 221 000 · 94420 56767
+               caption: "Call during consulting hours and someone will
+               answer."
+
+  SECTION 3 — BEFORE YOU COME
+    Eyebrow: "Before you come"
+    Heading — EXACT: "Four things that make the visit shorter."
+    Four items (not numbered):
+      Bring your glasses — all of them — "Including the old pair you
+        stopped using. They tell us more than you would expect."
+      Bring any previous prescriptions or reports — "Especially if you have
+        been seen elsewhere, or have diabetes and carry a sugar record."
+      Bring your scheme or insurance card — "It saves a second trip if
+        treatment turns out to be needed."
+      Bring someone with you, if you can — "If drops are needed to examine
+        the retina, your vision will be blurred for a few hours afterwards.
+        You should not drive yourself home."
+    Card — heading "Getting here":
+      "On Palladam Road at T. Kottampatti, directly opposite LMHSS School.
+      Town buses along the Palladam Road route stop within walking
+      distance, and there is space to park a two-wheeler or car outside."
+      Button: "Open in Maps" (primary)
+      caption: "No appointment is needed. If you would prefer a set time,
+      call ahead."
+
+
+════════════════════════════════════════════════════════════════════════════════
+PART 8 · PAGE 7 — ABOUT  (about.html)
+════════════════════════════════════════════════════════════════════════════════
+
+A · THE BRIEF
+────────────────────────────────────────────────────────────────────────────────
+Substantiates the "well equipped" claim and explains, without defensiveness, why
+a small single-surgeon practice is a choice rather than a limitation. Four
+sections. It is the least urgent page on the site and should feel unhurried.
+
+
+B · CONTENT
+────────────────────────────────────────────────────────────────────────────────
+
+  SECTION 1 — PAGE HERO
+    Breadcrumb: Home / About
+    Heading — EXACT: "A small hospital that has stayed in one place."
+    Subheading — EXACT: "Shri Andavar Eye Care and Retina Centre has been on
+    Palladam Road since 2013, run by the surgeon who founded it."
+
+  SECTION 2 — THE STORY
+    Paragraph 1 — EXACT: "There are larger eye hospitals within an hour of
+    here, and they do good work. What they cannot offer is the thing a
+    small practice gives for free: the same surgeon, every time, for as
+    long as you need him."
+    Paragraph 2 — EXACT: "Most of the people who walk through the door were
+    sent by someone — a neighbour who had their cataract done here, a
+    family doctor who has been referring patients for years, a son who
+    searched and read about the surgeon before bringing his mother in.
+    Reputation in a town this size is slow to build and very hard to fake."
+    Paragraph 3 — EXACT: "The practice takes retina work seriously enough
+    to put it in its own name. Alongside that sits a steady volume of
+    cataract surgery, diabetic eye screening, glaucoma monitoring and
+    routine examinations — the everyday work that keeps a district seeing."
+    Card — eyebrow "In short", four blocks:
+      Founded — "2013, in Pollachi, by Dr. A. Raghuram."
+      Focus — "Retina and cataract, with full general eye care."
+      Languages — "Tamil and English, throughout — at the counter and in
+        the consulting room."
+      Where — "One location, on Palladam Road. No branches, by choice."
+
+  SECTION 3 — HOW WE WORK
+    Eyebrow: "How we work"
+    Heading — EXACT: "Three things we hold to."
+    Three items:
+      01 Nothing is recommended that is not needed — "If your eyes are
+         fine, you will be told they are fine. An unnecessary procedure is
+         a betrayal of thirteen years of trust, and it is not worth it."
+      02 You will understand what is happening — "Explanations in the
+         language you think in, without medical vocabulary, for as long as
+         it takes. Bring your questions written down if that helps."
+      03 The cost is stated before you commit — "What the visit costs, what
+         the procedure costs, and what your scheme covers — said out loud,
+         in advance, every time."
+
+  SECTION 4 — CLOSING CALL
+    Heading — EXACT: "Come and meet the surgeon."
+    Buttons: "Call 04259 221 000" (primary) · "About Dr. Raghuram" (secondary)
+    → our-surgeon.html
+
+PRODUCTION NOTE
+────────────────────────────────────────────────────────────────────────────────
+Facility photography, when available, is added to Section 2 to substantiate
+"well equipped," which is currently only asserted.
+
+
+════════════════════════════════════════════════════════════════════════════════
+PART 9 · PAGE 8 — PATIENT STORIES  (patient-stories.html)
+════════════════════════════════════════════════════════════════════════════════
+
+A · THE BRIEF
+────────────────────────────────────────────────────────────────────────────────
+Social proof. The Eye Foundation shows five testimonials on their Pollachi page;
+this needs to be better and more local. Three sections.
+
+  ⚠ THE SIX QUOTATIONS CURRENTLY ON THIS PAGE ARE PLACEHOLDERS. They are written
+  to demonstrate length and tone. They are NOT real patients and must be
+  replaced before launch. A visible note on the page says exactly this; remove
+  the note when the real quotations are in.
+
+
+B · CONTENT
+────────────────────────────────────────────────────────────────────────────────
+
+  SECTION 1 — PAGE HERO
+    Breadcrumb: Home / Patient stories
+    Heading — EXACT: "What people say afterwards."
+    Subheading — EXACT: "Collected from patients and families who agreed to
+    have their words published."
+
+  SECTION 2 — THE STORIES
+    First, an internal note card — "A note for the hospital, not the
+    patient" — explaining that the six quotations below are placeholders,
+    that Google reviews can be pulled in automatically instead, and that
+    this note must be removed before launch.
+    Then six testimonial cards, each: star rating → treatment label →
+    quotation → name and place.
+    PLACEHOLDER content, six cards:
+      Cataract surgery, both eyes · R. Manickam, Pollachi
+      Diabetic eye screening · S. Lakshmi, Zamin Uthukuli
+      Retina, emergency · A. Karthik, Kinathukadavu
+      Cataract surgery · M. Devi, Pollachi
+      Glaucoma monitoring · V. Subramanian, Anaimalai
+      Spectacles and check-up · P. Anitha, Pollachi
+
+  SECTION 3 — ASK FOR ONE
+    Heading — EXACT: "Were you treated here?"
+    Subheading — EXACT: "A few sentences about your experience helps the
+    next person decide whether to come in. Tell us at the desk, or leave a
+    review on Google."
+    Button: "Call 04259 221 000" (primary)
+
+PRODUCTION NOTE
+────────────────────────────────────────────────────────────────────────────────
+Never publish a testimonial without the patient's consent on record. Do not
+invent names, places or outcomes — if real quotations are short, publish
+fewer cards rather than padding. If Google reviews are embedded instead, keep
+the same card structure so the page still reads as part of this site.
+
+
+════════════════════════════════════════════════════════════════════════════════
+PART 10 · PAGE 9 — EYE HEALTH  (eye-health.html)
+════════════════════════════════════════════════════════════════════════════════
+
+A · THE BRIEF
+────────────────────────────────────────────────────────────────────────────────
+Not a blog. Answers to the questions people actually ask at the counter, written
+in the surgeon's voice. Three sections. Six entries is enough to launch.
+
+
+B · CONTENT
+────────────────────────────────────────────────────────────────────────────────
+
+  SECTION 1 — PAGE HERO
+    Breadcrumb: Home / Eye health
+    Heading — EXACT: "Questions people ask at the counter."
+    Subheading — EXACT: "Written by Dr. Raghuram, in answer to the things
+    patients actually ask — not a blog for the sake of having one."
+
+  SECTION 2 — THE SIX ANSWERS
+    Six cards. Each heading is a conclusion, not a question, plus one
+    paragraph:
+      1  If you have diabetes, your eyes need a check every year
+      2  A cataract does not need to be "ripe"
+      3  Children rarely say they cannot see
+      4  Floaters are usually harmless. A curtain is not.
+      5  Screens do not damage your eyes, but they do dry them
+      6  Do not buy a pressure reading from a machine alone
+    Beneath the six, a second internal note explaining that the page only
+    earns its keep if it is fed one answer a month, and that leaving it as
+    is beats letting it visibly go stale.
+
+  SECTION 3 — CLOSING CALL
+    Heading — EXACT: "Something here sound like you?"
+    Subheading — EXACT: "Come in and have it looked at properly. No
+    appointment needed."
+    Buttons: "Call 04259 221 000" (primary) · "What we treat" (secondary)
+    → treatments.html
+
+PRODUCTION NOTE
+────────────────────────────────────────────────────────────────────────────────
+Headings must stay conclusions, not questions — e.g. "A cataract does not
+need to be ripe", not "Does a cataract need to be ripe?" Every clinical claim
+must be confirmed by Dr. Raghuram before publication.
+
+
+────────────────────────────────────────────────────────────────────────────────
+END OF SPECIFICATION
+Shri Andavar Eye Care and Retina Centre · Content only
+────────────────────────────────────────────────────────────────────────────────

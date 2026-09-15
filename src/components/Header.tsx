@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -9,7 +10,6 @@ const NAV = [
   { href: "/treatments", label: "Treatments" },
   { href: "/our-surgeon", label: "Our Surgeon" },
   { href: "/schemes", label: "Schemes" },
-  { href: "/visit-us", label: "Visit Us" },
   { href: "/about", label: "About" },
 ];
 
@@ -47,13 +47,14 @@ export default function Header() {
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
       <div className={`container ${styles.bar}`}>
         <Link href="/" className={styles.brandLink}>
-          <span className={styles.mark} aria-hidden="true">
-            <span />
-          </span>
-          <span className={styles.brandText}>
-            <span className={styles.brandName}>Shri Andavar</span>
-            <span className={styles.brandSub}>Eye Care &amp; Retina Centre</span>
-          </span>
+          <Image
+            src="/logo.png"
+            alt="Shri Andavar Eye Care & Retina Centre"
+            width={300}
+            height={80}
+            className={styles.logo}
+            priority
+          />
         </Link>
 
         <nav className={styles.nav} aria-label="Primary">

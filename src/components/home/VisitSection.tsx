@@ -22,7 +22,7 @@ export default function VisitSection() {
             >
               ◎ Open in Maps
             </MagneticButton>
-            <MagneticButton href="/visit-us" className={styles.btnSecondary}>
+            <MagneticButton href="/about" className={styles.btnSecondary}>
               Visiting details
             </MagneticButton>
           </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import styles from "./Footer.module.css";
 
@@ -9,8 +10,13 @@ export default function Footer() {
       <div aria-hidden="true" className={styles.glow} />
       <div className={`container ${styles.grid}`}>
         <div>
-          <div className={styles.brandName}>Shri Andavar</div>
-          <span className={styles.brandSub}>Eye Care &amp; Retina Centre</span>
+          <Image
+            src="/logo.png"
+            alt="Shri Andavar Eye Care & Retina Centre"
+            width={300}
+            height={80}
+            className={styles.logo}
+          />
           <p className={styles.blurb}>
             Cataract and retina care in Pollachi since 2013, by one surgeon
             who sees you from the first examination to the last follow-up.

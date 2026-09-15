@@ -28,54 +28,18 @@
 .brandLink {
   display: flex;
   align-items: center;
-  gap: 12px;
   min-width: 0;
   flex: 1 1 auto;
 }
 
-.mark {
-  flex: 0 0 auto;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  display: grid;
-  place-items: center;
+.logo {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+  transform: scale(1.35);
+  transform-origin: left center;
 }
 
-.mark span {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: #fff;
-  box-shadow: inset -2px -2px 0 rgba(9, 58, 36, 0.25);
-}
-
-.brandText {
-  min-width: 0;
-  overflow: hidden;
-}
-
-.brandName {
-  font-family: var(--font-head);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.1;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.brandSub {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
-  color: var(--muted);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 
 .nav {
   display: flex;
@@ -220,12 +184,8 @@
 }
 
 @media (max-width: 430px) {
-  .brandSub {
-    display: none;
-  }
-
-  .mark {
-    width: 32px;
-    height: 32px;
+  .logo {
+    height: 48px;
+    transform: scale(1.2);
   }
 }

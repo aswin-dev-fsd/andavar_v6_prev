@@ -1,0 +1,149 @@
+.section {
+  position: relative;
+  padding: 0 0 clamp(72px, 10vw, 140px);
+  background: var(--bg);
+  z-index: 2;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(16px, 2vw, 24px);
+}
+
+.card {
+  position: relative;
+  background: #fff;
+  border-radius: var(--r-lg);
+  padding: clamp(24px, 2.5vw, 36px);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease), border-color 0.5s var(--ease);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(31, 158, 87, 0.08), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.5s var(--ease);
+  pointer-events: none;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--line-strong);
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.cardFeatured {
+  grid-column: span 2;
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: linear-gradient(140deg, rgba(11, 106, 60, 0.08), rgba(31, 158, 87, 0.12));
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  transition: transform 0.5s var(--ease), background 0.5s var(--ease), color 0.5s var(--ease);
+}
+
+.card:hover .icon {
+  background: linear-gradient(140deg, var(--primary), var(--secondary));
+  color: #fff;
+  transform: translateY(-4px) scale(1.05);
+}
+
+.title {
+  font-family: var(--font-head);
+  font-size: clamp(1.2rem, 1.8vw, 1.4rem);
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.8rem;
+  line-height: 1.2;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* Hover Reveal for sub-items */
+.contentWrapper {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.subItemsOverlay {
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  transform: translateY(10px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s var(--ease);
+}
+
+.card:hover .subItemsOverlay {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.card:hover .description.hasSub {
+  opacity: 0;
+}
+
+.subItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-family: var(--font-head);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.subIcon {
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cardFeatured {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .cardFeatured {
+    grid-column: span 1;
+  }
+}
