@@ -1,0 +1,145 @@
+:root {
+  --primary: #0b6a3c;
+  --secondary: #16924c;
+  --accent: #1f9e57;
+  --gold: #eda80f;
+  --gold-deep: #c6820a;
+  --bg: #f6fbf7;
+  --bg-alt: #ecf6ef;
+  --card: #ffffff;
+  --ink: #173042;
+  --muted: #5a6e7c;
+  --line: rgba(14, 70, 45, 0.1);
+  --line-strong: rgba(14, 70, 45, 0.16);
+  --deep: #0a3b24;
+
+  --shadow-sm: 0 2px 8px rgba(9, 58, 36, 0.06);
+  --shadow-md: 0 18px 40px -20px rgba(9, 58, 36, 0.22);
+  --shadow-lg: 0 40px 80px -32px rgba(9, 58, 36, 0.34);
+
+  --r-sm: 14px;
+  --r-md: 22px;
+  --r-lg: 32px;
+  --r-xl: 44px;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --maxw: 1240px;
+  --gutter: clamp(20px, 5vw, 40px);
+
+  --font-head: var(--font-plus-jakarta), system-ui, sans-serif;
+  --font-body: var(--font-manrope), system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.66;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 0;
+}
+
+body.has-call-bar {
+  padding-bottom: 84px;
+}
+
+@media (min-width: 861px) {
+  body.has-call-bar {
+    padding-bottom: 0;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-head);
+  color: var(--ink);
+  font-weight: 700;
+  text-wrap: balance;
+  line-height: 1.12;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.container {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding-inline: var(--gutter);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 26px;
+  height: 2px;
+  background: var(--primary);
+  border-radius: 2px;
+}
+
+.ta {
+  display: none;
+}
+
+[data-lang="ta"] .ta {
+  display: inline;
+}
+
+[data-lang="ta"] .en {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

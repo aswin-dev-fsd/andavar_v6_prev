@@ -1,0 +1,111 @@
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+import styles from "./Header.module.css";
+
+const NAV = [
+  { href: "/treatments", label: "Treatments" },
+  { href: "/our-surgeon", label: "Our Surgeon" },
+  { href: "/schemes", label: "Schemes" },
+  { href: "/visit-us", label: "Visit Us" },
+  { href: "/about", label: "About" },
+];
+
+export default function Header() {
+  const pathname = usePathname();
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [lang, setLang] = useState<"en" | "ta">("en");
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 10);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    const stored = window.localStorage.getItem("sa-lang");
+    if (stored === "ta" || stored === "en") {
+      // Deliberately deferred to an effect: the server always renders "en" first,
+      // so restoring the saved language during render would mismatch on hydration.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setLang(stored);
+      document.documentElement.dataset.lang = stored;
+    }
+  }, []);
+
+  function switchLang(next: "en" | "ta") {
+    setLang(next);
+    document.documentElement.dataset.lang = next;
+    window.localStorage.setItem("sa-lang", next);
+  }
+
+  return (
+    <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
+      <div className={`container ${styles.bar}`}>
+        <Link href="/" className={styles.brandLink}>
+          <span className={styles.mark} aria-hidden="true">
+            <span />
+          </span>
+          <span className={styles.brandText}>
+            <span className={styles.brandName}>Shri Andavar</span>
+            <span className={styles.brandSub}>Eye Care &amp; Retina Centre</span>
+          </span>
+        </Link>
+
+        <nav className={styles.nav} aria-label="Primary">
+          {NAV.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`${styles.navLink} ${
+                pathname === item.href ? styles.active : ""
+              }`}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
+
+        <div className={styles.right}>
+          <div className={styles.langToggle} role="group" aria-label="Language">
+            <button
+              type="button"
+              className={lang === "en" ? styles.activeLang : ""}
+              onClick={() => switchLang("en")}
+            >
+              EN
+            </button>
+            <button
+              type="button"
+              className={lang === "ta" ? styles.activeLang : ""}
+              onClick={() => switchLang("ta")}
+            >
+              த
+            </button>
+          </div>
+          <button
+            type="button"
+            className={`${styles.menuBtn} ${menuOpen ? styles.open : ""}`}
+            aria-label="Menu"
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((v) => !v)}
+          >
+            <span />
+          </button>
+        </div>
+      </div>
+
+      <div className={`${styles.mobilePanel} ${menuOpen ? styles.open : ""}`}>
+        {NAV.map((item) => (
+          <Link key={item.href} href={item.href} onClick={() => setMenuOpen(false)}>
+            {item.label}
+          </Link>
+        ))}
+      </div>
+    </header>
+  );
+}

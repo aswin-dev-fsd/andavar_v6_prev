@@ -1,0 +1,45 @@
+.bar {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .bar {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 60;
+    background: rgba(246, 251, 247, 0.94);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-top: 1px solid var(--line);
+    padding: 10px var(--gutter);
+    padding-bottom: max(10px, env(safe-area-inset-bottom));
+    gap: 10px;
+  }
+}
+
+.btn {
+  flex: 1 1 0;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.call {
+  background: var(--primary);
+  color: #fff;
+}
+
+.directions {
+  border: 1.5px solid var(--line-strong);
+  color: var(--ink);
+  background: #fff;
+}
