@@ -4,20 +4,28 @@ import styles from "./SurgeonSection.module.css";
 
 const QUALIFICATIONS = [
   {
-    title: "MBBS, DO",
-    body: "Medical degree, then a diploma in ophthalmology — eyes only.",
+    titleEn: "MBBS, DO",
+    titleTa: "MBBS, DO",
+    bodyEn: "Medical degree, then a diploma in ophthalmology — eyes only.",
+    bodyTa: "மருத்துவப் பட்டம், அதன்பிறகு கண் மருத்துவத்தில் பட்டயம் — கண்களுக்கு மட்டுமே.",
   },
   {
-    title: "DNB (Ophthalmology)",
-    body: "The national board qualification for eye specialists in India.",
+    titleEn: "DNB (Ophthalmology)",
+    titleTa: "DNB (கண் மருத்துவம்)",
+    bodyEn: "The national board qualification for eye specialists in India.",
+    bodyTa: "இந்தியாவில் கண் சிறப்பு மருத்துவர்களுக்கான தேசிய வாரியத் தகுதி.",
   },
   {
-    title: "FICO (United Kingdom)",
-    body: "Fellowship of the International Council of Ophthalmology.",
+    titleEn: "FICO (United Kingdom)",
+    titleTa: "FICO (ஐக்கிய ராஜ்ஜியம்)",
+    bodyEn: "Fellowship of the International Council of Ophthalmology.",
+    bodyTa: "சர்வதேச கண் மருத்துவ கவுன்சிலின் பெல்லோஷிப்.",
   },
   {
-    title: "FRCS (Glasgow)",
-    body: "A surgical fellowship of the Royal College of Surgeons — unusual in a town this size.",
+    titleEn: "FRCS (Glasgow)",
+    titleTa: "FRCS (கிளாஸ்கோ)",
+    bodyEn: "A surgical fellowship of the Royal College of Surgeons — unusual in a town this size.",
+    bodyTa: "ராயல் காலேஜ் ஆஃப் சர்ஜன்ஸ் வழங்கும் அறுவை சிகிச்சை பெல்லோஷிப் — இந்த அளவிலான ஒரு நகரத்தில் இது அரிதானது.",
   },
 ];
 
@@ -26,24 +34,40 @@ export default function SurgeonSection() {
     <section className={styles.section}>
       <div className={`container ${styles.grid}`}>
         <Reveal targets=":scope > *" stagger={0.09}>
-          <span className="eyebrow">Your surgeons</span>
-          <h2 className={styles.h2}>Dr. A. Raghuram</h2>
+          <span className="eyebrow">
+            <span className="en">Your surgeons</span> <span className="ta" lang="ta">உங்கள் மருத்துவர்</span>
+          </span>
+          <h2 className={styles.h2}>
+            <span className="en">Dr. A. Raghuram</span> <span className="ta" lang="ta">டாக்டர் A. ரகுராம்</span>
+          </h2>
           <p className={styles.lede}>
-            At a large chain you are seen by whoever is on duty that day.
-            Here there is one surgeon, and he will still be here at your
-            follow-up next year.
+            <span className="en">
+              At a large chain you are seen by whoever is on duty that day.
+              Here there is one surgeon, and he will still be here at your
+              follow-up next year.
+            </span>
+            {" "}
+            <span className="ta" lang="ta">
+              பெரிய மருத்துவமனைகளில், அன்று பணியில் இருக்கும் மருத்துவரே உங்களைப் பார்ப்பார். இங்கே ஒரே ஒரு அறுவை சிகிச்சை நிபுணர் மட்டுமே உள்ளார், அடுத்த ஆண்டு உங்கள் தொடர் பரிசோதனையிலும் அவரே இருப்பார்.
+            </span>
           </p>
           <Link href="/our-surgeons" className={styles.arrowLink}>
-            More about Dr. Raghuram →
+            <span className="en">More about Dr. Raghuram →</span> <span className="ta" lang="ta">டாக்டர் ரகுராம் பற்றி மேலும் அறிய →</span>
           </Link>
         </Reveal>
 
         <Reveal className={styles.card} stagger={0.07}>
-          <div className={styles.cardLabel}>Qualifications, in plain words</div>
+          <div className={styles.cardLabel}>
+            <span className="en">Qualifications, in plain words</span> <span className="ta" lang="ta">எளிய வார்த்தைகளில் தகுதிகள்</span>
+          </div>
           {QUALIFICATIONS.map((q) => (
-            <div key={q.title} className={styles.row}>
-              <div className={styles.rowTitle}>{q.title}</div>
-              <div className={styles.rowBody}>{q.body}</div>
+            <div key={q.titleEn} className={styles.row}>
+              <div className={styles.rowTitle}>
+                <span className="en">{q.titleEn}</span> <span className="ta" lang="ta">{q.titleTa}</span>
+              </div>
+              <div className={styles.rowBody}>
+                <span className="en">{q.bodyEn}</span> <span className="ta" lang="ta">{q.bodyTa}</span>
+              </div>
             </div>
           ))}
         </Reveal>

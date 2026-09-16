@@ -7,9 +7,9 @@ export default function CataractHero() {
       <div className={styles.glow} aria-hidden="true" />
       <div className={`container ${styles.grid}`}>
         <Reveal targets=":scope > *" stagger={0.1}>
-          <div className={styles.breadcrumb}>Home / Treatments / Cataract surgery</div>
+          <div className={styles.breadcrumb}>Home / Treatments / Cataract Surgery</div>
           <h1 className={styles.h1}>
-            <span className="en">Cataract surgery</span>
+            <span className="en">Cataract Surgery</span>
             <span className="ta" lang="ta">கண்புரை அறுவை சிகிச்சை</span>
           </h1>
           <p className={styles.lede}>

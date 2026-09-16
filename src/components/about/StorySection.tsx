@@ -15,7 +15,7 @@ export default function StorySection() {
             <span className="ta" lang="ta">இங்கு வரும் பெரும்பாலானோர் யாரோ ஒருவரால் பரிந்துரைக்கப்பட்டு வந்தவர்களே — இங்கு கண்புரை அறுவை சிகிச்சை செய்து கொண்ட ஒரு அண்டை வீட்டார், பல ஆண்டுகளாக நோயாளிகளைப் பரிந்துரைக்கும் ஒரு குடும்ப மருத்துவர், தன் தாயை அழைத்து வருவதற்கு முன் மருத்துவரைப் பற்றித் தேடிப் படித்த ஒரு மகன். இவ்வளவு பெரிய ஊரில் நற்பெயரைக் கட்டியெழுப்புவது மெதுவானது மற்றும் அதனைப் போலியாக உருவாக்குவது மிகவும் கடினம்.</span>
           </p>
           <p className={styles.p}>
-            <span className="en">The practice takes retina work seriously enough to put it in its own name. Alongside that sits a steady volume of cataract surgery, diabetic eye screening, glaucoma monitoring and routine examinations — the everyday work that keeps a district seeing.</span>
+            <span className="en">The practice takes retina work seriously enough to put it in its own name. Alongside that sits a steady volume of Cataract Surgery, Diabetic Eye Screening, Glaucoma Monitoring and Routine Examinations — the everyday work that keeps a district seeing.</span>
             <span className="ta" lang="ta">இந்த மருத்துவமனை விழித்திரை (retina) சிகிச்சைக்கு அதிக முக்கியத்துவம் அளிக்கிறது, அதனாலேயே அதன் பெயரிலும் அது இடம்பெற்றுள்ளது. அத்துடன் தொடர்ந்து கண்புரை அறுவை சிகிச்சை, சர்க்கரை நோய் கண் பரிசோதனை, குளுக்கோமா கண்காணிப்பு மற்றும் வழக்கமான கண் பரிசோதனைகள் போன்ற மாவட்ட மக்களின் பார்வையைப் பாதுகாக்கும் அன்றாடப் பணிகளும் நடைபெறுகின்றன.</span>
           </p>
         </Reveal>

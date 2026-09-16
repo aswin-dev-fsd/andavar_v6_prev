@@ -5,10 +5,14 @@ All notable changes to the Shri Andavar Eye Care project.
 ## [2026-09-16]
 
 ### Global & Architecture
+- **Bilingual Support:** Integrated dual-language (English/Tamil) labels across navigation headers, footers, home sections, and page components.
 - **Typography:** Tightened global typography by reducing line heights for all headings (`h1`-`h4`) and body text.
-- **Navigation:** Added a "Home" link to the main Navbar (placed right before "Treatments").
+- **Navigation:** Added "Home" and "Community" links to the main Navbar and Footer with localized labels.
 - **Copywriting:** Renamed "Our Surgeon" to "Our Surgeons" site-wide across all navigation menus and footers.
-- **Footer:** Standardized the layout by applying the Home page footer components universally across all pages.
+- **Footer:** Standardized the layout by applying the Home page footer components universally across all pages with bilingual support.
+
+### `/community` Page
+- **Page Creation:** Built the complete Community & CSR page (`/community`) featuring `CommunityHero` and `CommunityGrid` to highlight free eye camps, outreach programs, and social impact initiatives.
 
 ### Home Page (`/`)
 - **Layout Rhythm:** Reordered the page by moving the `FactStrip` directly below the `Hero` section.

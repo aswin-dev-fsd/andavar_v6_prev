@@ -6,7 +6,7 @@ const SCHEMES = [
     title: <>CM's Comprehensive Health<br/>Insurance Scheme</>,
     tagEn: "CMCHIS",
     tagTa: "அரசு காப்பீட்டுத் திட்டம்",
-    bodyEn: "The Tamil Nadu government scheme. Cataract surgery and a number of other eye procedures are covered.",
+    bodyEn: "The Tamil Nadu government scheme. Cataract Surgery and a number of other eye procedures are covered.",
     bodyTa: "தமிழ்நாடு அரசு திட்டம். கண்புரை அறுவை சிகிச்சை மற்றும் பல கண் சிகிச்சைகள் இதில் அடங்கும்.",
     bringEn: ["Your CMCHIS card", "Aadhaar card", "Ration card, if you have it"],
     bringTa: ["உங்கள் முதலமைச்சரின் விரிவான மருத்துவக் காப்பீட்டுத் திட்ட அட்டை", "ஆதார் அட்டை", "குடும்ப அட்டை (இருந்தால்)"]

@@ -6,6 +6,13 @@ import styles from "./TreatmentsHero.module.css";
 export default function TreatmentsHero() {
   return (
     <section className={styles.section}>
+      {/* Background Image Placeholder */}
+      <img 
+        src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=2000&auto=format&fit=crop" 
+        alt="" 
+        className={styles.bgImage} 
+        aria-hidden="true" 
+      />
       <div aria-hidden="true" className={styles.glowA} />
       <div aria-hidden="true" className={styles.glowB} />
       <div className={`container ${styles.inner}`}>

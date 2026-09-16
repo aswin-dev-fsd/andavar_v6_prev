@@ -7,11 +7,12 @@ import { useEffect, useState } from "react";
 import styles from "./Header.module.css";
 
 const NAV = [
-  { href: "/", label: "Home" },
-  { href: "/treatments", label: "Treatments" },
-  { href: "/our-surgeons", label: "Our Surgeons" },
-  { href: "/schemes", label: "Schemes" },
-  { href: "/about", label: "About" },
+  { href: "/", labelEn: "Home", labelTa: "முகப்பு" },
+  { href: "/treatments", labelEn: "Treatments", labelTa: "சிகிச்சைகள்" },
+  { href: "/our-surgeons", labelEn: "Our Surgeons", labelTa: "எங்கள் மருத்துவர்" },
+  { href: "/schemes", labelEn: "Schemes", labelTa: "திட்டங்கள்" },
+  { href: "/about", labelEn: "About", labelTa: "எங்களைப் பற்றி" },
+  { href: "/community", labelEn: "Community", labelTa: "சமூகம்" },
 ];
 
 export default function Header() {
@@ -67,7 +68,7 @@ export default function Header() {
                 pathname === item.href ? styles.active : ""
               }`}
             >
-              {item.label}
+              <span className="en">{item.labelEn}</span> <span className="ta" lang="ta">{item.labelTa}</span>
             </Link>
           ))}
         </nav>
@@ -104,7 +105,7 @@ export default function Header() {
       <div className={`${styles.mobilePanel} ${menuOpen ? styles.open : ""}`}>
         {NAV.map((item) => (
           <Link key={item.href} href={item.href} onClick={() => setMenuOpen(false)}>
-            {item.label}
+            <span className="en">{item.labelEn}</span> <span className="ta" lang="ta">{item.labelTa}</span>
           </Link>
         ))}
       </div>

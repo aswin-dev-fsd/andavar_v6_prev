@@ -11,13 +11,17 @@ gradient shapes and line-drawn SVG (aperture rings, icons) instead of
 photography, matching the reference site's own hero treatment. Nothing to
 swap out on this page.
 
-## Pages not yet built
+## Brand & Logo Assets
 
-When a page needs a real photo (e.g. the surgeon's portrait on
-`our-surgeon.html`, or facility photos on `about.html`), it will be recorded
-here with:
+- **`/public/logo.png`**: Primary transparent brand logo copied from `docs/logo transparent chatgpt.png`. Used in `Header.tsx` and `Footer.tsx`.
 
-- File path in the project
-- Source / license
-- What it's standing in for
-- What real asset should replace it
+## Community & CSR Page (`/community`)
+
+- **Community Camp Visuals**: Abstract CSS gradients and SVG icon illustrations used for free eye camps and CSR sections.
+
+## Pages Built
+
+- **`our-surgeons`**: Uses Lucide icons and abstract background glows for qualifications and stats.
+- **`about`**: Uses abstract hospital image background and SVG icons.
+- **`cataract-surgery`**: Custom interactive SVG/CSS vision slider.
+

@@ -4,27 +4,39 @@ import styles from "./TreatSection.module.css";
 
 const CARDS = [
   {
-    symptom: "Things look cloudy, faded or washed out",
-    title: "Cataract surgery",
-    body: "The lens inside your eye has clouded. It is replaced with a clear artificial one in a day-care procedure.",
+    symptomEn: "Things look cloudy, faded or washed out",
+    symptomTa: "பார்வை மங்கலாக அல்லது வெளிறியதாக இருத்தல்",
+    titleEn: "Cataract Surgery",
+    titleTa: "கண்புரை அறுவை சிகிச்சை",
+    bodyEn: "The lens inside your eye has clouded. It is replaced with a clear artificial one in a day-care procedure.",
+    bodyTa: "உங்கள் கண்ணின் உள்ளே உள்ள லென்ஸ் மங்கலாகிவிட்டது. இது ஒரு நாள் சிகிச்சையில் தெளிவான செயற்கை லென்ஸால் மாற்றப்படுகிறது.",
     href: "/cataract-surgery",
   },
   {
-    symptom: "A shadow, floaters or sudden blurring",
-    title: "Retina care",
-    body: "Retinal detachment, macular disease and laser treatment for the eye's most delicate layer.",
+    symptomEn: "A shadow, floaters or sudden blurring",
+    symptomTa: "பார்வையில் நிழல், மிதக்கும் துகள்கள் அல்லது திடீர் மங்கல்",
+    titleEn: "Retina Care",
+    titleTa: "விழித்திரை சிகிச்சை",
+    bodyEn: "Retinal detachment, macular disease and laser treatment for the eye's most delicate layer.",
+    bodyTa: "விழித்திரை விலகல், மேக்குலர் நோய் மற்றும் கண்ணின் மிக நுண்ணிய அடுக்கான விழித்திரைக்கு லேசர் சிகிச்சை.",
     href: "/treatments",
   },
   {
-    symptom: "You have diabetes and have not had your eyes checked",
-    title: "Diabetic eye care",
-    body: "A yearly screening catches damage at the back of the eye long before you would notice it.",
+    symptomEn: "You have diabetes and have not had your eyes checked",
+    symptomTa: "உங்களுக்கு நீரிழிவு நோய் உள்ளது மற்றும் உங்கள் கண்களை பரிசோதிக்கவில்லை",
+    titleEn: "Diabetic Eye Care",
+    titleTa: "நீரிழிவு கண் பராமரிப்பு",
+    bodyEn: "A yearly screening catches damage at the back of the eye long before you would notice it.",
+    bodyTa: "ஆண்டுதோறும் செய்யப்படும் பரிசோதனை, நீங்கள் உணர்வதற்கு நீண்ட காலத்திற்கு முன்பே கண்ணின் பின்புறத்தில் ஏற்படும் பாதிப்பைக் கண்டறிகிறது.",
     href: "/treatments",
   },
   {
-    symptom: "Headaches, or glaucoma in the family",
-    title: "Glaucoma & check-ups",
-    body: "Pressure testing and long-term monitoring for a condition that takes sight quietly.",
+    symptomEn: "Headaches, or glaucoma in the family",
+    symptomTa: "தலைவலி, அல்லது குடும்பத்தில் குளுக்கோமா (கண் நீர் அழுத்த நோய்) இருத்தல்",
+    titleEn: "Glaucoma & Check-ups",
+    titleTa: "குளுக்கோமா மற்றும் பரிசோதனைகள்",
+    bodyEn: "Pressure testing and long-term monitoring for a condition that takes sight quietly.",
+    bodyTa: "பார்வையை அமைதியாகப் பறிக்கும் இந்த நிலைக்கு, கண் அழுத்தப் பரிசோதனை மற்றும் நீண்ட கால கண்காணிப்பு.",
     href: "/treatments",
   },
 ];
@@ -34,26 +46,38 @@ export default function TreatSection() {
     <section className={styles.section}>
       <div className="container">
         <Reveal className={styles.head}>
-          <span className="eyebrow">What we treat</span>
-          <h2 className={styles.h2}>Start with what you have noticed.</h2>
+          <span className="eyebrow">
+            <span className="en">What we treat</span> <span className="ta" lang="ta">நாங்கள் அளிக்கும் சிகிச்சைகள்</span>
+          </span>
+          <h2 className={styles.h2}>
+            <span className="en">Start with what you have noticed.</span> <span className="ta" lang="ta">நீங்கள் கவனித்த அறிகுறிகளிலிருந்து தொடங்குங்கள்.</span>
+          </h2>
         </Reveal>
 
         <Reveal className={styles.grid} stagger={0.08}>
           {CARDS.map((c) => (
-            <div key={c.title} className={styles.card}>
+            <div key={c.titleEn} className={styles.card}>
               <span aria-hidden="true" className={styles.corner} />
-              <div className={styles.symptom}>{c.symptom}</div>
-              <h3 className={styles.title}>{c.title}</h3>
-              <p className={styles.body}>{c.body}</p>
+              <div className={styles.symptom}>
+                <span className="en">{c.symptomEn}</span> <span className="ta" lang="ta">{c.symptomTa}</span>
+              </div>
+              <h3 className={styles.title}>
+                <span className="en">{c.titleEn}</span> <span className="ta" lang="ta">{c.titleTa}</span>
+              </h3>
+              <p className={styles.body}>
+                <span className="en">{c.bodyEn}</span> <span className="ta" lang="ta">{c.bodyTa}</span>
+              </p>
               <Link href={c.href} className={styles.link}>
-                Read more →
+                <span className="en">Read more →</span> <span className="ta" lang="ta">மேலும் படிக்க →</span>
               </Link>
             </div>
           ))}
         </Reveal>
 
         <div className={styles.more}>
-          <Link href="/treatments">See everything we treat →</Link>
+          <Link href="/treatments">
+            <span className="en">See everything we treat →</span> <span className="ta" lang="ta">அனைத்து சிகிச்சைகளையும் பார்க்க →</span>
+          </Link>
         </div>
       </div>
     </section>

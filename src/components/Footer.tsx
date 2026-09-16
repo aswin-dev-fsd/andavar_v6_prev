@@ -18,39 +18,74 @@ export default function Footer() {
             className={styles.logo}
           />
           <p className={styles.blurb}>
-            Cataract and retina care in Pollachi since 2013, by one surgeon
-            who sees you from the first examination to the last follow-up.
+            <span className="en">
+              Cataract and retina care in Pollachi since 2013, by one surgeon
+              who sees you from the first examination to the last follow-up.
+            </span>
+            {" "}
+            <span className="ta" lang="ta">
+              2013 முதல் பொள்ளாச்சியில் கண்புரை மற்றும் விழித்திரை சிகிச்சை. முதல் பரிசோதனை முதல் இறுதி வரை ஒருவரே அறுவை சிகிச்சை நிபுணர்.
+            </span>
           </p>
         </div>
 
         <div>
-          <div className={styles.colTitle}>Treatments</div>
+          <div className={styles.colTitle}>
+            <span className="en">Treatments</span> <span className="ta" lang="ta">சிகிச்சைகள்</span>
+          </div>
           <div className={styles.linkList}>
-            <Link href="/cataract-surgery">Cataract surgery</Link>
-            <Link href="/treatments">Retina care</Link>
-            <Link href="/treatments">Diabetic eye care</Link>
-            <Link href="/treatments">Glaucoma</Link>
-            <Link href="/treatments">Eye check-up</Link>
+            <Link href="/cataract-surgery">
+              <span className="en">Cataract Surgery</span> <span className="ta" lang="ta">கண்புரை அறுவை சிகிச்சை</span>
+            </Link>
+            <Link href="/treatments">
+              <span className="en">Retina Care</span> <span className="ta" lang="ta">விழித்திரை சிகிச்சை</span>
+            </Link>
+            <Link href="/treatments">
+              <span className="en">Diabetic Eye Care</span> <span className="ta" lang="ta">நீரிழிவு கண் பராமரிப்பு</span>
+            </Link>
+            <Link href="/treatments">
+              <span className="en">Glaucoma</span> <span className="ta" lang="ta">குளுக்கோமா</span>
+            </Link>
+            <Link href="/treatments">
+              <span className="en">Eye check-up</span> <span className="ta" lang="ta">கண் பரிசோதனை</span>
+            </Link>
           </div>
         </div>
 
         <div>
-          <div className={styles.colTitle}>The Hospital</div>
+          <div className={styles.colTitle}>
+            <span className="en">The Hospital</span> <span className="ta" lang="ta">மருத்துவமனை</span>
+          </div>
           <div className={styles.linkList}>
-            <Link href="/our-surgeons">Our surgeons</Link>
-            <Link href="/about">About</Link>
-            <Link href="/patient-stories">Patient stories</Link>
-            <Link href="/schemes">Schemes &amp; insurance</Link>
-            <Link href="/eye-health">Eye health tips</Link>
+            <Link href="/our-surgeons">
+              <span className="en">Our surgeons</span> <span className="ta" lang="ta">எங்கள் மருத்துவர்</span>
+            </Link>
+            <Link href="/about">
+              <span className="en">About</span> <span className="ta" lang="ta">எங்களைப் பற்றி</span>
+            </Link>
+            <Link href="/patient-stories">
+              <span className="en">Patient stories</span> <span className="ta" lang="ta">நோயாளிகளின் கதைகள்</span>
+            </Link>
+            <Link href="/schemes">
+              <span className="en">Schemes &amp; insurance</span> <span className="ta" lang="ta">திட்டங்கள் &amp; காப்பீடு</span>
+            </Link>
+            <Link href="/community">
+              <span className="en">Community &amp; CSR</span> <span className="ta" lang="ta">சமூகம் &amp; CSR</span>
+            </Link>
+            <Link href="/eye-health">
+              <span className="en">Eye health tips</span> <span className="ta" lang="ta">கண் ஆரோக்கிய குறிப்புகள்</span>
+            </Link>
           </div>
       </div>
       </div>
 
       <div className={`container ${styles.bottom}`}>
         <span>
-          © {year} Shri Andavar Eye Care and Retina Centre
+          <span className="en">© {year} Shri Andavar Eye Care and Retina Centre</span> <span className="ta" lang="ta">© {year} ஸ்ரீ ஆண்டவர் ஐ கேர் மற்றும் ரெட்டினா சென்டர்</span>
         </span>
-        <span>Pollachi, Tamil Nadu</span>
+        <span>
+          <span className="en">Pollachi, Tamil Nadu</span> <span className="ta" lang="ta">பொள்ளாச்சி, தமிழ்நாடு</span>
+        </span>
       </div>
     </footer>
   );
