@@ -1,6 +1,6 @@
 .section {
   padding: clamp(64px, 10vw, 112px) 0;
-  background: var(--bg);
+  background: var(--bg-gradient);
 }
 .grid {
   display: flex;

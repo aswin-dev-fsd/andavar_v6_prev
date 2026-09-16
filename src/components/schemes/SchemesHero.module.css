@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   padding: clamp(64px, 10vw, 128px) 0 clamp(48px, 8vw, 96px);
-  background: var(--bg);
+  background: var(--bg-gradient);
 }
 
 .glow {

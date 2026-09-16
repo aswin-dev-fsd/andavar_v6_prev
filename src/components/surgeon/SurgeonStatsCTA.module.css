@@ -1,6 +1,6 @@
 .section {
   padding: 120px 0;
-  background-color: var(--bg);
+  background: var(--bg-gradient);
   position: relative;
   overflow: hidden;
   color: var(--muted);

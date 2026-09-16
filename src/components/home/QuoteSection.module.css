@@ -1,5 +1,5 @@
 .section {
-  background: var(--bg);
+  background: var(--bg-gradient);
   padding: clamp(64px, 11vw, 120px) 0;
 }
 

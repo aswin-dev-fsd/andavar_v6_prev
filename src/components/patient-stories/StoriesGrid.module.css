@@ -1,6 +1,6 @@
 .section {
   padding: clamp(32px, 5vw, 64px) 0 clamp(64px, 10vw, 112px);
-  background: var(--bg);
+  background: var(--bg-gradient);
 }
 
 .internalNote {

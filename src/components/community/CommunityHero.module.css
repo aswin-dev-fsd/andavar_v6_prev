@@ -1,6 +1,6 @@
 .section {
   padding: 160px 0 80px;
-  background: var(--bg);
+  background: var(--bg-gradient);
   text-align: center;
 }
 

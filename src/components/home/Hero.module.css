@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   padding: clamp(48px, 8vw, 96px) 0 clamp(64px, 10vw, 112px);
-  background: var(--bg);
+  background: var(--bg-gradient);
 }
 
 .grid {
