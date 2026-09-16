@@ -177,27 +177,7 @@
   }
 
   .visual {
-    position: absolute;
-    inset: 0;
-    opacity: 0.15;
-    max-width: none;
-    z-index: 0;
-    transform: none;
-    overflow: hidden;
-  }
-  
-  .imageWrapper {
-    width: 100%;
-    max-width: 100%;
-    aspect-ratio: auto;
-    height: 100%;
-    border-radius: 0;
-    transform: none;
-    border: none;
-  }
-
-  .imageWrapper:hover {
-    transform: none;
+    display: none;
   }
 
   .copy {
