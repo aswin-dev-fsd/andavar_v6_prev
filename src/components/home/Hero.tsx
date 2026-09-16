@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import MagneticButton from "@/components/MagneticButton";
 import Reveal from "@/components/Reveal";
 import { getClinicStatus } from "@/lib/clinicHours";
@@ -50,7 +51,10 @@ export default function Hero() {
 
           <div className={styles.actions}>
             <MagneticButton href="tel:+914259221000" className={styles.btnPrimary}>
-              ☎ Call 04259 221 000
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              04259 221 000
             </MagneticButton>
             <MagneticButton
               href="https://maps.google.com/?q=Shri+Andavar+Eye+Care+and+Retina+Centre+Palladam+Road+Pollachi"
@@ -67,16 +71,19 @@ export default function Hero() {
           </p>
         </Reveal>
 
-        <div className={styles.visual} aria-hidden="true">
-          {[220, 170, 120].map((size) => (
-            <span
-              key={size}
-              className={styles.ring}
-              style={{ width: size + "%", height: size + "%" }}
-            />
-          ))}
-          <div className={styles.pupil} />
-        </div>
+        <Reveal delay={0.1}>
+          <div className={styles.visual} aria-hidden="true">
+            <div className={styles.imageWrapper}>
+              <Image 
+                src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1500&auto=format&fit=crop" 
+                alt="Hospital Facility" 
+                fill 
+                priority
+                className={styles.image} 
+              />
+            </div>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

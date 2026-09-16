@@ -1,37 +1,12 @@
 "use client";
-
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import MagneticButton from "@/components/MagneticButton";
 import Reveal from "@/components/Reveal";
 import styles from "./NoSchemeSection.module.css";
 
 export default function NoSchemeSection() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const sectionRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    
-    const ctx = gsap.context(() => {
-      if (sectionRef.current) {
-        ScrollTrigger.create({
-          trigger: sectionRef.current,
-          start: "top top",
-          end: "+=100%", // Pin duration
-          pin: true,
-          pinSpacing: false, // Allows the next section to scroll over this one
-        });
-      }
-    }, containerRef);
-
-    return () => ctx.revert();
-  }, []);
-
   return (
-    <div ref={containerRef}>
-      <section ref={sectionRef} className={styles.section}>
+    <div>
+      <section className={styles.section}>
         <div className="container">
           <div className={styles.content}>
             <Reveal targets=":scope > *" stagger={0.1}>

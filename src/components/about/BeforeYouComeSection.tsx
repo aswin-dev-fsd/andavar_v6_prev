@@ -4,7 +4,7 @@ import styles from "./BeforeYouComeSection.module.css";
 
 const ITEMS = [
   {
-    titleEn: "Bring your glasses — all of them",
+    titleEn: "Bring your glasses, all of them",
     titleTa: "உங்கள் கண்ணாடிகள் அனைத்தையும் கொண்டு வாருங்கள்",
     bodyEn: "Including the old pair you stopped using. They tell us more than you would expect.",
     bodyTa: "நீங்கள் பயன்படுத்தாமல் விட்ட பழைய கண்ணாடியையும் சேர்த்து. அவை நீங்கள் எதிர்பார்ப்பதை விட அதிகம் சொல்லும்."
@@ -68,7 +68,7 @@ export default function BeforeYouComeSection() {
             <MagneticButton href="tel:+914259221000" className={styles.btnPrimary}>
               ☎ Call 04259 221 000
             </MagneticButton>
-            <MagneticButton href="/our-surgeon" className={styles.btnSecondary}>
+            <MagneticButton href="/our-surgeons" className={styles.btnSecondary}>
               About Dr. Raghuram
             </MagneticButton>
           </div>

@@ -48,7 +48,7 @@
   color: var(--muted);
 }
 .closing {
-  margin-top: clamp(64px, 8vw, 96px);
+  margin-top: clamp(32px, 4vw, 48px);
   text-align: center;
   display: flex;
   flex-direction: column;

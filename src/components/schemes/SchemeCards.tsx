@@ -3,7 +3,7 @@ import styles from "./SchemeCards.module.css";
 
 const SCHEMES = [
   {
-    title: "Chief Minister's Comprehensive Health Insurance Scheme",
+    title: <>CM's Comprehensive Health<br/>Insurance Scheme</>,
     tagEn: "CMCHIS",
     tagTa: "அரசு காப்பீட்டுத் திட்டம்",
     bodyEn: "The Tamil Nadu government scheme. Cataract surgery and a number of other eye procedures are covered.",
@@ -12,7 +12,7 @@ const SCHEMES = [
     bringTa: ["உங்கள் முதலமைச்சரின் விரிவான மருத்துவக் காப்பீட்டுத் திட்ட அட்டை", "ஆதார் அட்டை", "குடும்ப அட்டை (இருந்தால்)"]
   },
   {
-    title: "Pensioners Health Scheme",
+    title: <>Pensioners<br/>Health Scheme</>,
     tagEn: "For retired government employees",
     tagTa: "ஓய்வூதியர் சுகாதாரத் திட்டம்",
     bodyEn: "Covers retired state government employees and their dependants under the scheme's terms.",
@@ -21,7 +21,7 @@ const SCHEMES = [
     bringTa: ["உங்கள் ஓய்வூதியர் அடையாள அட்டை", "திட்ட அட்டை", "சமீபத்திய ஓய்வூதிய சீட்டு"]
   },
   {
-    title: "Star Health Insurance",
+    title: <>Star Health<br/>Insurance</>,
     tagEn: "Private cover",
     tagTa: "தனியார் காப்பீடு",
     bodyEn: "Cashless treatment subject to your policy terms and prior approval where required.",
@@ -37,7 +37,7 @@ export default function SchemeCards() {
       <div className="container">
         <Reveal className={styles.grid} stagger={0.1}>
           {SCHEMES.map((scheme) => (
-            <div key={scheme.title} className={styles.card}>
+            <div key={scheme.tagEn} className={styles.card}>
               <div className={styles.tag}>
                 <span className="en">{scheme.tagEn}</span>
                 <span className="ta" lang="ta">{scheme.tagTa}</span>

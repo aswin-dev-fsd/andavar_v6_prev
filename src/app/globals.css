@@ -53,7 +53,7 @@ body {
   color: var(--ink);
   font-family: var(--font-body);
   font-size: 18px;
-  line-height: 1.66;
+  line-height: 1.55;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding-bottom: 0;
@@ -82,7 +82,7 @@ h4 {
   color: var(--ink);
   font-weight: 700;
   text-wrap: balance;
-  line-height: 1.12;
+  line-height: 1.02;
 }
 
 img,
@@ -111,14 +111,6 @@ button {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--primary);
-}
-
-.eyebrow::before {
-  content: "";
-  width: 26px;
-  height: 2px;
-  background: var(--primary);
-  border-radius: 2px;
 }
 
 .ta {

@@ -1,8 +1,10 @@
 .section {
   position: relative;
   overflow: hidden;
-  padding: clamp(64px, 10vw, 112px) 0 clamp(48px, 8vw, 96px);
-  background: var(--bg);
+  padding: clamp(80px, 12vw, 140px) 0 clamp(64px, 10vw, 120px);
+  background: 
+    linear-gradient(rgba(246, 251, 247, 0.75), rgba(246, 251, 247, 0.95)), 
+    url('/hospital-bg.jpg') center/cover no-repeat;
 }
 .grid {
   position: relative;
@@ -43,6 +45,6 @@
   font-size: clamp(18px, 2vw, 21px);
   color: var(--muted);
   max-width: 50ch;
-  margin: 0 auto;
+  margin: 24px auto 0;
   line-height: 1.5;
 }

@@ -7,7 +7,6 @@ export default function AboutHero() {
       <div className={styles.glow} aria-hidden="true" />
       <div className={`container ${styles.grid}`}>
         <Reveal targets=":scope > *" stagger={0.1}>
-          <div className="breadcrumb">Home / About</div>
           <h1 className={styles.h1}>
             <span className="en">A small hospital that has stayed in one place.</span>
             <span className="ta" lang="ta">ஒரே இடத்தில் நிலைத்திருக்கும் ஒரு சிறிய மருத்துவமனை.</span>

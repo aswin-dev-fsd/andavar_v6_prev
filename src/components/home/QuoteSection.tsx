@@ -17,7 +17,7 @@ export default function QuoteSection() {
 
         <Reveal targets=":scope > *" stagger={0.1}>
           <p className={styles.body}>
-            Most people who come here were sent by someone they trust — a
+            Most people who come here were sent by someone they trust a
             neighbour, a relative, the doctor down the road. That is how a
             practice lasts thirteen years in a town this size.
           </p>

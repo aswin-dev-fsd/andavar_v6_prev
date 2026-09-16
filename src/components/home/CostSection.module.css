@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: clamp(32px, 5vw, 80px);
-  align-items: center;
+  align-items: flex-start;
 }
 
 .h2 {
@@ -32,6 +32,13 @@
   border: 1.5px solid var(--line-strong);
   font-weight: 600;
   background: #fff;
+  color: var(--ink);
+  transition: border-color 0.2s, background-color 0.2s, color 0.2s;
+}
+.btnGhost:hover {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: #fff;
 }
 
 .card {

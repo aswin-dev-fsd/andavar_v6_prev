@@ -37,27 +37,13 @@ export default function Footer() {
         <div>
           <div className={styles.colTitle}>The Hospital</div>
           <div className={styles.linkList}>
-            <Link href="/our-surgeon">Our surgeon</Link>
+            <Link href="/our-surgeons">Our surgeons</Link>
             <Link href="/about">About</Link>
             <Link href="/patient-stories">Patient stories</Link>
             <Link href="/schemes">Schemes &amp; insurance</Link>
             <Link href="/eye-health">Eye health tips</Link>
           </div>
-        </div>
-
-        <div className={styles.visit}>
-          <div className={styles.colTitle}>Visit Us</div>
-          <p>
-            No. 73, Palladam Road, Opposite LMHSS School,
-            <br />
-            T. Kottampatti, Pollachi 642002
-          </p>
-          <a href="tel:+914259221000" className={styles.phone}>
-            04259 221 000
-          </a>
-          <a href="tel:+919442056767">94420 56767</a>
-          <p>Mon–Sat · 10:00 AM – 2:00 PM and 5:00 – 7:00 PM. Sunday closed.</p>
-        </div>
+      </div>
       </div>
 
       <div className={`container ${styles.bottom}`}>

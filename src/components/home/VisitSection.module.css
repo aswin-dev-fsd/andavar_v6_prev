@@ -22,7 +22,7 @@
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: clamp(32px, 5vw, 80px);
-  align-items: center;
+  align-items: flex-start;
 }
 
 .eyebrow {

@@ -50,19 +50,17 @@ export default function PremiumLenses() {
           </div>
         </Reveal>
 
-        <div className={styles.grid}>
-          {LENSES.map((lens, index) => (
-            <Reveal key={lens.title} delay={index * 0.15}>
-              <div className={styles.card}>
-                <div className={styles.iconWrapper}>
-                  {lens.icon}
-                </div>
-                <h3 className={styles.cardTitle}>{lens.title}</h3>
-                <p className={styles.cardBody}>{lens.body}</p>
+        <Reveal className={styles.grid} stagger={0.15} targets=":scope > *">
+          {LENSES.map((lens) => (
+            <div key={lens.title} className={styles.card}>
+              <div className={styles.iconWrapper}>
+                {lens.icon}
               </div>
-            </Reveal>
+              <h3 className={styles.cardTitle}>{lens.title}</h3>
+              <p className={styles.cardBody}>{lens.body}</p>
+            </div>
           ))}
-        </div>
+        </Reveal>
       </div>
     </section>
   );

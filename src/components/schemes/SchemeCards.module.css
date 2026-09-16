@@ -28,7 +28,7 @@
 .tag {
   display: inline-flex;
   align-items: center;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -38,6 +38,10 @@
   border-radius: 999px;
   margin-bottom: 20px;
   align-self: flex-start;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
 .title {

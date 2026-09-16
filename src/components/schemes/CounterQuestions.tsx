@@ -3,24 +3,16 @@ import styles from "./CounterQuestions.module.css";
 
 const QUESTIONS = [
   {
-    en: "Do I need a referral to use my scheme?",
-    ta: "எனது திட்டத்தைப் பயன்படுத்த எனக்கு பரிந்துரை தேவையா?"
+    en: "FAQ Question 1 (Content pending from client)",
+    ta: "கேள்வி 1 (வாடிக்கையாளர் உள்ளடக்கத்திற்காக காத்திருக்கிறது)"
   },
   {
-    en: "Will I have to pay and claim it back?",
-    ta: "நான் முதலில் பணம் செலுத்திவிட்டு, பிறகு திரும்பப் பெற வேண்டுமா?"
+    en: "FAQ Question 2 (Content pending from client)",
+    ta: "கேள்வி 2 (வாடிக்கையாளர் உள்ளடக்கத்திற்காக காத்திருக்கிறது)"
   },
   {
-    en: "Does the scheme cover both eyes?",
-    ta: "திட்டம் இரண்டு கண்களுக்கும் பொருந்துமா?"
-  },
-  {
-    en: "What about spectacles afterwards?",
-    ta: "அறுவை சிகிச்சைக்குப் பிறகு கண்ணாடி பற்றி என்ன?"
-  },
-  {
-    en: "I am not from Pollachi. Can I still use my scheme?",
-    ta: "நான் பொள்ளாச்சியைச் சேர்ந்தவன் அல்ல. நான் இன்னும் எனது திட்டத்தைப் பயன்படுத்தலாமா?"
+    en: "FAQ Question 3 (Content pending from client)",
+    ta: "கேள்வி 3 (வாடிக்கையாளர் உள்ளடக்கத்திற்காக காத்திருக்கிறது)"
   }
 ];
 

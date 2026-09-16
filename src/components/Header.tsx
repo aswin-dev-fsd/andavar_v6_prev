@@ -9,7 +9,7 @@ import styles from "./Header.module.css";
 const NAV = [
   { href: "/", label: "Home" },
   { href: "/treatments", label: "Treatments" },
-  { href: "/our-surgeon", label: "Our Surgeon" },
+  { href: "/our-surgeons", label: "Our Surgeons" },
   { href: "/schemes", label: "Schemes" },
   { href: "/about", label: "About" },
 ];

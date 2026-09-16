@@ -39,7 +39,7 @@
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--muted);
+  color: var(--deep);
   font-weight: 600;
 }
 .val {

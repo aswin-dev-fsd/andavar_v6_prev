@@ -1,5 +1,5 @@
 .section {
-  padding: clamp(48px, 8vw, 96px) 0;
+  padding: clamp(24px, 4vw, 48px) 0 clamp(48px, 8vw, 96px) 0;
   background: var(--bg-alt);
 }
 .head {
@@ -25,6 +25,13 @@
   position: relative;
 }
 .num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(31, 158, 87, 0.1);
   font-size: 14px;
   font-weight: 700;
   color: var(--primary);

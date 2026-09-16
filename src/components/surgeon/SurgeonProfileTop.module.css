@@ -1,5 +1,5 @@
 .section {
-  padding: 180px 0 100px;
+  padding: 120px 0 120px;
   position: relative;
   background: radial-gradient(circle at 80% -20%, var(--bg-alt) 0%, var(--bg) 60%);
   overflow: hidden;
@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 60px;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 @media (min-width: 900px) {
@@ -19,13 +19,18 @@
   }
 }
 
+.imageReveal {
+  height: 100%;
+}
+
 .imageCol {
   position: relative;
   border-radius: var(--r-lg);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
-  aspect-ratio: 4/5;
   background: var(--bg-alt);
+  height: 100%;
+  min-height: 500px;
 }
 
 .image {
@@ -74,7 +79,6 @@
 .contentCol {
   display: flex;
   flex-direction: column;
-  gap: 24px;
 }
 
 .eyebrow {
@@ -85,6 +89,7 @@
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--primary);
+  margin-bottom: 12px;
 }
 
 .title {
@@ -92,6 +97,7 @@
   letter-spacing: -0.02em;
   color: var(--ink);
   line-height: 1.05;
+  margin-bottom: 28px;
 }
 
 .bio {
@@ -113,7 +119,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
-  margin-top: 24px;
+  margin-top: 36px;
 }
 
 @media (max-width: 600px) {
@@ -131,6 +137,7 @@
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+  height: 100%;
 }
 
 .specCard:hover {
@@ -153,6 +160,7 @@
 .specIcon {
   color: var(--primary);
   opacity: 0.8;
+  flex-shrink: 0;
 }
 
 .specBody {

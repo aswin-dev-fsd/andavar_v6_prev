@@ -19,7 +19,7 @@ export default function ClosingCallSection() {
             <MagneticButton href="tel:+914259221000" className={styles.btnPrimary}>
               ☎ Call 04259 221 000
             </MagneticButton>
-            <MagneticButton href="/our-surgeon" className={styles.btnSecondary}>
+            <MagneticButton href="/our-surgeons" className={styles.btnSecondary}>
               Meet the surgeon
             </MagneticButton>
           </div>

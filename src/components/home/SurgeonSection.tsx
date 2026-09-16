@@ -26,14 +26,14 @@ export default function SurgeonSection() {
     <section className={styles.section}>
       <div className={`container ${styles.grid}`}>
         <Reveal targets=":scope > *" stagger={0.09}>
-          <span className="eyebrow">Your surgeon</span>
+          <span className="eyebrow">Your surgeons</span>
           <h2 className={styles.h2}>Dr. A. Raghuram</h2>
           <p className={styles.lede}>
             At a large chain you are seen by whoever is on duty that day.
             Here there is one surgeon, and he will still be here at your
             follow-up next year.
           </p>
-          <Link href="/our-surgeon" className={styles.arrowLink}>
+          <Link href="/our-surgeons" className={styles.arrowLink}>
             More about Dr. Raghuram →
           </Link>
         </Reveal>
