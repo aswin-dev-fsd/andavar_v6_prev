@@ -4,8 +4,10 @@ import styles from "./SurgeonProfileTop.module.css";
 
 const QUALIFICATIONS = [
   {
-    title: "MBBS, DO",
-    body: "Medical degree, then a diploma in ophthalmology — eyes only.",
+    titleEn: "MBBS, DO",
+    titleTa: "MBBS, DO",
+    bodyEn: "Medical degree, then a diploma in ophthalmology — eyes only.",
+    bodyTa: "மருத்துவப் பட்டம், அதன்பிறகு கண் மருத்துவத்தில் ஒரு பட்டயம் — கண்கள் மட்டும்.",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
@@ -13,8 +15,10 @@ const QUALIFICATIONS = [
     ),
   },
   {
-    title: "DNB (Ophthalmology)",
-    body: "The national board qualification for eye specialists in India.",
+    titleEn: "DNB (Ophthalmology)",
+    titleTa: "DNB (கண் மருத்துவம்)",
+    bodyEn: "The national board qualification for eye specialists in India.",
+    bodyTa: "இந்தியாவில் கண் சிறப்பு மருத்துவர்களுக்கான தேசிய வாரியத் தகுதி.",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
@@ -23,8 +27,10 @@ const QUALIFICATIONS = [
     ),
   },
   {
-    title: "FICO (United Kingdom)",
-    body: "Fellowship of the International Council of Ophthalmology.",
+    titleEn: "FICO (United Kingdom)",
+    titleTa: "FICO (ஐக்கிய இராச்சியம்)",
+    bodyEn: "Fellowship of the International Council of Ophthalmology.",
+    bodyTa: "சர்வதேச கண் மருத்துவக் கழகத்தின் ஃபெலோஷிப்.",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10" />
@@ -34,8 +40,10 @@ const QUALIFICATIONS = [
     ),
   },
   {
-    title: "FRCS (Glasgow)",
-    body: "A surgical fellowship of the Royal College of Surgeons — unusual in a town this size.",
+    titleEn: "FRCS (Glasgow)",
+    titleTa: "FRCS (கிளாஸ்கோ)",
+    bodyEn: "A surgical fellowship of the Royal College of Surgeons — unusual in a town this size.",
+    bodyTa: "ராயல் காலேஜ் ஆஃப் சர்ஜன்ஸ்-ன் அறுவை சிகிச்சை ஃபெலோஷிப் — இவ்வளவு சிறிய ஊரில் காணக் கிடைப்பது அரிது.",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="8" r="7" />
@@ -62,7 +70,7 @@ export default function SurgeonProfileTop() {
             <div className={styles.badgeStack}>
               <div className={styles.badge}>
                 <span className={styles.dot}></span>
-                Chief Surgeon
+                <span className="en">Chief Surgeon</span> <span className="ta" lang="ta">தலைமை அறுவை சிகிச்சை நிபுணர்</span>
               </div>
               <div className={styles.badge}>FRCS (Glasgow)</div>
             </div>
@@ -72,14 +80,14 @@ export default function SurgeonProfileTop() {
         {/* Right Side: Content */}
         <div className={styles.contentCol}>
           <Reveal stagger={0.05}>
-            <span className={styles.eyebrow}>Ophthalmology Leadership</span>
-            <h1 className={styles.title}>Dr. A. Raghuram</h1>
+            <span className={styles.eyebrow}><span className="en">Ophthalmology Leadership</span> <span className="ta" lang="ta">கண் மருத்துவத் தலைமை</span></span>
+            <h1 className={styles.title}><span className="en">Dr. A. Raghuram</span> <span className="ta" lang="ta">டாக்டர் ஏ. ரகுராம்</span></h1>
             <div className={styles.bio}>
               <p>
-                <strong>At a large chain you are seen by whoever is on duty that day.</strong> Here there is one surgeon, and he will still be here at your follow-up next year.
+                <strong><span className="en">At a large chain you are seen by whoever is on duty that day.</span> <span className="ta" lang="ta">ஒரு பெரிய மருத்துவமனை சங்கிலியில், அந்த நாளில் பணியில் இருக்கும் யாரோ ஒருவரால் நீங்கள் பார்க்கப்படுவீர்கள்.</span></strong> <span className="en">Here there is one surgeon, and he will still be here at your follow-up next year.</span> <span className="ta" lang="ta">இங்கு ஒரே ஒரு அறுவை சிகிச்சை நிபுணர் மட்டுமே உள்ளார், அடுத்த ஆண்டு உங்களின் தொடர் பரிசோதனையின்போதும் அவர் இங்கேயே இருப்பார்.</span>
               </p>
               <p>
-                Dr. Raghuram combines decades of specialized surgical expertise with a deeply personal approach to patient care. Focusing exclusively on advanced ophthalmology, he has established international benchmarks in cataract and complex reconstructive eye procedures. 
+                <span className="en">Dr. Raghuram combines decades of specialized surgical expertise with a deeply personal approach to patient care. Focusing exclusively on advanced ophthalmology, he has established international benchmarks in cataract and complex reconstructive eye procedures.</span> <span className="ta" lang="ta">டாக்டர் ரகுராம், பல தசாப்த கால சிறப்பு அறுவை சிகிச்சை நிபுணத்துவத்துடன், நோயாளிகளின் பராமரிப்பில் ஆழ்ந்த தனிப்பட்ட அணுகுமுறையை ஒருங்கிணைக்கிறார். மேம்பட்ட கண் மருத்துவத்தில் மட்டுமே கவனம் செலுத்தும் இவர், கண்புரை மற்றும் சிக்கலான மறுசீரமைப்பு கண் சிகிச்சை முறைகளில் சர்வதேச அளவுகோல்களை நிறுவியுள்ளார்.</span>
               </p>
             </div>
           </Reveal>
@@ -87,12 +95,14 @@ export default function SurgeonProfileTop() {
           <Reveal delay={0.2} stagger={0.05}>
             <div className={styles.specsGrid}>
               {QUALIFICATIONS.map((q) => (
-                <div key={q.title} className={styles.specCard}>
+                <div key={q.titleEn} className={styles.specCard}>
                   <div className={styles.specTitle}>
                     <span className={styles.specIcon}>{q.icon}</span>
-                    {q.title}
+                    <span className="en">{q.titleEn}</span> <span className="ta" lang="ta">{q.titleTa}</span>
                   </div>
-                  <div className={styles.specBody}>{q.body}</div>
+                  <div className={styles.specBody}>
+                    <span className="en">{q.bodyEn}</span> <span className="ta" lang="ta">{q.bodyTa}</span>
+                  </div>
                 </div>
               ))}
             </div>

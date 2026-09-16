@@ -46,92 +46,127 @@ const Icons = {
 const SERVICES = [
   {
     id: "cataract",
-    title: "Cataract & IOL Services",
+    titleEn: "Cataract & IOL Services",
+    titleTa: "கண்புரை மற்றும் ஐ.ஓ.எல் (IOL) சேவைகள்",
     icon: Icons.Sun,
-    desc: "Advanced micro-incision cataract surgery with premium intraocular lens (IOL) implantation. We restore clear, vibrant vision through a painless, day-care procedure.",
+    descEn: "Advanced micro-incision cataract surgery with premium intraocular lens (IOL) implantation. We restore clear, vibrant vision through a painless, day-care procedure.",
+    descTa: "உயர்ரக உள்விழி வில்லை (IOL) பொருத்துதலுடன் கூடிய மேம்பட்ட நுண்-துளை கண்புரை அறுவை சிகிச்சை. வலியற்ற, நாள்-பராமரிப்பு செயல்முறையின் மூலம் தெளிவான பார்வையை மீட்டெடுக்கிறோம்.",
     featured: true,
   },
   {
     id: "retina",
-    title: "Retina Clinic",
+    titleEn: "Retina Clinic",
+    titleTa: "விழித்திரை சிகிச்சை மையம்",
     icon: Icons.ScanFace,
-    desc: "Expert diagnosis and management of retinal disorders like diabetic retinopathy and macular degeneration, performed by our specialized surgeon.",
+    descEn: "Expert diagnosis and management of retinal disorders like diabetic retinopathy and macular degeneration, performed by our specialized surgeon.",
+    descTa: "நீரிழிவு விழித்திரை நோய் மற்றும் மாகுலர் சிதைவு போன்ற விழித்திரை கோளாறுகளை நிபுணத்துவத்துடன் கண்டறிந்து சிகிச்சையளித்தல்.",
     featured: true,
-    subItems: [
+    subItemsEn: [
       "Retina laser treatments",
       "Intravitreal injections",
       "Vitreo retinal surgery",
     ],
+    subItemsTa: [
+      "விழித்திரை லேசர் சிகிச்சைகள்",
+      "விழிக்குள் ஊசி மூலம் மருந்து செலுத்துதல்",
+      "விட்ரியோ ரெட்டினல் அறுவை சிகிச்சை",
+    ],
   },
   {
     id: "general",
-    title: "General Ophthalmology",
+    titleEn: "General Ophthalmology",
+    titleTa: "பொது கண் மருத்துவம்",
     icon: Icons.Eye,
-    desc: "Comprehensive eye examinations and baseline screening.",
+    descEn: "Comprehensive eye examinations and baseline screening.",
+    descTa: "முழுமையான கண் பரிசோதனைகள் மற்றும் அடிப்படை பரிசோதனை.",
   },
   {
     id: "dryeye",
-    title: "Dry Eye Clinic",
+    titleEn: "Dry Eye Clinic",
+    titleTa: "வறண்ட கண் சிகிச்சை மையம்",
     icon: Icons.Droplet,
-    desc: "Targeted therapies to relieve burning, gritty, and tired eyes.",
+    descEn: "Targeted therapies to relieve burning, gritty, and tired eyes.",
+    descTa: "எரிச்சல், உறுத்தல் மற்றும் சோர்வடைந்த கண்களுக்கு நிவாரணம் அளிக்க இலக்கு வைக்கப்பட்ட சிகிச்சைகள்.",
   },
   {
     id: "glaucoma",
-    title: "Glaucoma Clinic",
+    titleEn: "Glaucoma Clinic",
+    titleTa: "குளுக்கோமா (கண் நீர் அழுத்த நோய்) மையம்",
     icon: Icons.Gauge,
-    desc: "Early detection and visual field testing to prevent silent vision loss.",
+    descEn: "Early detection and visual field testing to prevent silent vision loss.",
+    descTa: "அமைதியான பார்வை இழப்பைத் தடுக்க ஆரம்பத்திலேயே கண்டறிதல் மற்றும் காட்சிப் புலப் பரிசோதனை.",
   },
   {
     id: "paediatric",
-    title: "Paediatric Eye Care",
+    titleEn: "Paediatric Eye Care",
+    titleTa: "குழந்தைகளுக்கான கண் பராமரிப்பு",
     icon: Icons.Baby,
-    desc: "Gentle, specialized care for children's eyes and visual development.",
+    descEn: "Gentle, specialized care for children's eyes and visual development.",
+    descTa: "குழந்தைகளின் கண்கள் மற்றும் பார்வை வளர்ச்சிக்கு மென்மையான, சிறப்புப் பராமரிப்பு.",
   },
   {
     id: "contactlens",
-    title: "Contact Lens Services",
+    titleEn: "Contact Lens Services",
+    titleTa: "காண்டாக்ட் லென்ஸ் சேவைகள்",
     icon: Icons.Eye,
-    desc: "Professional fitting and dispensing of contact lenses tailored to you.",
-    subItems: [
+    descEn: "Professional fitting and dispensing of contact lenses tailored to you.",
+    descTa: "உங்களுக்கு ஏற்றவாறு காண்டாக்ட் லென்ஸ்கள் தொழில்முறை முறையில் பொருத்துதல் மற்றும் வழங்குதல்.",
+    subItemsEn: [
       "Normal & Disposable lenses",
       "Cosmetic lenses",
+    ],
+    subItemsTa: [
+      "சாதாரண மற்றும் டிஸ்போசபிள் லென்ஸ்கள்",
+      "அழகு சாதன லென்ஸ்கள்",
     ],
   },
   {
     id: "orbit",
-    title: "Orbit & Oculoplasty",
+    titleEn: "Orbit & Oculoplasty",
+    titleTa: "ஆர்பிட் மற்றும் ஆக்குலோபிளாஸ்டி",
     icon: Icons.Users,
-    desc: "Corrective treatments for eyelids, tear ducts, and orbit.",
+    descEn: "Corrective treatments for eyelids, tear ducts, and orbit.",
+    descTa: "கண் இமைகள், கண்ணீர் குழாய்கள் மற்றும் சுற்றுப்பாதைக்கான திருத்த சிகிச்சைகள்.",
   },
   {
     id: "master",
-    title: "Master Health Checkup",
+    titleEn: "Master Health Checkup",
+    titleTa: "முழுமையான உடல்/கண் பரிசோதனை",
     icon: Icons.Activity,
-    desc: "Thorough ocular health evaluation to catch symptomless diseases.",
+    descEn: "Thorough ocular health evaluation to catch symptomless diseases.",
+    descTa: "அறிகுறியற்ற நோய்களைக் கண்டறிய முழுமையான கண் ஆரோக்கிய மதிப்பீடு.",
   },
   {
     id: "community",
-    title: "Community Ophthalmology",
+    titleEn: "Community Ophthalmology",
+    titleTa: "சமூக கண் மருத்துவம்",
     icon: Icons.Users,
-    desc: "Outreach camps and awareness programs to eradicate blindness.",
+    descEn: "Outreach camps and awareness programs to eradicate blindness.",
+    descTa: "பார்வையின்மையை ஒழிக்க சிறப்பு முகாம்கள் மற்றும் விழிப்புணர்வு நிகழ்ச்சிகள்.",
   },
   {
     id: "optical",
-    title: "Advanced Optical Shop",
+    titleEn: "Advanced Optical Shop",
+    titleTa: "மேம்பட்ட ஆப்டிகல் ஷாப்",
     icon: Icons.Glasses,
-    desc: "Wide selection of premium frames and precision lenses.",
+    descEn: "Wide selection of premium frames and precision lenses.",
+    descTa: "பிரீமியம் பிரேம்கள் மற்றும் துல்லியமான லென்ஸ்களின் பரந்த தேர்வு.",
   },
   {
     id: "pharmacy",
-    title: "Dispensing Pharmacy",
+    titleEn: "Dispensing Pharmacy",
+    titleTa: "மருந்தகம்",
     icon: Icons.Pill,
-    desc: "In-house pharmacy for authentic ophthalmic medications.",
+    descEn: "In-house pharmacy for authentic ophthalmic medications.",
+    descTa: "உண்மையான கண் மருந்துகளுக்கான மருத்துவமனை மருந்தகம்.",
   },
   {
     id: "insurance",
-    title: "Insurance & Claims",
+    titleEn: "Insurance & Claims",
+    titleTa: "காப்பீடு மற்றும் உரிமைகோரல்கள்",
     icon: Icons.ShieldCheck,
-    desc: "Hassle-free financial processing for your treatments. We support major health schemes and provide dedicated assistance for cashless claims and reimbursements.",
+    descEn: "Hassle-free financial processing for your treatments. We support major health schemes and provide dedicated assistance for cashless claims and reimbursements.",
+    descTa: "உங்கள் சிகிச்சைகளுக்கான தொந்தரவு இல்லாத நிதிச் செயலாக்கம். முக்கிய சுகாதாரத் திட்டங்களை நாங்கள் ஆதரிக்கிறோம் மற்றும் ரொக்கமில்லா கோரிக்கைகள் மற்றும் பணத்தைத் திரும்பப் பெறுவதற்கு பிரத்யேக உதவியை வழங்குகிறோம்.",
     featured: true,
   },
 ];
@@ -151,19 +186,21 @@ export default function BentoServices() {
                 <div className={styles.icon}>
                   <Icon />
                 </div>
-                <h3 className={styles.title}>{s.title}</h3>
+                <h3 className={styles.title}>
+                  <span className="en">{s.titleEn}</span> <span className="ta" lang="ta">{s.titleTa}</span>
+                </h3>
                 
                 <div className={styles.contentWrapper}>
-                  <p className={`${styles.description} ${s.subItems ? styles.hasSub : ""}`}>
-                    {s.desc}
+                  <p className={`${styles.description} ${s.subItemsEn ? styles.hasSub : ""}`}>
+                    <span className="en">{s.descEn}</span> <span className="ta" lang="ta">{s.descTa}</span>
                   </p>
                   
-                  {s.subItems && (
+                  {s.subItemsEn && s.subItemsTa && (
                     <div className={styles.subItemsOverlay}>
-                      {s.subItems.map((sub, idx) => (
+                      {s.subItemsEn.map((sub, idx) => (
                         <div key={idx} className={styles.subItem}>
                           <Icons.ChevronRight className={styles.subIcon} width={16} height={16} />
-                          {sub}
+                          <span className="en">{sub}</span> <span className="ta" lang="ta">{s.subItemsTa?.[idx]}</span>
                         </div>
                       ))}
                     </div>

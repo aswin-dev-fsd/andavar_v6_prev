@@ -66,6 +66,7 @@ All notable changes to the Shri Andavar Eye Care project.
 ### `/treatments` Page
 - **Page Creation:** Built the Treatments directory page.
 - **UI Redesign:** Dropped the overly long vertical accordion layout in favor of a sleek Bento Box Grid for easier visual scanning.
+- **Bilingual Localization:** Fully translated all treatment service titles, descriptions, and sub-items into Tamil (`titleTa`, `descTa`, `subItemsTa`) across the Bento Grid and Hero section.
 - **Information Architecture:** Merged the "Visit Us" link concept from the header directly into the About page flow.
 - **Bug Fixes:** Resolved a minor TypeScript `any` error in the SVG icons.
 
