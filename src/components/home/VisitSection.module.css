@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   background: var(--deep);
-  color: #dfeee7;
+  color: var(--text-inverse-soft);
   padding: clamp(64px, 11vw, 120px) 0;
 }
 
@@ -13,7 +13,7 @@
   width: 480px;
   height: 480px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(31, 158, 87, 0.4), transparent 70%);
+  background: radial-gradient(circle, rgba(var(--secondary-rgb), 0.3), transparent 70%);
   pointer-events: none;
 }
 
@@ -26,15 +26,15 @@
 }
 
 .eyebrow {
-  color: #4A90E2;
+  color: var(--secondary);
 }
 
 .eyebrow::before {
-  background: #4A90E2;
+  background: var(--secondary);
 }
 
 .h2 {
-  color: #F8FAFC;
+  color: var(--text-inverse);
   font-size: clamp(28px, 4.2vw, 40px);
   margin: 14px 0 16px;
   max-width: 16ch;
@@ -42,7 +42,7 @@
 
 .lede {
   font-size: 19px;
-  color: #b7cfc4;
+  color: var(--text-inverse-faint);
   max-width: 44ch;
   margin-bottom: 26px;
 }
@@ -96,13 +96,13 @@
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #8fb3a2;
+  color: var(--text-inverse-faint);
   margin-bottom: 6px;
 }
 
 .rowValue {
   font-size: 16.5px;
-  color: #eef6f1;
+  color: var(--text-inverse);
 }
 
 @media (max-width: 860px) {

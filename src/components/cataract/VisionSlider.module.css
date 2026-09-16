@@ -104,7 +104,7 @@
 .badge {
   position: absolute;
   bottom: 40px;
-  background-color: rgba(14, 51, 37, 0.85);
+  background-color: rgba(15, 42, 68, 0.85);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   color: #ffffff;

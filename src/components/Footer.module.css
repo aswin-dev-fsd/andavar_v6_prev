@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   background: var(--deep);
-  color: #c9dcd2;
+  color: var(--text-inverse-muted);
   padding: 72px 0 28px;
 }
 
@@ -13,7 +13,7 @@
   width: 420px;
   height: 420px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(31, 158, 87, 0.35), transparent 70%);
+  background: radial-gradient(circle, rgba(var(--secondary-rgb), 0.25), transparent 70%);
   pointer-events: none;
 }
 
@@ -38,7 +38,7 @@
   font-size: 15.5px;
   line-height: 1.6;
   max-width: 32ch;
-  color: #b9cfc4;
+  color: var(--text-inverse-faint);
 }
 
 .colTitle {
@@ -46,7 +46,7 @@
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #8fb3a2;
+  color: var(--text-inverse-faint);
   margin-bottom: 16px;
 }
 
@@ -73,7 +73,7 @@
   flex-wrap: wrap;
   gap: 8px;
   font-size: 14px;
-  color: #7ea295;
+  color: var(--text-inverse-faint);
 }
 
 @media (max-width: 860px) {

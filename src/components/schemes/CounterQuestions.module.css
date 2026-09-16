@@ -45,7 +45,7 @@
   color: var(--muted);
   line-height: 1.6;
   max-width: 54ch;
-  background: rgba(31, 158, 87, 0.05);
+  background: rgba(var(--secondary-rgb), 0.05);
   padding: 24px;
   border-radius: 12px;
   border-left: 4px solid var(--primary);

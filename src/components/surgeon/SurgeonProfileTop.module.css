@@ -130,7 +130,7 @@
 
 .specCard {
   background: rgba(255, 255, 255, 0.6);
-  border: 1px solid rgba(11, 106, 60, 0.08);
+  border: 1px solid rgba(15, 42, 68, 0.08);
   padding: 20px;
   border-radius: var(--r-md);
   box-shadow: var(--shadow-sm);

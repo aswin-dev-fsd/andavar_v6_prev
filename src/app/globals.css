@@ -1,10 +1,13 @@
 :root {
   --primary: #0F2A44;
   --secondary: #4A90E2;
+  --secondary-rgb: 74, 144, 226;
   --accent: #00A8E8;
+  --accent-rgb: 0, 168, 232;
   --gold: #eda80f;
   --gold-deep: #c6820a;
   --bg: #F8FAFC;
+  --bg-rgb: 248, 250, 252;
   --bg-alt: #F1F5F9;
   --card: #ffffff;
   --ink: #173042;
@@ -12,6 +15,11 @@
   --line: rgba(15, 42, 68, 0.1);
   --line-strong: rgba(15, 42, 68, 0.16);
   --deep: #081624;
+
+  --text-inverse: #F8FAFC;
+  --text-inverse-soft: #E2E8F0;
+  --text-inverse-muted: #CBD5E1;
+  --text-inverse-faint: #94A3B8;
 
   --shadow-sm: 0 2px 8px rgba(15, 42, 68, 0.06);
   --shadow-md: 0 18px 40px -20px rgba(15, 42, 68, 0.22);

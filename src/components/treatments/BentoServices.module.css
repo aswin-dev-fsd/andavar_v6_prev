@@ -28,7 +28,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at top right, rgba(31, 158, 87, 0.08), transparent 60%);
+  background: radial-gradient(circle at top right, rgba(var(--secondary-rgb), 0.08), transparent 60%);
   opacity: 0;
   transition: opacity 0.5s var(--ease);
   pointer-events: none;
@@ -54,7 +54,7 @@
   width: 56px;
   height: 56px;
   border-radius: 16px;
-  background: linear-gradient(140deg, rgba(11, 106, 60, 0.08), rgba(31, 158, 87, 0.12));
+  background: linear-gradient(140deg, rgba(15, 42, 68, 0.08), rgba(var(--secondary-rgb), 0.12));
   color: var(--primary);
   margin-bottom: 1.5rem;
   transition: transform 0.5s var(--ease), background 0.5s var(--ease), color 0.5s var(--ease);

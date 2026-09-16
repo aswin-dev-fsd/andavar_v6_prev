@@ -31,7 +31,7 @@
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: rgba(31, 158, 87, 0.1);
+  background: rgba(var(--secondary-rgb), 0.1);
   font-size: 14px;
   font-weight: 700;
   color: var(--primary);

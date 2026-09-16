@@ -11,7 +11,7 @@
   height: 500px;
   top: -100px;
   right: -100px;
-  background: radial-gradient(circle at 40% 40%, rgba(31, 158, 87, 0.15), rgba(31, 158, 87, 0) 70%);
+  background: radial-gradient(circle at 40% 40%, rgba(var(--secondary-rgb), 0.15), rgba(var(--secondary-rgb), 0) 70%);
   border-radius: 50%;
   filter: blur(20px);
   pointer-events: none;

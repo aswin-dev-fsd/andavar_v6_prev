@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(246, 251, 247, 0.86);
+  background: rgba(248, 250, 252, 0.86);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   min-height: 78px;
@@ -14,7 +14,7 @@
 
 .header.scrolled {
   border-bottom-color: var(--line);
-  box-shadow: 0 8px 24px -20px rgba(9, 58, 36, 0.3);
+  box-shadow: 0 8px 24px -20px rgba(15, 42, 68, 0.3);
 }
 
 .bar {
@@ -39,6 +39,7 @@
   object-fit: contain;
   transform: scale(1.35);
   transform-origin: left center;
+  filter: hue-rotate(70deg) brightness(0.85); /* Temporary fix to match blue theme */
 }
 
 
