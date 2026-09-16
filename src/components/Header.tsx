@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import styles from "./Header.module.css";
 
 const NAV = [
+  { href: "/", label: "Home" },
   { href: "/treatments", label: "Treatments" },
   { href: "/our-surgeon", label: "Our Surgeon" },
   { href: "/schemes", label: "Schemes" },
