@@ -24,6 +24,8 @@ export const metadata: Metadata = {
     "Cataract and retina care in Pollachi, by the surgeon who examines you. Dr. A. Raghuram has looked after this district's eyes since 2013.",
 };
 
+import FloatingActionButtons from "@/components/FloatingActionButtons";
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" data-lang="en" className={`${manrope.variable} ${plusJakarta.variable}`}>
@@ -34,6 +36,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <Footer />
         </SmoothScroll>
         <StickyCallBar />
+        <FloatingActionButtons />
       </body>
     </html>
   );

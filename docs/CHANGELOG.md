@@ -5,6 +5,7 @@ All notable changes to the Shri Andavar Eye Care project.
 ## [2026-09-16]
 
 ### Global & Architecture
+- **Floating Action Buttons:** Added a persistent `FloatingActionButtons` component to `RootLayout` (`src/app/layout.tsx`) providing quick access to Google Maps location and social links.
 - **Bilingual Support:** Integrated dual-language (English/Tamil) labels across navigation headers, footers, home sections, and page components.
 - **Typography:** Tightened global typography by reducing line heights for all headings (`h1`-`h4`) and body text.
 - **Navigation:** Added "Home" and "Community" links to the main Navbar and Footer with localized labels.

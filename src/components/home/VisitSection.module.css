@@ -26,15 +26,15 @@
 }
 
 .eyebrow {
-  color: #7fdba0;
+  color: #4A90E2;
 }
 
 .eyebrow::before {
-  background: #7fdba0;
+  background: #4A90E2;
 }
 
 .h2 {
-  color: #fff;
+  color: #F8FAFC;
   font-size: clamp(28px, 4.2vw, 40px);
   margin: 14px 0 16px;
   max-width: 16ch;
