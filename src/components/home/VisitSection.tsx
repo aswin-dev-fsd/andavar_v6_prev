@@ -48,7 +48,7 @@ export default function VisitSection() {
                 No. 73, Palladam Road, Opposite LMHSS School, T. Kottampatti,
                 Pollachi 642002
               </span>
-              <span className="ta" lang="ta" style={{ display: "block" }}>
+              <span className="ta" lang="ta">
                 எண். 73, பல்லடம் ரோடு, LMHSS பள்ளி எதிரில், டி. கோட்டாம்பட்டி,
                 பொள்ளாச்சி 642002
               </span>
@@ -64,7 +64,7 @@ export default function VisitSection() {
                 <br />
                 Sunday closed
               </span>
-              <span className="ta" lang="ta" style={{ display: "block" }}>
+              <span className="ta" lang="ta">
                 திங்கள்–சனி · காலை 10:00 – மதியம் 2:00 மற்றும் மாலை 5:00 – 7:00
                 <br />
                 ஞாயிறு விடுமுறை
