@@ -1,0 +1,52 @@
+.section {
+  position: relative;
+  z-index: 2; /* Scroll over the pinned NoSchemeSection */
+  background: var(--bg-alt);
+  padding: clamp(80px, 12vw, 140px) 0;
+  border-top: 1px solid var(--line);
+}
+
+.content {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.h2 {
+  font-size: clamp(32px, 4vw, 42px);
+  letter-spacing: -0.02em;
+  margin-bottom: 48px;
+  color: var(--ink);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 64px 0;
+}
+
+.listItem {
+  font-size: clamp(18px, 2.5vw, 24px);
+  color: var(--ink);
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.listItem::before {
+  content: "—";
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.caption {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.6;
+  max-width: 54ch;
+  background: rgba(31, 158, 87, 0.05);
+  padding: 24px;
+  border-radius: 12px;
+  border-left: 4px solid var(--primary);
+}

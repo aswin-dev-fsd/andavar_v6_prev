@@ -1,0 +1,195 @@
+.section {
+  padding: 100px 0 160px;
+  background-color: var(--bg-alt);
+  position: relative;
+  text-align: center;
+}
+
+.header {
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.title {
+  font-family: var(--font-head);
+  font-size: clamp(36px, 5vw, 56px);
+  color: var(--deep);
+  line-height: 1.1;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: var(--muted);
+}
+
+.sliderContainer {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: var(--r-lg);
+  overflow: visible;
+  touch-action: pan-y; /* Prevent touch scrolling when dragging horizontally */
+  box-shadow: var(--shadow-md);
+  user-select: none;
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  background-color: var(--bg);
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* clip-path will be set via inline style in React */
+  z-index: 1;
+}
+
+.blurredImage {
+  filter: blur(6px) sepia(0.3) contrast(0.8) brightness(0.95);
+  transform: scale(1.02); /* Slight scale to prevent edge bleed on blur */
+}
+
+/* Handle */
+.handleLine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 2;
+  cursor: ew-resize;
+  /* left will be set via inline style */
+}
+
+.handleButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: var(--primary);
+}
+
+.handleButton svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Badges */
+.badge {
+  position: absolute;
+  bottom: 40px;
+  background-color: rgba(14, 51, 37, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #ffffff;
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 13px;
+  padding: 8px 16px;
+  border-radius: 99px;
+  pointer-events: none;
+}
+
+.badgeLeft {
+  left: 32px;
+  z-index: 2; /* Needs to be above the blurred image */
+}
+
+.badgeRight {
+  right: 32px;
+  z-index: 0; /* Lives on the base layer */
+}
+
+/* Floating Info Card */
+.infoCardWrapper {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 600px;
+  z-index: 3;
+  padding: 0 20px;
+}
+
+.infoCard {
+  background: #ffffff;
+  border-radius: var(--r-md);
+  padding: 24px 32px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--line);
+}
+
+.infoCard h3 {
+  font-size: 16px;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.infoCard p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 80px 0 140px;
+  }
+  
+  .title {
+    font-size: 32px;
+  }
+  
+  .imageWrapper {
+    aspect-ratio: 4/3;
+  }
+  
+  .badge {
+    bottom: 24px;
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+  
+  .badgeLeft {
+    left: 16px;
+  }
+  
+  .badgeRight {
+    right: 16px;
+  }
+  
+  .infoCardWrapper {
+    bottom: -80px;
+  }
+  
+  .infoCard {
+    padding: 16px 20px;
+  }
+}

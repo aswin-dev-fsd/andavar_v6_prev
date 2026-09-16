@@ -1,0 +1,49 @@
+.section {
+  padding: clamp(64px, 10vw, 112px) 0;
+  background: var(--bg-alt);
+}
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.content {
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.h2 {
+  font-size: clamp(32px, 4vw, 42px);
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin: 0;
+}
+.lede {
+  font-size: clamp(18px, 2vw, 21px);
+  color: var(--muted);
+  line-height: 1.5;
+  margin: 0;
+}
+.actions {
+  margin-top: 8px;
+}
+.btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 58px;
+  padding: 0 30px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.25s var(--ease-soft), box-shadow 0.25s var(--ease-soft);
+}
+.btnPrimary:hover {
+  box-shadow: var(--shadow-lg);
+}
