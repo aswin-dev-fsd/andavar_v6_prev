@@ -4,7 +4,8 @@ import MagneticButton from "@/components/MagneticButton";
 import styles from "./SurgeonStatsCTA.module.css";
 
 const STATS = [
-  { value: "4,200+", labelEn: "Successful Surgeries", labelTa: "வெற்றிகரமான அறுவை சிகிச்சைகள்" },
+  { value: "15,000+", labelEn: "Cataract Surgeries", labelTa: "கண்புரை அறுவை சிகிச்சைகள்" },
+  { value: "1,000+", labelEn: "Vitrectomy Surgeries", labelTa: "விழித்திரை அறுவை சிகிச்சைகள்" },
   { value: "99.4%", labelEn: "Complication-Free", labelTa: "சிக்கலற்ற சிகிச்சைகள்" },
   { value: "20+ Years", labelEn: "Clinical Leadership", labelTa: "மருத்துவத் தலைமை" },
 ];

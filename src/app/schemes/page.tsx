@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import SchemesHero from "@/components/schemes/SchemesHero";
 import SchemeCards from "@/components/schemes/SchemeCards";
+import EmpaneledList from "@/components/schemes/EmpaneledList";
 import NoSchemeSection from "@/components/schemes/NoSchemeSection";
 import CounterQuestions from "@/components/schemes/CounterQuestions";
 
@@ -14,6 +15,7 @@ export default function SchemesPage() {
     <>
       <SchemesHero />
       <SchemeCards />
+      <EmpaneledList />
       <NoSchemeSection />
       <CounterQuestions />
     </>

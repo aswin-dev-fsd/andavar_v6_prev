@@ -65,10 +65,6 @@ export default function Hero() {
             </MagneticButton>
           </div>
 
-          <p className={styles.caption}>
-            Opposite LMHSS School, Palladam Road. Walk in, or call and we
-            will give you a time.
-          </p>
         </Reveal>
 
         <Reveal delay={0.1}>
