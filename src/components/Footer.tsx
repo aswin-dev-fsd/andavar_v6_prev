@@ -60,20 +60,20 @@ export default function Footer() {
             <Link href="/our-surgeons">
               <span className="en">Our surgeons</span> <span className="ta" lang="ta">எங்கள் மருத்துவர்</span>
             </Link>
-            <Link href="/about">
-              <span className="en">About</span> <span className="ta" lang="ta">எங்களைப் பற்றி</span>
-            </Link>
             <Link href="/patient-stories">
               <span className="en">Patient stories</span> <span className="ta" lang="ta">நோயாளிகளின் கதைகள்</span>
             </Link>
             <Link href="/schemes">
               <span className="en">Schemes &amp; insurance</span> <span className="ta" lang="ta">திட்டங்கள் &amp; காப்பீடு</span>
             </Link>
+            <Link href="/eye-health">
+              <span className="en">Eye health tips</span> <span className="ta" lang="ta">கண் ஆரோக்கிய குறிப்புகள்</span>
+            </Link>
             <Link href="/community">
               <span className="en">Community &amp; CSR</span> <span className="ta" lang="ta">சமூகம் &amp; CSR</span>
             </Link>
-            <Link href="/eye-health">
-              <span className="en">Eye health tips</span> <span className="ta" lang="ta">கண் ஆரோக்கிய குறிப்புகள்</span>
+            <Link href="/about">
+              <span className="en">About</span> <span className="ta" lang="ta">எங்களைப் பற்றி</span>
             </Link>
           </div>
       </div>

@@ -55,7 +55,7 @@ export function getClinicStatus(date: Date = new Date()): ClinicStatus {
       return {
         isOpen: false,
         pillLabel: `Closed · opens ${formatClock(nextSessionToday.start)}`,
-        callLabel: `Call — opens ${formatClock(nextSessionToday.start)}`,
+        callLabel: `Opens ${formatClock(nextSessionToday.start)}`,
       };
     }
   }
@@ -70,6 +70,6 @@ export function getClinicStatus(date: Date = new Date()): ClinicStatus {
   return {
     isOpen: false,
     pillLabel: `Closed · opens ${dayLabel}${formatClock(SESSIONS[0].start)}`,
-    callLabel: `Call — opens ${dayLabel}${formatClock(SESSIONS[0].start)}`,
+    callLabel: `Opens ${dayLabel}${formatClock(SESSIONS[0].start)}`,
   };
 }

@@ -192,6 +192,9 @@
 }
 
 @media (max-width: 430px) {
+  .brandLink {
+    margin-right: 30px;
+  }
   .logo {
     height: 48px;
     transform: scale(1.2);
