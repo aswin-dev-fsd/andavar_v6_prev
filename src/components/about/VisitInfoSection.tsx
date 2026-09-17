@@ -4,7 +4,7 @@ import styles from "./VisitInfoSection.module.css";
 
 export default function VisitInfoSection() {
   return (
-    <section className={styles.section}>
+    <section id="getting-here" className={styles.section}>
       <div className={`container ${styles.grid}`}>
         <Reveal className={styles.card} stagger={0.08} targets=":scope > *">
           <div className={styles.fact}>

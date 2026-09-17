@@ -46,7 +46,7 @@ export default function SurgeonStatsCTA() {
 
         <Reveal delay={0.4}>
           <div className={styles.actions}>
-            <MagneticButton href="/contact" className={styles.btnPrimary}>
+            <MagneticButton href="/about#getting-here" className={styles.btnPrimary}>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                 <line x1="16" y1="2" x2="16" y2="6"></line>

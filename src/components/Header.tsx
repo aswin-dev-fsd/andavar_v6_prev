@@ -7,7 +7,6 @@ import { useEffect, useState } from "react";
 import styles from "./Header.module.css";
 
 const NAV = [
-  { href: "/", labelEn: "Home", labelTa: "முகப்பு" },
   { href: "/treatments", labelEn: "Treatments", labelTa: "சிகிச்சைகள்" },
   { href: "/our-surgeons", labelEn: "Our Surgeons", labelTa: "எங்கள் மருத்துவர்" },
   { href: "/schemes", labelEn: "Schemes", labelTa: "திட்டங்கள்" },
