@@ -41,7 +41,7 @@
 
 @media (max-width: 860px) {
   .container {
-    bottom: 96px; /* Above the sticky call bar */
+    bottom: 16px;
     right: 16px;
   }
   

@@ -4,6 +4,7 @@ import styles from "./AboutHero.module.css";
 export default function AboutHero() {
   return (
     <section className={styles.section}>
+      <img src="/images/shri-andavar-eye-hospital-building-exterior.webp" alt="" className={styles.bgImage} aria-hidden="true" />
       <div className={styles.glow} aria-hidden="true" />
       <div className={`container ${styles.grid}`}>
         <Reveal targets=":scope > *" stagger={0.1}>

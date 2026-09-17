@@ -11,7 +11,7 @@ export default function Footer() {
       <div className={`container ${styles.grid}`}>
         <div>
           <Image
-            src="/logo.png"
+            src="/logo_v3.png"
             alt="Shri Andavar Eye Care & Retina Centre"
             width={300}
             height={80}

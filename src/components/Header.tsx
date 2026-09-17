@@ -50,7 +50,7 @@ export default function Header() {
       <div className={`container ${styles.bar}`}>
         <Link href="/" className={styles.brandLink}>
           <Image
-            src="/logo.png"
+            src="/logo_v3.png"
             alt="Shri Andavar Eye Care & Retina Centre"
             width={300}
             height={80}

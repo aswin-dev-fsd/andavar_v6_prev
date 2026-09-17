@@ -4,6 +4,7 @@ import styles from "./CommunityHero.module.css";
 export default function CommunityHero() {
   return (
     <section className={styles.section}>
+      <img src="/images/camps/camp-kanjampatti-jan-2026-1.jpg" alt="" className={styles.bgImage} aria-hidden="true" />
       <div className={`container ${styles.container}`}>
         <Reveal targets=":scope > *" stagger={0.08} className={styles.content}>
           <span className="eyebrow">

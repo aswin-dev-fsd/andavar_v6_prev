@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import SurgeonProfileTop from "@/components/surgeon/SurgeonProfileTop";
+import SurgeonSection from "@/components/home/SurgeonSection";
 import SurgeonStatsCTA from "@/components/surgeon/SurgeonStatsCTA";
 import VisitingSpecialists from "@/components/surgeon/VisitingSpecialists";
 
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function OurSurgeonPage() {
   return (
     <>
-      <SurgeonProfileTop />
+      <SurgeonSection />
       <VisitingSpecialists />
       <SurgeonStatsCTA />
     </>

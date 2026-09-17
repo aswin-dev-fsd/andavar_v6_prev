@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Image from "next/image";
 import Reveal from "@/components/Reveal";
 import styles from "./SurgeonSection.module.css";
 
@@ -32,8 +32,17 @@ const QUALIFICATIONS = [
 export default function SurgeonSection() {
   return (
     <section className={styles.section}>
+      <img src="/images/surgeon-performing-microscopic-eye-surgery.webp" alt="" className={styles.bgImage} aria-hidden="true" />
       <div className={`container ${styles.grid}`}>
         <Reveal targets=":scope > *" stagger={0.09}>
+          <div className={styles.imageWrapper}>
+            <Image
+              src="/images/doctor-detailed-slit-lamp-examination.webp"
+              alt="Slit lamp examination"
+              fill
+              className={styles.image}
+            />
+          </div>
           <span className="eyebrow">
             <span className="en">Your surgeons</span> <span className="ta" lang="ta">உங்கள் மருத்துவர்</span>
           </span>
@@ -51,9 +60,6 @@ export default function SurgeonSection() {
               பெரிய மருத்துவமனைகளில், அன்று பணியில் இருக்கும் மருத்துவரே உங்களைப் பார்ப்பார். இங்கே ஒரே ஒரு அறுவை சிகிச்சை நிபுணர் மட்டுமே உள்ளார், அடுத்த ஆண்டு உங்கள் தொடர் பரிசோதனையிலும் அவரே இருப்பார்.
             </span>
           </p>
-          <Link href="/our-surgeons" className={styles.arrowLink}>
-            <span className="en">More about Dr. Raghuram →</span> <span className="ta" lang="ta">டாக்டர் ரகுராம் பற்றி மேலும் அறிய →</span>
-          </Link>
         </Reveal>
 
         <Reveal className={styles.card} stagger={0.07}>

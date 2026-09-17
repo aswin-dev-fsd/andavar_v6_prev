@@ -34,12 +34,11 @@
 }
 
 .logo {
-  height: 64px;
+  height: 56px;
   width: auto;
   object-fit: contain;
-  transform: scale(1.35);
+  transform: scale(1.15);
   transform-origin: left center;
-  filter: hue-rotate(70deg) brightness(0.85); /* Temporary fix to match blue theme */
 }
 
 
@@ -196,7 +195,7 @@
     margin-right: 30px;
   }
   .logo {
-    height: 48px;
-    transform: scale(1.2);
+    height: 40px;
+    transform: scale(1.15);
   }
 }

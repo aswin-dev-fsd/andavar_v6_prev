@@ -29,13 +29,12 @@ import FloatingActionButtons from "@/components/FloatingActionButtons";
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" data-lang="en" className={`${manrope.variable} ${plusJakarta.variable}`}>
-      <body className="has-call-bar">
+      <body>
         <SmoothScroll>
           <Header />
           <main>{children}</main>
           <Footer />
         </SmoothScroll>
-        <StickyCallBar />
         <FloatingActionButtons />
       </body>
     </html>

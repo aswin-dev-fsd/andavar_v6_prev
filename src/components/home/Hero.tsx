@@ -21,6 +21,7 @@ export default function Hero() {
 
   return (
     <section className={styles.section}>
+      <img src="/images/hospital-reception-and-waiting-area.webp" alt="" className={styles.bgImage} aria-hidden="true" />
       <div aria-hidden="true" className={styles.glowA} />
       <div aria-hidden="true" className={styles.glowB} />
       <div className={`container ${styles.grid}`}>

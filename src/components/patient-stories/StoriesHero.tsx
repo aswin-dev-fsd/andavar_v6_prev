@@ -4,6 +4,7 @@ import styles from "./StoriesHero.module.css";
 export default function StoriesHero() {
   return (
     <section className={styles.section}>
+      <img src="/images/elderly-patient-vision-testing-trial-frames.webp" alt="" className={styles.bgImage} aria-hidden="true" />
       <div className={styles.glow} aria-hidden="true" />
       <div className={`container ${styles.grid}`}>
         <Reveal targets=":scope > *" stagger={0.1}>

@@ -4,6 +4,17 @@
   padding: clamp(64px, 10vw, 112px) 0 clamp(48px, 8vw, 96px);
   background: var(--bg-gradient);
 }
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.08;
+  pointer-events: none;
+}
 .grid {
   position: relative;
   display: flex;

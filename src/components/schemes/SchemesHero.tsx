@@ -33,6 +33,7 @@ export default function SchemesHero() {
 
   return (
     <section className={styles.section}>
+      <img src="/images/hospital-reception-and-waiting-area.webp" alt="" className={styles.bgImage} aria-hidden="true" />
       <div ref={glowRef} aria-hidden="true" className={styles.glow} />
       <div className="container">
         <Reveal className={styles.copy} targets=":scope > *" stagger={0.1}>

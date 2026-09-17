@@ -1,6 +1,6 @@
 import Hero from "@/components/home/Hero";
 import StorySection from "@/components/about/StorySection";
-import SurgeonSection from "@/components/home/SurgeonSection";
+import SurgeonProfileTop from "@/components/surgeon/SurgeonProfileTop";
 import TreatSection from "@/components/home/TreatSection";
 import CostSection from "@/components/home/CostSection";
 import FactStrip from "@/components/home/FactStrip";
@@ -14,7 +14,7 @@ export default function Home() {
       <Hero />
       <FactStrip />
       <StorySection />
-      <SurgeonSection />
+      <SurgeonProfileTop />
       <TreatSection />
       <CostSection />
       <QuoteSection />

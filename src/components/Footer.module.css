@@ -29,8 +29,8 @@
   width: auto;
   object-fit: contain;
   margin-bottom: 24px;
-  filter: invert(1) brightness(2);
-  transform: scale(1.35);
+  filter: brightness(0) invert(1);
+  transform: scale(1.15);
   transform-origin: left center;
 }
 

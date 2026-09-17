@@ -4,6 +4,7 @@ import styles from "./CataractHero.module.css";
 export default function CataractHero() {
   return (
     <section className={styles.section}>
+      <img src="/images/eye-surgery-procedure-in-progress.webp" alt="" className={styles.bgImage} aria-hidden="true" />
       <div className={styles.glow} aria-hidden="true" />
       <div className={`container ${styles.grid}`}>
         <Reveal targets=":scope > *" stagger={0.1}>

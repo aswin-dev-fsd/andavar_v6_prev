@@ -63,7 +63,7 @@
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--primary);
+  color: var(--accent);
   font-weight: 700;
 }
 
