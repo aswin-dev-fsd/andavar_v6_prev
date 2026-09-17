@@ -8,7 +8,7 @@ export default function FloatingActionButtons() {
     <div className={styles.container}>
       {/* LinkedIn Button */}
       <Link
-        href="#" // TODO: Add actual LinkedIn profile URL
+        href="https://andavar-v6-prev.vercel.app/"
         target="_blank"
         rel="noopener noreferrer"
         className={styles.fab}

@@ -4,7 +4,7 @@
   padding: clamp(80px, 12vw, 140px) 0 clamp(64px, 10vw, 120px);
   background: 
     linear-gradient(rgba(var(--bg-rgb), 0.75), rgba(var(--bg-rgb), 0.95)), 
-    url('/hospital-bg.jpg') center/cover no-repeat;
+    url('/images/hospital-reception-and-waiting-area.webp') center/cover no-repeat;
 }
 .grid {
   position: relative;

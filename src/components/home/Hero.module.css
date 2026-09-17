@@ -169,6 +169,7 @@
 
 .image {
   object-fit: cover;
+  object-position: 25% 50%;
 }
 
 @media (max-width: 900px) {

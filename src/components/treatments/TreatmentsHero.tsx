@@ -8,7 +8,7 @@ export default function TreatmentsHero() {
     <section className={styles.section}>
       {/* Background Image Placeholder */}
       <img 
-        src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=2000&auto=format&fit=crop" 
+        src="/images/patient-eye-examination-autorefractor.webp" 
         alt="" 
         className={styles.bgImage} 
         aria-hidden="true" 

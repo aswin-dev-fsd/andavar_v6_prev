@@ -69,12 +69,12 @@ export default function Hero() {
 
         <Reveal delay={0.1}>
           <div className={styles.visual} aria-hidden="true">
-            <div className={styles.imageWrapper}>
-              <Image 
-                src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1500&auto=format&fit=crop" 
-                alt="Hospital Facility" 
-                fill 
-                priority
+              <div className={styles.imageWrapper}>
+                <Image 
+                  src="/images/shri-andavar-eye-hospital-building-exterior.webp" 
+                  alt="Hospital Facility" 
+                  fill 
+                  priority
                 className={styles.image} 
               />
             </div>

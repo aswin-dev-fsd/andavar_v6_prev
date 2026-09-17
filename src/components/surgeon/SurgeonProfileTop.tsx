@@ -61,7 +61,7 @@ export default function SurgeonProfileTop() {
         <Reveal className={styles.imageReveal}>
           <div className={styles.imageCol}>
             <Image
-              src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2070&auto=format&fit=crop"
+              src="/images/chief-surgeon-portrait-desk-plants-white-background.webp"
               alt="Dr. A. Raghuram"
               fill
               className={styles.image}

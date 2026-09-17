@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import SurgeonProfileTop from "@/components/surgeon/SurgeonProfileTop";
 import SurgeonStatsCTA from "@/components/surgeon/SurgeonStatsCTA";
+import VisitingSpecialists from "@/components/surgeon/VisitingSpecialists";
 
 export const metadata: Metadata = {
   title: "Our Surgeons | Shri Andavar Eye Care",
@@ -12,6 +13,7 @@ export default function OurSurgeonPage() {
   return (
     <>
       <SurgeonProfileTop />
+      <VisitingSpecialists />
       <SurgeonStatsCTA />
     </>
   );
