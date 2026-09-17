@@ -17,7 +17,10 @@ swap out on this page.
 
 ## Community & CSR Page (`/community`)
 
-- **Community Camp Visuals**: Abstract CSS gradients and SVG icon illustrations used for free eye camps and CSR sections.
+- **Medical Camp Photography**: Real event photography stored under `/public/images/camps/` for:
+  - Kanjampatti Camp (Jan 23, 2026): 5 photos
+  - Free Medical Camp (Feb 19, 2026): 4 photos
+  - RTO Premises Camp (Aug 19, 2026): 3 photos
 
 ## Pages Built
 

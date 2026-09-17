@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import CommunityHero from "@/components/community/CommunityHero";
-import CommunityGrid from "@/components/community/CommunityGrid";
+import CommunityCamps from "@/components/community/CommunityCamps";
 
 export const metadata: Metadata = {
   title: "Community & CSR | Shri Andavar Eye Care and Retina Centre",
@@ -11,7 +11,7 @@ export default function CommunityPage() {
   return (
     <>
       <CommunityHero />
-      <CommunityGrid />
+      <CommunityCamps />
     </>
   );
 }

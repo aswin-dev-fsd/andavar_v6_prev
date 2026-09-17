@@ -2,6 +2,16 @@
 
 All notable changes to the Shri Andavar Eye Care project.
 
+## [2026-09-17]
+
+### `/community` Page Overhaul
+- **Interactive Camp Carousels:** Replaced static grid with `CommunityCamps` and `CampCarousel` components featuring interactive multi-photo carousels.
+- **Medical Camp Content:** Added bilingual coverage (English & Tamil) for free medical camps:
+  - Free Medical Camp at Kanjampatti (Jan 23, 2026)
+  - Free Medical Camp (Feb 19, 2026)
+  - General Medical Camp at RTO Premises (Aug 19, 2026)
+- **Documentation & Assets:** Added camp photo documentation under `docs/` and public assets under `/public/images/camps/`.
+
 ## [2026-09-16]
 
 ### Global & Architecture
