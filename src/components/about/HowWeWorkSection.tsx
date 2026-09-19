@@ -5,7 +5,7 @@ const ITEMS = [
   {
     num: "01",
     titleEn: "Nothing is recommended that is not needed",
-    titleTa: "தேவையில்லாத எதையும் நாங்கள் பரிந்துரைக்க மாட்டோம்",
+    titleTa: "தேவையற்ற எதையும் நாங்கள் பரிந்துரைக்க மாட்டோம்",
     bodyEn: "If your eyes are fine, you will be told they are fine. An unnecessary procedure is a betrayal of thirteen years of trust, and it is not worth it.",
     bodyTa: "உங்கள் கண்கள் நன்றாக இருந்தால், அவை நன்றாக இருப்பதாகவே உங்களிடம் சொல்லப்படும். தேவையற்ற ஒரு சிகிச்சையைச் செய்வது பதின்மூன்று ஆண்டு கால நம்பிக்கைக்குச் செய்யும் துரோகம், அதற்கு எந்த அவசியமும் இல்லை."
   },

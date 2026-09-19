@@ -8,7 +8,7 @@ import styles from "./Header.module.css";
 
 const NAV = [
   { href: "/treatments", labelEn: "Treatments", labelTa: "சிகிச்சைகள்" },
-  { href: "/our-surgeons", labelEn: "Our Surgeons", labelTa: "எங்கள் மருத்துவர்" },
+  { href: "/our-surgeons", labelEn: "Our Surgeons", labelTa: "எங்கள் மருத்துவர்கள்" },
   { href: "/schemes", labelEn: "Schemes", labelTa: "திட்டங்கள்" },
   { href: "/community", labelEn: "Community", labelTa: "சமூகம்" },
   { href: "/about", labelEn: "About", labelTa: "எங்களைப் பற்றி" },

@@ -91,3 +91,4 @@ All notable changes to the Shri Andavar Eye Care project.
 ### `/our-surgeon` Page
 - **Prototyping:** Used StitchMCP to generate visual UI prototypes for the hero section, ultimately selecting Option 3 for the final build.
 - **Foundation:** Built the structural components for the surgeon profile.
+- **Content Updates:** Refined Tamil/English translations, updated scheme details (e.g. replacing Star Health Insurance with "Other Private Insurances"), and streamlined copy across various sections including the Treatments Hero, Surgeon Profile, and Home components.

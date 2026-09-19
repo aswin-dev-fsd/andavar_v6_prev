@@ -19,12 +19,11 @@ export default function Footer() {
           />
           <p className={styles.blurb}>
             <span className="en">
-              Cataract and retina care in Pollachi since 2013, by one surgeon
-              who sees you from the first examination to the last follow-up.
+              Cataract and retina care in Pollachi since 2013, by a dedicated team
+              that sees you from the first examination to the last follow-up.
             </span>
-            {" "}
             <span className="ta" lang="ta">
-              2013 முதல் பொள்ளாச்சியில் கண்புரை மற்றும் விழித்திரை சிகிச்சை. முதல் பரிசோதனை முதல் இறுதி வரை ஒருவரே அறுவை சிகிச்சை நிபுணர்.
+              2013 முதல் பொள்ளாச்சியில் கண்புரை மற்றும் விழித்திரை சிகிச்சை. முதல் பரிசோதனை முதல் இறுதி வரை ஒரு அர்ப்பணிப்புள்ள மருத்துவக் குழு.
             </span>
           </p>
         </div>
@@ -58,7 +57,7 @@ export default function Footer() {
           </div>
           <div className={styles.linkList}>
             <Link href="/our-surgeons">
-              <span className="en">Our surgeons</span> <span className="ta" lang="ta">எங்கள் மருத்துவர்</span>
+              <span className="en">Our surgeons</span> <span className="ta" lang="ta">எங்கள் மருத்துவர்கள்</span>
             </Link>
             <Link href="/patient-stories">
               <span className="en">Patient stories</span> <span className="ta" lang="ta">நோயாளிகளின் கதைகள்</span>

@@ -44,7 +44,7 @@ export default function SurgeonSection() {
             />
           </div>
           <span className="eyebrow">
-            <span className="en">Your surgeons</span> <span className="ta" lang="ta">உங்கள் மருத்துவர்</span>
+            <span className="en">Your surgeon</span> <span className="ta" lang="ta">உங்கள் மருத்துவர்</span>
           </span>
           <h2 className={styles.h2}>
             <span className="en">Dr. A. Raghuram</span> <span className="ta" lang="ta">டாக்டர் A. ரகுராம்</span>

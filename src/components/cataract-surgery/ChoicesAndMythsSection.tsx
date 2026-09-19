@@ -48,8 +48,8 @@ export default function ChoicesAndMythsSection() {
             </div>
           </div>
           <p className={styles.closing}>
-            <span className="en">Which one suits you depends on your eye and on the life you actually lead. Dr. Raghuram will go through it with you before anything is decided.</span>
-            <span className="ta" lang="ta">உங்களுக்கு எது பொருந்தும் என்பது உங்கள் கண்ணையும் நீங்கள் வாழும் வாழ்க்கை முறையையும் பொறுத்தது. முடிவெடுப்பதற்கு முன் டாக்டர் ரகுராம் உங்களுடன் இதை விரிவாக விவாதிப்பார்.</span>
+            <span className="en">Which one suits you depends on your eye and on the life you actually lead. Our doctors will go through it with you before anything is decided.</span>
+            <span className="ta" lang="ta">உங்களுக்கு எது பொருந்தும் என்பது உங்கள் கண்ணையும் நீங்கள் வாழும் வாழ்க்கை முறையையும் பொறுத்தது. முடிவெடுப்பதற்கு முன் எங்கள் மருத்துவர்கள் உங்களுடன் இதை விரிவாக விவாதிப்பார்கள்.</span>
           </p>
         </Reveal>
 

@@ -7,7 +7,7 @@ import CounterQuestions from "@/components/schemes/CounterQuestions";
 
 export const metadata: Metadata = {
   title: "Schemes & Insurance | Shri Andavar Eye Care and Retina Centre",
-  description: "Information about CMCHIS, Pensioners Health Scheme, Star Health Insurance and other accepted schemes at Shri Andavar Eye Care.",
+  description: "Information about CMCHIS, Pensioners Health Scheme, and other private insurances accepted at Shri Andavar Eye Care.",
 };
 
 export default function SchemesPage() {

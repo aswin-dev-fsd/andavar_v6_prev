@@ -21,7 +21,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "Shri Andavar Eye Care and Retina Centre | Pollachi",
   description:
-    "Cataract and retina care in Pollachi, by the surgeon who examines you. Dr. A. Raghuram has looked after this district's eyes since 2013.",
+    "Cataract and retina care in Pollachi. Shri Andavar Eye Care has looked after this district's eyes since 2013.",
 };
 
 import FloatingActionButtons from "@/components/FloatingActionButtons";

@@ -44,8 +44,7 @@ export default function Hero() {
 
           <h1 className={styles.h1}>
             <span className="en">
-              Cataract and retina care in Pollachi, by the surgeon who
-              examines you.
+              Cataract and retina care in Pollachi.
             </span>
             <span className="ta" lang="ta">
               பொள்ளாச்சியில் கண்புரை மற்றும் விழித்திரை சிகிச்சை.
@@ -54,12 +53,11 @@ export default function Hero() {
 
           <p className={styles.lede}>
             <span className="en">
-              Dr. A. Raghuram has looked after this district&apos;s eyes since
-              2013. He examines you, he operates, and he is the one who sees
-              you at your follow-up.
+              Shri Andavar Eye Care has looked after this district&apos;s eyes since
+              2013.
             </span>
             <span className="ta" lang="ta">
-              டாக்டர் ஏ. ரகுராம் 2013 முதல் இம்மாவட்டத்தின் கண் பாதுகாப்பில் சேவையாற்றி வருகிறார். உங்களை பரிசோதித்து, அறுவை சிகிச்சை செய்து, தொடர்ந்து உங்களை கவனிப்பவரும் அவரே.
+              ஸ்ரீ ஆண்டவர் கண் மருத்துவமனை 2013 முதல் இம்மாவட்டத்தின் கண் பாதுகாப்பில் சேவையாற்றி வருகிறது.
             </span>
           </p>
 

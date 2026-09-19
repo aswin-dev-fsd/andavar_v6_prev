@@ -16,8 +16,8 @@ const TICKS = [
     bodyTa: "ஓய்வு பெற்ற அரசு ஊழியர்கள் மற்றும் அவர்களைச் சார்ந்தவர்களுக்கானது.",
   },
   {
-    titleEn: "Star Health Insurance",
-    titleTa: "ஸ்டார் ஹெல்த் இன்சூரன்ஸ்",
+    titleEn: "Other Private Insurances",
+    titleTa: "பிற தனியார் காப்பீடுகள்",
     bodyEn: "Cashless, subject to your policy terms.",
     bodyTa: "உங்கள் பாலிசி விதிகளுக்கு உட்பட்டு, பணமில்லாச் சிகிச்சை.",
   },

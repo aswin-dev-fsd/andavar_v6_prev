@@ -6,8 +6,8 @@ const QUALIFICATIONS = [
   {
     titleEn: "MBBS, DO",
     titleTa: "MBBS, DO",
-    bodyEn: "Medical degree, then a diploma in ophthalmology — eyes only.",
-    bodyTa: "மருத்துவப் பட்டம், அதன்பிறகு கண் மருத்துவத்தில் ஒரு பட்டயம் — கண்கள் மட்டும்.",
+    bodyEn: "Medical degree, diploma in ophthalmology.",
+    bodyTa: "மருத்துவப் பட்டம், கண் மருத்துவத்தில் பட்டயம்.",
     icon: (
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
@@ -86,7 +86,7 @@ export default function SurgeonProfileTop() {
             <h1 className={styles.title}><span className="en">Dr. A. Raghuram</span> <span className="ta" lang="ta">டாக்டர் ஏ. ரகுராம்</span></h1>
             <div className={styles.bio}>
               <p>
-                <strong><span className="en">At a large chain you are seen by whoever is on duty that day.</span> <span className="ta" lang="ta">ஒரு பெரிய மருத்துவமனை சங்கிலியில், அந்த நாளில் பணியில் இருக்கும் யாரோ ஒருவரால் நீங்கள் பார்க்கப்படுவீர்கள்.</span></strong> <span className="en">Here there is one surgeon, and he will still be here at your follow-up next year.</span> <span className="ta" lang="ta">இங்கு ஒரே ஒரு அறுவை சிகிச்சை நிபுணர் மட்டுமே உள்ளார், அடுத்த ஆண்டு உங்களின் தொடர் பரிசோதனையின்போதும் அவர் இங்கேயே இருப்பார்.</span>
+                <strong><span className="en">At a large chain you are seen by whoever is on duty that day.</span> <span className="ta" lang="ta">ஒரு பெரிய மருத்துவமனை சங்கிலியில், அந்த நாளில் பணியில் இருக்கும் யாரோ ஒருவரால் நீங்கள் பார்க்கப்படுவீர்கள்.</span></strong>
               </p>
               <p>
                 <span className="en">Dr. Raghuram combines decades of specialized surgical expertise with a deeply personal approach to patient care. Focusing exclusively on advanced ophthalmology, he has established international benchmarks in cataract and complex reconstructive eye procedures.</span> <span className="ta" lang="ta">டாக்டர் ரகுராம், பல தசாப்த கால சிறப்பு அறுவை சிகிச்சை நிபுணத்துவத்துடன், நோயாளிகளின் பராமரிப்பில் ஆழ்ந்த தனிப்பட்ட அணுகுமுறையை ஒருங்கிணைக்கிறார். மேம்பட்ட கண் மருத்துவத்தில் மட்டுமே கவனம் செலுத்தும் இவர், கண்புரை மற்றும் சிக்கலான மறுசீரமைப்பு கண் சிகிச்சை முறைகளில் சர்வதேச அளவுகோல்களை நிறுவியுள்ளார்.</span>

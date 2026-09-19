@@ -3,7 +3,12 @@ import styles from "./SchemeCards.module.css";
 
 const SCHEMES = [
   {
-    title: <>CM's Comprehensive Health<br/>Insurance Scheme</>,
+    title: (
+      <>
+        <span className="en">CM's Comprehensive Health<br/>Insurance Scheme</span>
+        <span className="ta" lang="ta">முதலமைச்சரின் விரிவான<br/>மருத்துவக் காப்பீட்டுத் திட்டம்</span>
+      </>
+    ),
     tagEn: "CMCHIS",
     tagTa: "அரசு காப்பீட்டுத் திட்டம்",
     bodyEn: "The Tamil Nadu government scheme. Cataract Surgery and a number of other eye procedures are covered.",
@@ -12,7 +17,12 @@ const SCHEMES = [
     bringTa: ["உங்கள் முதலமைச்சரின் விரிவான மருத்துவக் காப்பீட்டுத் திட்ட அட்டை", "ஆதார் அட்டை", "குடும்ப அட்டை (இருந்தால்)"]
   },
   {
-    title: <>Pensioners<br/>Health Scheme</>,
+    title: (
+      <>
+        <span className="en">Pensioners<br/>Health Scheme</span>
+        <span className="ta" lang="ta">ஓய்வூதியதாரர்கள்<br/>மருத்துவக் காப்பீட்டுத் திட்டம்</span>
+      </>
+    ),
     tagEn: "For retired government employees",
     tagTa: "ஓய்வூதியர் சுகாதாரத் திட்டம்",
     bodyEn: "Covers retired state government employees and their dependants under the scheme's terms.",
@@ -21,7 +31,12 @@ const SCHEMES = [
     bringTa: ["உங்கள் ஓய்வூதியர் அடையாள அட்டை", "திட்ட அட்டை", "சமீபத்திய ஓய்வூதிய சீட்டு"]
   },
   {
-    title: <>Star Health<br/>Insurance</>,
+    title: (
+      <>
+        <span className="en">Other Private<br/>Insurances</span>
+        <span className="ta" lang="ta">பிற தனியார்<br/>காப்பீடுகள்</span>
+      </>
+    ),
     tagEn: "Private cover",
     tagTa: "தனியார் காப்பீடு",
     bodyEn: "Cashless treatment subject to your policy terms and prior approval where required.",

@@ -34,8 +34,8 @@ const STEPS = [
     num: "05",
     titleEn: "The day after",
     titleTa: "மறுநாள்",
-    bodyEn: "You come back the next morning so Dr. Raghuram can check the eye. Most people notice the difference by then.",
-    bodyTa: "மறுநாள் காலை நீங்கள் மீண்டும் வர வேண்டும், அப்போது டாக்டர் ரகுராம் உங்கள் கண்ணைப் பரிசோதிப்பார். பெரும்பாலானவர்கள் அதற்குள்ளாகவே பார்வையில் உள்ள மாற்றத்தை உணர்வார்கள்."
+    bodyEn: "You come back the next morning so our doctors can check the eye. Most people notice the difference by then.",
+    bodyTa: "மறுநாள் காலை நீங்கள் மீண்டும் வர வேண்டும், அப்போது எங்கள் மருத்துவர்கள் உங்கள் கண்ணைப் பரிசோதிப்பார்கள். பெரும்பாலானவர்கள் அதற்குள்ளாகவே பார்வையில் உள்ள மாற்றத்தை உணர்வார்கள்."
   },
   {
     num: "06",

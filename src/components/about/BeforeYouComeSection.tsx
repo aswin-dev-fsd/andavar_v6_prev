@@ -75,8 +75,8 @@ export default function BeforeYouComeSection() {
               04259 221 000
             </MagneticButton>
             <MagneticButton href="/our-surgeons" className={styles.btnSecondary}>
-              <span className="en">About Dr. Raghuram</span>
-              <span className="ta" lang="ta">டாக்டர் ரகுராம் பற்றி</span>
+              <span className="en">Our Surgeons</span>
+              <span className="ta" lang="ta">எங்கள் மருத்துவர்கள்</span>
             </MagneticButton>
           </div>
         </Reveal>

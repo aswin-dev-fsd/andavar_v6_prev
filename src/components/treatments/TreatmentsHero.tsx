@@ -28,8 +28,8 @@ export default function TreatmentsHero() {
 
           <p className={styles.lede}>
             <span className="en">From routine optical dispensing to advanced vitreo-retinal surgery, 
-            Dr. A. Raghuram provides complete ophthalmic care using 
-            state-of-the-art technology, backed by decades of trusted experience.</span> <span className="ta" lang="ta">வழக்கமான கண்ணாடிகள் வழங்குதல் முதல் மேம்பட்ட விட்ரியோ-ரெட்டினல் அறுவை சிகிச்சை வரை, டாக்டர் ஏ. ரகுராம் பல தசாப்த கால அனுபவத்துடன், அதிநவீன தொழில்நுட்பத்தை பயன்படுத்தி முழுமையான கண் மருத்துவ சேவைகளை வழங்குகிறார்.</span>
+            Shri Andavar Eye Care provides complete ophthalmic care using 
+            state-of-the-art technology, backed by decades of trusted experience.</span> <span className="ta" lang="ta">வழக்கமான கண்ணாடிகள் வழங்குதல் முதல் மேம்பட்ட விட்ரியோ-ரெட்டினல் அறுவை சிகிச்சை வரை, ஸ்ரீ ஆண்டவர் கண் மருத்துவமனை பல தசாப்த கால அனுபவத்துடன், அதிநவீன தொழில்நுட்பத்தை பயன்படுத்தி முழுமையான கண் மருத்துவ சேவைகளை வழங்குகிறது.</span>
           </p>
         </Reveal>
       </div>
