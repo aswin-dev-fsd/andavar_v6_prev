@@ -1,6 +1,6 @@
 .section {
   position: relative;
-  padding: 0 0 clamp(72px, 10vw, 140px);
+  padding: clamp(64px, 8vw, 96px) 0 clamp(72px, 10vw, 140px);
   background: var(--bg-gradient);
   z-index: 2;
 }
@@ -73,6 +73,8 @@
   color: var(--ink);
   margin-bottom: 0.8rem;
   line-height: 1.2;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .description {

@@ -30,7 +30,10 @@ export default function HowWeWorkSection() {
     <section className={styles.section}>
       <div className="container">
         <Reveal className={styles.head}>
-          <span className="eyebrow">How we work</span>
+          <span className="eyebrow">
+            <span className="en">How we work</span>
+            <span className="ta" lang="ta">நாங்கள் செயல்படும் விதம்</span>
+          </span>
           <h2 className={styles.h2}>
             <span className="en">Three things we hold to.</span>
             <span className="ta" lang="ta">நாங்கள் கடைப்பிடிக்கும் மூன்று கொள்கைகள்.</span>

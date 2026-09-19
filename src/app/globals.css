@@ -94,6 +94,17 @@ h4 {
   line-height: 1.02;
 }
 
+/* Fix overlapping text in Tamil headings due to tall ascenders/descenders */
+[data-lang="ta"] h1,
+[data-lang="ta"] h2,
+[data-lang="ta"] h3,
+[data-lang="ta"] h4,
+[data-lang="ta"] .h1,
+[data-lang="ta"] .h2,
+[data-lang="ta"] .h3 {
+  line-height: 1.2;
+}
+
 img,
 svg {
   display: block;

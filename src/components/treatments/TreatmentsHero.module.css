@@ -1,7 +1,7 @@
 .section {
   position: relative;
   overflow: hidden;
-  padding: clamp(100px, 11vw, 140px) 0 clamp(110px, 14vw, 160px);
+  padding: clamp(100px, 11vw, 140px) 0 clamp(64px, 8vw, 96px);
   background: var(--bg-gradient);
 }
 

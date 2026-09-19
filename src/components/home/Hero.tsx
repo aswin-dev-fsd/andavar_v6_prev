@@ -4,13 +4,11 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import MagneticButton from "@/components/MagneticButton";
 import Reveal from "@/components/Reveal";
-import { getClinicStatus } from "@/lib/clinicHours";
+import { getClinicStatus, ClinicStatus } from "@/lib/clinicHours";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
-  const [status, setStatus] = useState<{ isOpen: boolean; pillLabel: string } | null>(
-    null
-  );
+  const [status, setStatus] = useState<ClinicStatus | null>(null);
 
   useEffect(() => {
     const update = () => setStatus(getClinicStatus());
@@ -31,7 +29,17 @@ export default function Hero() {
               className={`${styles.dot} ${status && !status.isOpen ? styles.closed : ""}`}
               aria-hidden="true"
             />
-            {status ? status.pillLabel : "Checking today's hours…"}
+            {status ? (
+              <>
+                <span className="en">{status.pillLabelEn}</span>
+                <span className="ta" lang="ta">{status.pillLabelTa}</span>
+              </>
+            ) : (
+              <>
+                <span className="en">Checking today's hours…</span>
+                <span className="ta" lang="ta">இன்றைய நேரங்களைச் சரிபார்க்கிறது...</span>
+              </>
+            )}
           </div>
 
           <h1 className={styles.h1}>
@@ -45,9 +53,14 @@ export default function Hero() {
           </h1>
 
           <p className={styles.lede}>
-            Dr. A. Raghuram has looked after this district&apos;s eyes since
-            2013. He examines you, he operates, and he is the one who sees
-            you at your follow-up.
+            <span className="en">
+              Dr. A. Raghuram has looked after this district&apos;s eyes since
+              2013. He examines you, he operates, and he is the one who sees
+              you at your follow-up.
+            </span>
+            <span className="ta" lang="ta">
+              டாக்டர் ஏ. ரகுராம் 2013 முதல் இம்மாவட்டத்தின் கண் பாதுகாப்பில் சேவையாற்றி வருகிறார். உங்களை பரிசோதித்து, அறுவை சிகிச்சை செய்து, தொடர்ந்து உங்களை கவனிப்பவரும் அவரே.
+            </span>
           </p>
 
           <div className={styles.actions}>
@@ -62,7 +75,7 @@ export default function Hero() {
               external
               className={styles.btnSecondary}
             >
-              ◎ Get directions
+              ◎ <span className="en">Get directions</span><span className="ta" lang="ta">வழி காட்டி</span>
             </MagneticButton>
           </div>
 

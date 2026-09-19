@@ -51,7 +51,10 @@ export default function TimelineSection() {
     <section className={styles.section}>
       <div className={`container ${styles.grid}`}>
         <Reveal className={styles.head}>
-          <span className="eyebrow">The day itself</span>
+          <span className="eyebrow">
+            <span className="en">The day itself</span>
+            <span className="ta" lang="ta">அறுவை சிகிச்சை நாள்</span>
+          </span>
           <h2 className={styles.h2}>
             <span className="en">What happens, hour by hour.</span>
             <span className="ta" lang="ta">ஒவ்வொரு மணி நேரமும் என்ன நடக்கும்.</span>

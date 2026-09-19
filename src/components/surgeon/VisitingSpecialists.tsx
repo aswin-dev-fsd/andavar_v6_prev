@@ -26,8 +26,14 @@ export default function VisitingSpecialists() {
                 SK
               </div>
               <div className={styles.nameSection}>
-                <h3 className={styles.name}>Dr. T.M. Sathish Kumaar</h3>
-                <p className={styles.qualifications}>M.S OPHTHAL.</p>
+                <h3 className={styles.name}>
+                  <span className="en">Dr. T.M. Sathish Kumaar</span>
+                  <span className="ta" lang="ta">டாக்டர் T.M. சதீஷ் குமார்</span>
+                </h3>
+                <p className={styles.qualifications}>
+                  <span className="en">M.S OPHTHAL.</span>
+                  <span className="ta" lang="ta">M.S OPHTHAL.</span>
+                </p>
               </div>
             </div>
 

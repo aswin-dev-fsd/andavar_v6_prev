@@ -7,7 +7,10 @@ export default function ChoicesAndMythsSection() {
     <section className={styles.section}>
       <div className={`container ${styles.grid}`}>
         <Reveal className={styles.card} targets=":scope > *" stagger={0.08}>
-          <span className="eyebrow">Lens options</span>
+          <span className="eyebrow">
+            <span className="en">Lens options</span>
+            <span className="ta" lang="ta">லென்ஸ் விருப்பங்கள்</span>
+          </span>
           <p className={styles.intro}>
             <span className="en">The artificial lens is a permanent part of the eye, so the choice is worth a proper conversation. In broad terms:</span>
             <span className="ta" lang="ta">செயற்கை லென்ஸ் என்பது கண்ணின் நிரந்தரமான ஒரு பகுதி, எனவே அதைத் தேர்ந்தெடுப்பது குறித்து முறையாக ஆலோசிப்பது அவசியம். பொதுவாகக் கூற வேண்டுமானால்:</span>
@@ -51,7 +54,10 @@ export default function ChoicesAndMythsSection() {
         </Reveal>
 
         <Reveal className={styles.card} targets=":scope > *" stagger={0.08}>
-          <span className="eyebrow">Worth knowing</span>
+          <span className="eyebrow">
+            <span className="en">Worth knowing</span>
+            <span className="ta" lang="ta">அறிய வேண்டியவை</span>
+          </span>
           <div className={styles.list}>
             <div className={styles.item}>
               <h3 className={styles.title}>

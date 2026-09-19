@@ -8,10 +8,19 @@ export default function VisitInfoSection() {
       <div className={`container ${styles.grid}`}>
         <Reveal className={styles.card} stagger={0.08} targets=":scope > *">
           <div className={styles.fact}>
-            <span className="eyebrow">Address</span>
+            <span className="eyebrow">
+              <span className="en">Address</span>
+              <span className="ta" lang="ta">முகவரி</span>
+            </span>
             <div className={styles.val}>
-              No. 73, Palladam Road, Opposite LMHSS School, <br />
-              T. Kottampatti, Pollachi 642002
+              <span className="en">
+                No. 73, Palladam Road, Opposite LMHSS School, <br />
+                T. Kottampatti, Pollachi 642002
+              </span>
+              <span className="ta" lang="ta">
+                எண். 73, பல்லடம் ரோடு, LMHSS பள்ளி எதிரில், <br />
+                டி. கோட்டாம்பட்டி, பொள்ளாச்சி 642002
+              </span>
             </div>
             <div className={styles.caption}>
               <span className="en">The landmark is the school — everyone local knows it. We are directly opposite.</span>
@@ -20,17 +29,31 @@ export default function VisitInfoSection() {
           </div>
           
           <div className={styles.fact}>
-            <span className="eyebrow">Consulting Hours</span>
+            <span className="eyebrow">
+              <span className="en">Consulting Hours</span>
+              <span className="ta" lang="ta">பரிசோதனை நேரங்கள்</span>
+            </span>
             <div className={styles.val}>
-              Monday to Saturday <br />
-              Morning 10:00 AM – 2:00 PM <br />
-              Evening 5:00 PM – 7:00 PM <br />
-              Sunday closed
+              <span className="en">
+                Monday to Saturday <br />
+                Morning 10:00 AM – 2:00 PM <br />
+                Evening 5:00 PM – 7:00 PM <br />
+                Sunday closed
+              </span>
+              <span className="ta" lang="ta">
+                திங்கள் முதல் சனிக்கிழமை வரை <br />
+                காலை 10:00 AM – 2:00 PM <br />
+                மாலை 5:00 PM – 7:00 PM <br />
+                ஞாயிறு விடுமுறை
+              </span>
             </div>
           </div>
           
           <div className={styles.fact}>
-            <span className="eyebrow">Telephone</span>
+            <span className="eyebrow">
+              <span className="en">Telephone</span>
+              <span className="ta" lang="ta">தொலைபேசி</span>
+            </span>
             <div className={styles.val}>
               04259 221 000 <br />
               94420 56767
@@ -53,7 +76,8 @@ export default function VisitInfoSection() {
           </p>
           <div className={styles.actions}>
             <MagneticButton href="https://maps.google.com/?q=Shri+Andavar+Eye+Care+and+Retina+Centre+Palladam+Road+Pollachi" external className={styles.btnPrimary}>
-              ◎ Open in Maps
+              <span className="en">◎ Open in Maps</span>
+              <span className="ta" lang="ta">◎ வரைபடத்தில் பார்க்க (Maps)</span>
             </MagneticButton>
           </div>
           <p className={styles.caption}>

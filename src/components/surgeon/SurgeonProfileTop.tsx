@@ -72,7 +72,9 @@ export default function SurgeonProfileTop() {
                 <span className={styles.dot}></span>
                 <span className="en">Chief Surgeon</span> <span className="ta" lang="ta">தலைமை அறுவை சிகிச்சை நிபுணர்</span>
               </div>
-              <div className={styles.badge}>FRCS (Glasgow)</div>
+              <div className={styles.badge}>
+                <span className="en">FRCS (Glasgow)</span> <span className="ta" lang="ta">FRCS (கிளாஸ்கோ)</span>
+              </div>
             </div>
           </div>
         </Reveal>

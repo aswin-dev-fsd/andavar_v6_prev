@@ -6,8 +6,8 @@ const QUALIFICATIONS = [
   {
     titleEn: "MBBS, DO",
     titleTa: "MBBS, DO",
-    bodyEn: "Medical degree, then a diploma in ophthalmology — eyes only.",
-    bodyTa: "மருத்துவப் பட்டம், அதன்பிறகு கண் மருத்துவத்தில் பட்டயம் — கண்களுக்கு மட்டுமே.",
+    bodyEn: "Medical degree, diploma in ophthalmology.",
+    bodyTa: "மருத்துவப் பட்டம், கண் மருத்துவத்தில் பட்டயம்.",
   },
   {
     titleEn: "DNB (Ophthalmology)",
@@ -52,12 +52,10 @@ export default function SurgeonSection() {
           <p className={styles.lede}>
             <span className="en">
               At a large chain you are seen by whoever is on duty that day.
-              Here there is one surgeon, and he will still be here at your
-              follow-up next year.
             </span>
             {" "}
             <span className="ta" lang="ta">
-              பெரிய மருத்துவமனைகளில், அன்று பணியில் இருக்கும் மருத்துவரே உங்களைப் பார்ப்பார். இங்கே ஒரே ஒரு அறுவை சிகிச்சை நிபுணர் மட்டுமே உள்ளார், அடுத்த ஆண்டு உங்கள் தொடர் பரிசோதனையிலும் அவரே இருப்பார்.
+              பெரிய மருத்துவமனைகளில், அன்று பணியில் இருக்கும் மருத்துவரே உங்களைப் பார்ப்பார்.
             </span>
           </p>
         </Reveal>

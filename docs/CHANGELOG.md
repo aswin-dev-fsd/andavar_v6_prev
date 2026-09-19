@@ -2,6 +2,13 @@
 
 All notable changes to the Shri Andavar Eye Care project.
 
+## [2026-09-19]
+
+### Global & Components
+- **Clinic Hours Logic (`clinicHours.ts`):** Enhanced realtime open/closed clinic status evaluation with support for dual daily sessions (10am-2pm & 5pm-7pm) and Sunday closures.
+- **Sticky Call Bar (`StickyCallBar.tsx`):** Added live open/closed status badge and responsive bilingual action buttons for phone calls and directions.
+- **Bilingual & Layout Polish:** Updated bilingual copy (English/Tamil) and responsive styling across About, Cataract Surgery, Patient Stories, Schemes, and Visiting Specialists components.
+
 ## [2026-09-17]
 
 ### `/community` Page Overhaul

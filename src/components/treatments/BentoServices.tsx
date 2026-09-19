@@ -83,7 +83,7 @@ const SERVICES = [
   {
     id: "dryeye",
     titleEn: "Dry Eye Clinic",
-    titleTa: "வறண்ட கண் சிகிச்சை மையம்",
+    titleTa: "கண் வறட்சி சிகிச்சை மையம்",
     icon: Icons.Droplet,
     descEn: "Targeted therapies to relieve burning, gritty, and tired eyes.",
     descTa: "எரிச்சல், உறுத்தல் மற்றும் சோர்வடைந்த கண்களுக்கு நிவாரணம் அளிக்க இலக்கு வைக்கப்பட்ட சிகிச்சைகள்.",

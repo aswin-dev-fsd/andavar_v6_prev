@@ -21,31 +21,46 @@ export default function StorySection() {
         </Reveal>
 
         <Reveal className={styles.card} stagger={0.08} targets=":scope > *">
-          <span className="eyebrow">In short</span>
+          <span className="eyebrow">
+            <span className="en">In short</span>
+            <span className="ta" lang="ta">சுருக்கமாக</span>
+          </span>
           <div className={styles.facts}>
             <div className={styles.fact}>
-              <div className={styles.label}>Founded</div>
+              <div className={styles.label}>
+                <span className="en">Founded</span>
+                <span className="ta" lang="ta">நிறுவப்பட்டது</span>
+              </div>
               <div className={styles.val}>
                 <span className="en">2013, in Pollachi, by Dr. A. Raghuram.</span>
                 <span className="ta" lang="ta">2013-ல் பொள்ளாச்சியில், டாக்டர் ஏ. ரகுராம் அவர்களால் நிறுவப்பட்டது.</span>
               </div>
             </div>
             <div className={styles.fact}>
-              <div className={styles.label}>Focus</div>
+              <div className={styles.label}>
+                <span className="en">Focus</span>
+                <span className="ta" lang="ta">சிறப்பு கவனம்</span>
+              </div>
               <div className={styles.val}>
                 <span className="en">Retina and cataract, with full general eye care.</span>
                 <span className="ta" lang="ta">விழித்திரை மற்றும் கண்புரை சிகிச்சையுடன் முழுமையான பொது கண் பராமரிப்பு.</span>
               </div>
             </div>
             <div className={styles.fact}>
-              <div className={styles.label}>Languages</div>
+              <div className={styles.label}>
+                <span className="en">Languages</span>
+                <span className="ta" lang="ta">மொழிகள்</span>
+              </div>
               <div className={styles.val}>
                 <span className="en">Tamil and English, throughout — at the counter and in the consulting room.</span>
                 <span className="ta" lang="ta">முழுவதும் தமிழ் மற்றும் ஆங்கிலம் — வரவேற்பறையிலும் ஆலோசனை அறையிலும்.</span>
               </div>
             </div>
             <div className={styles.fact}>
-              <div className={styles.label}>Where</div>
+              <div className={styles.label}>
+                <span className="en">Where</span>
+                <span className="ta" lang="ta">அமைவிடம்</span>
+              </div>
               <div className={styles.val}>
                 <span className="en">One location, on Palladam Road. No branches, by choice.</span>
                 <span className="ta" lang="ta">பல்லடம் ரோட்டில் ஒரே இடத்தில். வேறு கிளைகள் இல்லை என்பது எங்கள் தேர்வு.</span>

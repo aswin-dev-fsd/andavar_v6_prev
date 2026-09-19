@@ -1,7 +1,9 @@
 export type ClinicStatus = {
   isOpen: boolean;
-  pillLabel: string;
-  callLabel: string;
+  pillLabelEn: string;
+  pillLabelTa: string;
+  callLabelEn: string;
+  callLabelTa: string;
 };
 
 const SESSIONS = [
@@ -24,15 +26,31 @@ function istParts(date: Date) {
   return { weekday, minutesOfDay: hour * 60 + minute };
 }
 
-function formatClock(minutesOfDay: number) {
+function formatClock(minutesOfDay: number, lang: "en" | "ta" = "en") {
   const h24 = Math.floor(minutesOfDay / 60) % 24;
   const m = minutesOfDay % 60;
-  const suffix = h24 >= 12 ? "PM" : "AM";
-  const h12 = h24 % 12 === 0 ? 12 : h24 % 12;
-  return m === 0 ? `${h12}:00 ${suffix}` : `${h12}:${String(m).padStart(2, "0")} ${suffix}`;
+  
+  if (lang === "ta") {
+    const suffix = h24 >= 12 && h24 < 16 ? "மதியம்" : h24 >= 16 ? "மாலை" : "காலை";
+    const h12 = h24 % 12 === 0 ? 12 : h24 % 12;
+    return m === 0 ? `${suffix} ${h12}:00` : `${suffix} ${h12}:${String(m).padStart(2, "0")}`;
+  } else {
+    const suffix = h24 >= 12 ? "PM" : "AM";
+    const h12 = h24 % 12 === 0 ? 12 : h24 % 12;
+    return m === 0 ? `${h12}:00 ${suffix}` : `${h12}:${String(m).padStart(2, "0")} ${suffix}`;
+  }
 }
 
 const WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const WEEKDAYS_TA: Record<string, string> = {
+  Sun: "ஞாயிறு",
+  Mon: "திங்கள்",
+  Tue: "செவ்வாய்",
+  Wed: "புதன்",
+  Thu: "வியாழன்",
+  Fri: "வெள்ளி",
+  Sat: "சனி",
+};
 
 export function getClinicStatus(date: Date = new Date()): ClinicStatus {
   const { weekday, minutesOfDay } = istParts(date);
@@ -45,8 +63,10 @@ export function getClinicStatus(date: Date = new Date()): ClinicStatus {
     if (activeSession) {
       return {
         isOpen: true,
-        pillLabel: `Open now · closes ${formatClock(activeSession.end)}`,
-        callLabel: "Call the hospital",
+        pillLabelEn: `Open now · closes ${formatClock(activeSession.end, "en")}`,
+        pillLabelTa: `தற்போது திறந்துள்ளது · ${formatClock(activeSession.end, "ta")}க்கு மூடும்`,
+        callLabelEn: "04259 221 000",
+        callLabelTa: "04259 221 000",
       };
     }
 
@@ -54,8 +74,10 @@ export function getClinicStatus(date: Date = new Date()): ClinicStatus {
     if (nextSessionToday) {
       return {
         isOpen: false,
-        pillLabel: `Closed · opens ${formatClock(nextSessionToday.start)}`,
-        callLabel: `Opens ${formatClock(nextSessionToday.start)}`,
+        pillLabelEn: `Closed · opens ${formatClock(nextSessionToday.start, "en")}`,
+        pillLabelTa: `மூடப்பட்டுள்ளது · ${formatClock(nextSessionToday.start, "ta")}க்கு திறக்கும்`,
+        callLabelEn: `Opens ${formatClock(nextSessionToday.start, "en")}`,
+        callLabelTa: `${formatClock(nextSessionToday.start, "ta")}க்கு திறக்கும்`,
       };
     }
   }
@@ -65,11 +87,14 @@ export function getClinicStatus(date: Date = new Date()): ClinicStatus {
   if (nextOpenDay === "Sun") {
     nextOpenDay = "Mon";
   }
-  const dayLabel = nextOpenDay === weekday ? "" : `${nextOpenDay} `;
+  const dayLabelEn = nextOpenDay === weekday ? "" : `${nextOpenDay} `;
+  const dayLabelTa = nextOpenDay === weekday ? "" : `${WEEKDAYS_TA[nextOpenDay]} `;
 
   return {
     isOpen: false,
-    pillLabel: `Closed · opens ${dayLabel}${formatClock(SESSIONS[0].start)}`,
-    callLabel: `Opens ${dayLabel}${formatClock(SESSIONS[0].start)}`,
+    pillLabelEn: `Closed · opens ${dayLabelEn}${formatClock(SESSIONS[0].start, "en")}`,
+    pillLabelTa: `மூடப்பட்டுள்ளது · ${dayLabelTa}${formatClock(SESSIONS[0].start, "ta")}க்கு திறக்கும்`,
+    callLabelEn: `Opens ${dayLabelEn}${formatClock(SESSIONS[0].start, "en")}`,
+    callLabelTa: `${dayLabelTa}${formatClock(SESSIONS[0].start, "ta")}க்கு திறக்கும்`,
   };
 }
