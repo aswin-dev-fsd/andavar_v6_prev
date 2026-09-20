@@ -6,6 +6,16 @@ import styles from "./Gallery.module.css";
 export default function GalleryHero() {
   return (
     <section className={styles.hero}>
+      {/* Background Image & Glows */}
+      <img 
+        src="/images/hospital-reception-and-waiting-area.webp" 
+        alt="" 
+        className={styles.bgImage} 
+        aria-hidden="true" 
+      />
+      <div aria-hidden="true" className={styles.glowA} />
+      <div aria-hidden="true" className={styles.glowB} />
+
       <div className={`container ${styles.heroInner}`}>
         <Reveal targets=":scope > *" stagger={0.08}>
           <span className="eyebrow">

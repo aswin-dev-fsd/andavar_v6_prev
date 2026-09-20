@@ -109,8 +109,8 @@ const SERVICES = [
     titleEn: "Contact Lens Services",
     titleTa: "காண்டாக்ட் லென்ஸ் சேவைகள்",
     icon: Icons.Eye,
-    descEn: "Professional fitting and dispensing of contact lenses tailored to you.",
-    descTa: "உங்களுக்கு ஏற்றவாறு காண்டாக்ட் லென்ஸ்கள் தொழில்முறை முறையில் பொருத்துதல் மற்றும் வழங்குதல்.",
+    descEn: "Professional fitting and dispensing of contact lenses tailored to your lifestyle. We offer a variety of options including normal wear, daily disposables, and cosmetic lenses for maximum all-day comfort.",
+    descTa: "உங்கள் வாழ்க்கை முறைக்கு ஏற்றவாறு காண்டாக்ட் லென்ஸ்கள் தொழில்முறை முறையில் பொருத்துதல் மற்றும் வழங்குதல். நாள் முழுவதும் அதிகபட்ச வசதிக்காக சாதாரண லென்ஸ்கள், தினசரி டிஸ்போசபிள் மற்றும் அழகு சாதன லென்ஸ்களை நாங்கள் வழங்குகிறோம்.",
     subItemsEn: [
       "Normal & Disposable lenses",
       "Cosmetic lenses",
@@ -119,15 +119,9 @@ const SERVICES = [
       "சாதாரண மற்றும் டிஸ்போசபிள் லென்ஸ்கள்",
       "அழகு சாதன லென்ஸ்கள்",
     ],
+    featured: true,
   },
-  {
-    id: "orbit",
-    titleEn: "Orbit & Oculoplasty",
-    titleTa: "ஆர்பிட் மற்றும் ஆக்குலோபிளாஸ்டி",
-    icon: Icons.Users,
-    descEn: "Corrective treatments for eyelids, tear ducts, and orbit.",
-    descTa: "கண் இமைகள், கண்ணீர் குழாய்கள் மற்றும் சுற்றுப்பாதைக்கான திருத்த சிகிச்சைகள்.",
-  },
+
   {
     id: "master",
     titleEn: "Master Health Checkup",

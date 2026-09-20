@@ -55,6 +55,14 @@
   border-radius: 999px;
   transition: background 0.2s var(--ease-soft), color 0.2s var(--ease-soft);
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
 }
 
 :global(html[data-lang="ta"]) .navLink {
@@ -69,6 +77,62 @@
 .navLink.active {
   color: var(--primary);
   font-weight: 600;
+}
+
+.navItemWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.navItemWrapper:hover .dropdownMenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-md);
+  border-radius: var(--r-md);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s var(--ease-soft);
+  z-index: 100;
+}
+
+.dropdownLink {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+:global(html[data-lang="ta"]) .dropdownLink {
+  font-size: 14px;
+}
+
+.dropdownLink:hover {
+  background: var(--bg-alt);
+}
+
+.dropdownLink.active {
+  color: var(--primary);
+  background: rgba(var(--primary-rgb), 0.05);
 }
 
 .right {
@@ -178,6 +242,70 @@
   font-size: 17px;
   font-weight: 500;
   border-bottom: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileAccordion {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--line);
+}
+
+.mobileAccordionTrigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 4px;
+  font-size: 17px;
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--ink);
+  font-family: inherit;
+  text-align: left;
+}
+
+.mobileAccordionTrigger > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileChevron {
+  display: flex;
+  transition: transform 0.3s var(--ease);
+  color: var(--muted);
+}
+
+.mobileChevron.rotated {
+  transform: rotate(180deg);
+}
+
+.mobileAccordionContent {
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s var(--ease);
+}
+
+.mobileAccordionContent.open {
+  height: auto;
+  opacity: 1;
+  padding-bottom: 8px;
+}
+
+.mobileAccordionContent a {
+  padding: 10px 4px 10px 16px;
+  font-size: 16px;
+  color: var(--muted);
+  border-bottom: none;
+}
+
+.mobileAccordionContent a:hover {
+  color: var(--primary);
 }
 
 @media (max-width: 1040px) {

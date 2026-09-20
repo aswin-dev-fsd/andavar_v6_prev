@@ -1,10 +1,50 @@
 .hero {
-  padding: 180px 0 100px;
+  position: relative;
+  overflow: hidden;
+  padding: clamp(80px, 8vw, 120px) 0 clamp(80px, 8vw, 120px);
   text-align: center;
   background: var(--bg-gradient);
 }
 
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.08; /* Very subtle so text is still readable */
+  pointer-events: none;
+}
+
+.glowA,
+.glowB {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(10px);
+  z-index: 1;
+}
+
+.glowA {
+  top: 10%;
+  left: 5%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(var(--secondary-rgb), 0.15), transparent 70%);
+}
+
+.glowB {
+  bottom: 10%;
+  right: 5%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(var(--accent-rgb), 0.1), transparent 70%);
+}
+
 .heroInner {
+  position: relative;
+  z-index: 2;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -151,7 +191,7 @@
   }
   
   .card:nth-child(7n + 7) {
-    grid-column: span 2;
+    grid-column: span 1;
     grid-row: span 1;
   }
 }

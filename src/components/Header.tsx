@@ -6,12 +6,24 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import styles from "./Header.module.css";
 
+const ChevronDown = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+);
+
 const NAV = [
   { href: "/treatments", labelEn: "Treatments", labelTa: "சிகிச்சைகள்" },
   { href: "/our-surgeons", labelEn: "Our Surgeons", labelTa: "எங்கள் மருத்துவர்கள்" },
   { href: "/schemes", labelEn: "Schemes", labelTa: "திட்டங்கள்" },
   { href: "/community", labelEn: "Community", labelTa: "சமூகம்" },
-  { href: "/about", labelEn: "About", labelTa: "எங்களைப் பற்றி" },
+  { 
+    labelEn: "About", 
+    labelTa: "எங்களைப் பற்றி",
+    items: [
+      { href: "/about", labelEn: "About Hospital", labelTa: "மருத்துவமனை பற்றி" },
+      { href: "/cataract-surgery", labelEn: "Cataract Surgery", labelTa: "கண்புரை அறுவை சிகிச்சை" },
+      { href: "/gallery", labelEn: "Gallery", labelTa: "புகைப்படங்கள்" }
+    ]
+  },
 ];
 
 export default function Header() {
@@ -19,6 +31,7 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [lang, setLang] = useState<"en" | "ta">("en");
+  const [expandedIdx, setExpandedIdx] = useState<number | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
@@ -30,13 +43,14 @@ export default function Header() {
   useEffect(() => {
     const stored = window.localStorage.getItem("sa-lang");
     if (stored === "ta" || stored === "en") {
-      // Deliberately deferred to an effect: the server always renders "en" first,
-      // so restoring the saved language during render would mismatch on hydration.
-      // eslint-disable-next-line react-hooks/set-state-in-effect
       setLang(stored);
       document.documentElement.dataset.lang = stored;
     }
   }, []);
+
+  useEffect(() => {
+    if (!menuOpen) setExpandedIdx(null);
+  }, [menuOpen]);
 
   function switchLang(next: "en" | "ta") {
     setLang(next);
@@ -59,16 +73,36 @@ export default function Header() {
         </Link>
 
         <nav className={styles.nav} aria-label="Primary">
-          {NAV.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={`${styles.navLink} ${
-                pathname === item.href ? styles.active : ""
-              }`}
-            >
-              <span className="en">{item.labelEn}</span> <span className="ta" lang="ta">{item.labelTa}</span>
-            </Link>
+          {NAV.map((item, idx) => (
+            item.items ? (
+              <div key={idx} className={styles.navItemWrapper}>
+                <button className={styles.navLink}>
+                  <span className="en">{item.labelEn}</span> <span className="ta" lang="ta">{item.labelTa}</span>
+                  <ChevronDown />
+                </button>
+                <div className={styles.dropdownMenu}>
+                  {item.items.map((sub) => (
+                    <Link 
+                      key={sub.href} 
+                      href={sub.href} 
+                      className={`${styles.dropdownLink} ${pathname === sub.href ? styles.active : ""}`}
+                    >
+                      <span className="en">{sub.labelEn}</span> <span className="ta" lang="ta">{sub.labelTa}</span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <Link
+                key={item.href}
+                href={item.href!}
+                className={`${styles.navLink} ${
+                  pathname === item.href ? styles.active : ""
+                }`}
+              >
+                <span className="en">{item.labelEn}</span> <span className="ta" lang="ta">{item.labelTa}</span>
+              </Link>
+            )
           ))}
         </nav>
 
@@ -102,10 +136,33 @@ export default function Header() {
       </div>
 
       <div className={`${styles.mobilePanel} ${menuOpen ? styles.open : ""}`}>
-        {NAV.map((item) => (
-          <Link key={item.href} href={item.href} onClick={() => setMenuOpen(false)}>
-            <span className="en">{item.labelEn}</span> <span className="ta" lang="ta">{item.labelTa}</span>
-          </Link>
+        {NAV.map((item, idx) => (
+          item.items ? (
+            <div key={idx} className={styles.mobileAccordion}>
+              <button 
+                className={`${styles.mobileAccordionTrigger} ${expandedIdx === idx ? styles.active : ""}`}
+                onClick={() => setExpandedIdx(expandedIdx === idx ? null : idx)}
+              >
+                <div>
+                  <span className="en">{item.labelEn}</span> <span className="ta" lang="ta">{item.labelTa}</span>
+                </div>
+                <div className={`${styles.mobileChevron} ${expandedIdx === idx ? styles.rotated : ""}`}>
+                  <ChevronDown />
+                </div>
+              </button>
+              <div className={`${styles.mobileAccordionContent} ${expandedIdx === idx ? styles.open : ""}`}>
+                {item.items.map((sub) => (
+                  <Link key={sub.href} href={sub.href} onClick={() => setMenuOpen(false)}>
+                    <span className="en">{sub.labelEn}</span> <span className="ta" lang="ta">{sub.labelTa}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <Link key={item.href} href={item.href!} onClick={() => setMenuOpen(false)}>
+              <span className="en">{item.labelEn}</span> <span className="ta" lang="ta">{item.labelTa}</span>
+            </Link>
+          )
         ))}
       </div>
     </header>

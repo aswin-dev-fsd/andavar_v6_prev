@@ -31,12 +31,24 @@
   border: 1px solid rgba(255, 255, 255, 0.4);
   transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease, background-color 0.2s ease;
   cursor: pointer;
+  appearance: none;
+  padding: 0;
+  outline: none;
 }
 
 .fab:hover {
   transform: translateY(-4px);
   background: rgba(255, 255, 255, 0.85);
   box-shadow: 0 6px 16px rgba(15, 42, 68, 0.14);
+}
+
+.desktopOnly {
+  position: relative;
+  display: block;
+}
+
+.mobileOnly {
+  display: none;
 }
 
 @media (max-width: 860px) {
@@ -49,4 +61,79 @@
     width: 44px;
     height: 44px;
   }
+
+  .desktopOnly {
+    display: none;
+  }
+
+  .mobileOnly {
+    display: flex; /* Override display: none */
+  }
+}
+
+.callMenu {
+  position: absolute;
+  bottom: calc(100% + 16px);
+  right: 0;
+  background: var(--bg);
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border);
+  padding: 8px;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  animation: slideUpFade 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform-origin: bottom right;
+}
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.menuHeader {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-tertiary);
+  padding: 8px 12px 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menuItem {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text);
+  transition: background-color 0.15s ease;
+}
+
+.menuItem:hover {
+  background-color: var(--bg-alt);
+}
+
+.menuLabel {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-bottom: 2px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menuNumber {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--primary);
 }

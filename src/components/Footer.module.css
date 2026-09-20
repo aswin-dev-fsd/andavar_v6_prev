@@ -29,6 +29,7 @@
   width: auto;
   object-fit: contain;
   margin-bottom: 24px;
+  filter: brightness(0) invert(1);
   transform: scale(1.15);
   transform-origin: left center;
 }

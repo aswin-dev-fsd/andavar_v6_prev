@@ -2,6 +2,13 @@
 
 All notable changes to the Shri Andavar Eye Care project.
 
+## [2026-09-20]
+
+### Components & Layout
+- **Floating Action Buttons (`FloatingActionButtons.tsx`):** Replaced LinkedIn icon with a Call button. Features a popup modal on desktop (showing landline & mobile numbers) and direct primary number dialing on mobile.
+- **Header & Navigation (`Header.tsx`):** Enhanced mobile menu and responsive layout styling.
+- **Gallery & Treatments Polish:** Adjusted hero styling and bento service grid elements.
+
 ## [2026-09-19]
 
 ### Global & Components
