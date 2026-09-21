@@ -4,8 +4,10 @@ All notable changes to the Shri Andavar Eye Care project.
 
 ## [2026-09-21]
 
-### Patient Stories & Hero Adjustments
-- **Stories Hero (`StoriesHero.tsx`):** Cleaned up hero section structure, simplified Tamil translations, removed breadcrumb clutter, and refined typography line-heights.
+### Navigation & Footer Polish
+- **Header Navigation (`Header.tsx`):** Added Retina Care, Diabetic Eye Care, and Glaucoma links to the main navigation dropdown.
+- **Footer Updates (`Footer.tsx` & `Footer.module.css`):** Updated footer bottom section with DreamLand Pictures branding, legal links (Terms/Privacy), and responsive flex layout.
+- **Patient Stories & Hero Adjustments:** Cleaned up hero section structure, simplified Tamil translations, removed breadcrumb clutter, and refined typography line-heights.
 - **Treatment Pages & Components:** Created full landing pages and dedicated hero/content components (`src/components/retina/`, `src/components/glaucoma/`, `src/components/diabetic/`) for specialized ophthalmic treatments.
 - **Navigation & Footer Updates:** Linked new treatment landing pages in `Footer.tsx` and updated hero component CSS in `StoriesHero` and `TreatmentHero`.
 - **Content & UI Adjustments:** Refined bilingual copy, layout spacing, counter mechanics, and section headings across `Hero`, `FactStrip`, `SurgeonSection`, `VisitSection`, `StorySection`, `VisitInfoSection`, and `AboutHero`.

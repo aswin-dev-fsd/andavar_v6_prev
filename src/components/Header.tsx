@@ -21,6 +21,9 @@ const NAV = [
     items: [
       { href: "/about", labelEn: "About Hospital", labelTa: "மருத்துவமனை பற்றி" },
       { href: "/cataract-surgery", labelEn: "Cataract Surgery", labelTa: "கண்புரை அறுவை சிகிச்சை" },
+      { href: "/retina-care", labelEn: "Retina Care", labelTa: "விழித்திரை சிகிச்சை" },
+      { href: "/diabetic-eye-care", labelEn: "Diabetic Eye Care", labelTa: "நீரிழிவு கண் பராமரிப்பு" },
+      { href: "/glaucoma", labelEn: "Glaucoma", labelTa: "குளுக்கோமா" },
       { href: "/gallery", labelEn: "Gallery", labelTa: "புகைப்படங்கள்" }
     ]
   },

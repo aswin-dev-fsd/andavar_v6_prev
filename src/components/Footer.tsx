@@ -76,12 +76,30 @@ export default function Footer() {
       </div>
 
       <div className={`container ${styles.bottom}`}>
-        <span>
-          <span className="en">© {year} Shri Andavar Eye Care and Retina Centre</span> <span className="ta" lang="ta">© {year} ஸ்ரீ ஆண்டவர் ஐ கேர் மற்றும் ரெட்டினா சென்டர்</span>
-        </span>
-        <span>
-          <span className="en">Pollachi, Tamil Nadu</span> <span className="ta" lang="ta">பொள்ளாச்சி, தமிழ்நாடு</span>
-        </span>
+        <div className={styles.copyright}>
+          <span className="en">© {year} DreamLand Pictures. All Rights Reserved.</span>
+          <span className="ta" lang="ta">© {year} ட்ரீம்லேண்ட் பிக்சர்ஸ். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</span>
+        </div>
+
+        <div className={styles.legalLinks}>
+          <Link href="#">
+            <span className="en">Terms</span>
+            <span className="ta" lang="ta">விதிமுறைகள்</span>
+          </Link>
+          <Link href="#">
+            <span className="en">Privacy</span>
+            <span className="ta" lang="ta">தனியுரிமை</span>
+          </Link>
+        </div>
+
+        <div className={styles.credits}>
+          <span className="en">
+            Crafted by <span className={styles.brandName}>DreamLand Pictures</span>
+          </span>
+          <span className="ta" lang="ta">
+            உருவாக்கியவர் <span className={styles.brandName}>ட்ரீம்லேண்ட் பிக்சர்ஸ்</span>
+          </span>
+        </div>
       </div>
     </footer>
   );

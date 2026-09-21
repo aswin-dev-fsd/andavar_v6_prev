@@ -66,14 +66,39 @@
 .bottom {
   position: relative;
   margin-top: 48px;
-  padding-top: 20px;
+  padding-top: 24px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 16px;
   font-size: 14px;
   color: var(--text-inverse-faint);
+}
+
+.legalLinks {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.legalLinks a {
+  color: var(--text-inverse-faint);
+  transition: color 0.2s ease;
+}
+
+.legalLinks a:hover {
+  color: #fff;
+}
+
+.credits {
+  color: var(--text-inverse-faint);
+}
+
+.brandName {
+  color: var(--accent);
+  font-weight: 600;
 }
 
 @media (max-width: 860px) {
