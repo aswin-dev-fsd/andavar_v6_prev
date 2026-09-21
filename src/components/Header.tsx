@@ -11,20 +11,26 @@ const ChevronDown = () => (
 );
 
 const NAV = [
-  { href: "/treatments", labelEn: "Treatments", labelTa: "சிகிச்சைகள்" },
+  { 
+    labelEn: "Treatments", 
+    labelTa: "சிகிச்சைகள்",
+    items: [
+      { href: "/treatments", labelEn: "All Treatments", labelTa: "அனைத்து சிகிச்சைகள்" },
+      { href: "/cataract-surgery", labelEn: "Cataract Surgery", labelTa: "கண்புரை அறுவை சிகிச்சை" },
+      { href: "/retina-care", labelEn: "Retina Care", labelTa: "விழித்திரை சிகிச்சை" },
+      { href: "/diabetic-eye-care", labelEn: "Diabetic Eye Care", labelTa: "நீரிழிவு கண் பராமரிப்பு" },
+      { href: "/glaucoma", labelEn: "Glaucoma", labelTa: "குளுக்கோமா" }
+    ]
+  },
   { href: "/our-surgeons", labelEn: "Our Surgeons", labelTa: "எங்கள் மருத்துவர்கள்" },
   { href: "/schemes", labelEn: "Schemes", labelTa: "திட்டங்கள்" },
-  { href: "/community", labelEn: "Community", labelTa: "சமூகம்" },
   { 
     labelEn: "About", 
     labelTa: "எங்களைப் பற்றி",
     items: [
       { href: "/about", labelEn: "About Hospital", labelTa: "மருத்துவமனை பற்றி" },
-      { href: "/cataract-surgery", labelEn: "Cataract Surgery", labelTa: "கண்புரை அறுவை சிகிச்சை" },
-      { href: "/retina-care", labelEn: "Retina Care", labelTa: "விழித்திரை சிகிச்சை" },
-      { href: "/diabetic-eye-care", labelEn: "Diabetic Eye Care", labelTa: "நீரிழிவு கண் பராமரிப்பு" },
-      { href: "/glaucoma", labelEn: "Glaucoma", labelTa: "குளுக்கோமா" },
-      { href: "/gallery", labelEn: "Gallery", labelTa: "புகைப்படங்கள்" }
+      { href: "/gallery", labelEn: "Gallery", labelTa: "புகைப்படங்கள்" },
+      { href: "/community", labelEn: "CSR", labelTa: "சமூகப் பணிகள் (CSR)" }
     ]
   },
 ];

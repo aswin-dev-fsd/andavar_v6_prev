@@ -4,8 +4,10 @@ All notable changes to the Shri Andavar Eye Care project.
 
 ## [2026-09-21]
 
-### Navigation & Footer Polish
-- **Header Navigation (`Header.tsx`):** Added Retina Care, Diabetic Eye Care, and Glaucoma links to the main navigation dropdown.
+### Navigation & Footer Restructuring
+- **Header Dropdowns (`Header.tsx`):** Moved treatment links (Cataract, Retina Care, Diabetic Eye Care, Glaucoma) into a dedicated "Treatments" dropdown. Relocated CSR to the "About" dropdown.
+- **Footer Link Adjustments (`Footer.tsx`):** Simplified CSR link label to "CSR" (Tamil: "சமூகப் பணிகள் (CSR)") and removed deprecated `/eye-health` link.
+- **Navigation & Footer Polish:** Added Retina Care, Diabetic Eye Care, and Glaucoma links to the main navigation dropdown.
 - **Footer Updates (`Footer.tsx` & `Footer.module.css`):** Updated footer bottom section with DreamLand Pictures branding, legal links (Terms/Privacy), and responsive flex layout.
 - **Patient Stories & Hero Adjustments:** Cleaned up hero section structure, simplified Tamil translations, removed breadcrumb clutter, and refined typography line-heights.
 - **Treatment Pages & Components:** Created full landing pages and dedicated hero/content components (`src/components/retina/`, `src/components/glaucoma/`, `src/components/diabetic/`) for specialized ophthalmic treatments.
