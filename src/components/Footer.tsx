@@ -35,13 +35,13 @@ export default function Footer() {
             <Link href="/cataract-surgery">
               <span className="en">Cataract Surgery</span> <span className="ta" lang="ta">கண்புரை அறுவை சிகிச்சை</span>
             </Link>
-            <Link href="/treatments">
+            <Link href="/retina-care">
               <span className="en">Retina Care</span> <span className="ta" lang="ta">விழித்திரை சிகிச்சை</span>
             </Link>
-            <Link href="/treatments">
+            <Link href="/diabetic-eye-care">
               <span className="en">Diabetic Eye Care</span> <span className="ta" lang="ta">நீரிழிவு கண் பராமரிப்பு</span>
             </Link>
-            <Link href="/treatments">
+            <Link href="/glaucoma">
               <span className="en">Glaucoma</span> <span className="ta" lang="ta">குளுக்கோமா</span>
             </Link>
 
