@@ -4,7 +4,8 @@ All notable changes to the Shri Andavar Eye Care project.
 
 ## [2026-09-21]
 
-### Navigation & Footer Restructuring
+### Navigation & Layout Polish
+- **Header Alignment (`Header.module.css`):** Adjusted navbar alignment (`margin-left: auto`) for proper spacing and right-alignment of desktop navigation links.
 - **Header Dropdowns (`Header.tsx`):** Moved treatment links (Cataract, Retina Care, Diabetic Eye Care, Glaucoma) into a dedicated "Treatments" dropdown. Relocated CSR to the "About" dropdown.
 - **Footer Link Adjustments (`Footer.tsx`):** Simplified CSR link label to "CSR" (Tamil: "சமூகப் பணிகள் (CSR)") and removed deprecated `/eye-health` link.
 - **Navigation & Footer Polish:** Added Retina Care, Diabetic Eye Care, and Glaucoma links to the main navigation dropdown.
