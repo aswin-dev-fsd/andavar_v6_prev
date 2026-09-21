@@ -19,11 +19,10 @@ export default function Footer() {
           />
           <p className={styles.blurb}>
             <span className="en">
-              Cataract and retina care in Pollachi since 2013, by a dedicated team
-              that sees you from the first examination to the last follow-up.
+              Cataract and retina care in Pollachi since 2013, with personalised attention from your first examination through every follow-up.
             </span>
             <span className="ta" lang="ta">
-              2013 முதல் பொள்ளாச்சியில் கண்புரை மற்றும் விழித்திரை சிகிச்சை. முதல் பரிசோதனை முதல் இறுதி வரை ஒரு அர்ப்பணிப்புள்ள மருத்துவக் குழு.
+              2013 முதல் பொள்ளாச்சியில் கண்புரை மற்றும் விழித்திரை சிகிச்சை. உங்கள் முதல் பரிசோதனை முதல் தொடர் சிகிச்சை மற்றும் பின்தொடர்பு பரிசோதனைகள் வரை, அக்கறையுடன் கவனிக்கும் மருத்துவக் குழு.
             </span>
           </p>
         </div>
@@ -45,9 +44,7 @@ export default function Footer() {
             <Link href="/treatments">
               <span className="en">Glaucoma</span> <span className="ta" lang="ta">குளுக்கோமா</span>
             </Link>
-            <Link href="/treatments">
-              <span className="en">Eye check-up</span> <span className="ta" lang="ta">கண் பரிசோதனை</span>
-            </Link>
+
           </div>
         </div>
 

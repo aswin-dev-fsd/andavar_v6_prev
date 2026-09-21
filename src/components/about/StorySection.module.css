@@ -13,6 +13,12 @@
   flex-direction: column;
   gap: 24px;
 }
+.h2 {
+  font-size: clamp(28px, 3.5vw, 36px);
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
 .p {
   font-size: 18px;
   line-height: 1.6;

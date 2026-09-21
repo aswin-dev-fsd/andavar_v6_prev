@@ -24,7 +24,7 @@ export default function GalleryHero() {
           </span>
           <h1 className={styles.heroTitle}>
             <span className="en">A closer look at our facilities.</span>
-            <span className="ta" lang="ta">எங்கள் வசதிகளின் ஒரு பார்வை.</span>
+            <span className="ta" lang="ta">எங்கள் மருத்துவ வசதிகளைப் பாருங்கள்</span>
           </h1>
           <p className={styles.heroLede}>
             <span className="en">
@@ -32,8 +32,7 @@ export default function GalleryHero() {
               state-of-the-art ophthalmic technology.
             </span>
             <span className="ta" lang="ta">
-              பல தசாப்த கால நிபுணத்துவமும் அதிநவீன கண் மருத்துவத் தொழில்நுட்பமும் 
-              இணையும் சூழலை அனுபவிக்கவும்.
+              பல ஆண்டுகால மருத்துவ அனுபவத்துடன், நவீன கண் மருத்துவத் தொழில்நுட்பம் மற்றும் தேவையான வசதிகளுடன் நோயாளிகளுக்கு பாதுகாப்பான மற்றும் நம்பிக்கையான கண் சிகிச்சையை வழங்குகிறோம்.
             </span>
           </p>
         </Reveal>

@@ -7,12 +7,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 type CounterProps = {
-  /** e.g. 13, prefix "13" of "13 yrs" */
   value: number;
-  suffix?: string;
 };
 
-export default function Counter({ value, suffix = "" }: CounterProps) {
+export default function Counter({ value }: CounterProps) {
   const ref = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
@@ -24,7 +22,7 @@ export default function Counter({ value, suffix = "" }: CounterProps) {
     ).matches;
 
     if (prefersReduced) {
-      el.textContent = `${value}${suffix}`;
+      el.textContent = `${value}`;
       return;
     }
 
@@ -40,13 +38,13 @@ export default function Counter({ value, suffix = "" }: CounterProps) {
           once: true,
         },
         onUpdate: () => {
-          el.textContent = `${Math.round(counter.n)}${suffix}`;
+          el.textContent = `${Math.round(counter.n)}`;
         },
       });
     }, el);
 
     return () => ctx.revert();
-  }, [value, suffix]);
+  }, [value]);
 
-  return <span ref={ref}>0{suffix}</span>;
+  return <span ref={ref}>0</span>;
 }

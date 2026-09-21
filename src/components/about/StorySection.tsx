@@ -6,17 +6,25 @@ export default function StorySection() {
     <section className={styles.section}>
       <div className={`container ${styles.grid}`}>
         <Reveal className={styles.copy} targets=":scope > *" stagger={0.08}>
+          <h2 className={styles.h2}>
+            <span className="en">Eye Care Built on Continuity and Trust</span>
+            <span className="ta" lang="ta">தொடர் கவனிப்பு மற்றும் நம்பிக்கையில் அமைந்த கண் சிகிச்சை</span>
+          </h2>
           <p className={styles.p}>
-            <span className="en">There are larger eye hospitals within an hour of here, and they do good work. What they cannot offer is the thing a small practice gives for free: the same surgeon, every time, for as long as you need him.</span>
-            <span className="ta" lang="ta">இங்கிருந்து ஒரு மணி நேர பயண தூரத்திற்குள் பல பெரிய கண் மருத்துவமனைகள் உள்ளன, அவை சிறந்த சேவையையும் வழங்குகின்றன. ஆனால் அவர்கள் வழங்க முடியாத ஒன்றை ஒரு சிறிய மருத்துவமனை இலவசமாக வழங்குகிறது: உங்களுக்கு எவ்வளவு காலம் தேவைப்படுகிறதோ, அவ்வளவு காலமும் ஒரே அறுவை சிகிச்சை நிபுணர் உங்களுக்குச் சிகிச்சையளிப்பார்.</span>
+            <span className="en">There are larger eye hospitals within an hour of Pollachi. What sets a focused practice apart is continuity — the same surgeon who knows your history, understands your concerns, and stays with you from your first consultation through follow-up.</span>
+            <span className="ta" lang="ta">பொள்ளாச்சியிலிருந்து ஒரு மணி நேரப் பயண தூரத்திற்குள் பல பெரிய கண் மருத்துவமனைகள் உள்ளன. எங்களைப் போன்ற ஒரு மருத்துவமனையைத் தனித்துவமாக்குவது அதன் தொடர் கவனிப்புதான் — உங்கள் மருத்துவ வரலாற்றை அறிந்த, உங்கள் கவலைகளைப் புரிந்துகொள்ளும், மேலும் உங்கள் முதல் பரிசோதனை முதல் இறுதி வரை உங்களுடனேயே பயணிக்கும் அதே அறுவை சிகிச்சை நிபுணர்.</span>
           </p>
           <p className={styles.p}>
-            <span className="en">Most of the people who walk through the door were sent by someone — a neighbour who had their cataract done here, a family doctor who has been referring patients for years, a son who searched and read about the surgeon before bringing his mother in. Reputation in a town this size is slow to build and very hard to fake.</span>
-            <span className="ta" lang="ta">இங்கு வரும் பெரும்பாலானோர் யாரோ ஒருவரால் பரிந்துரைக்கப்பட்டு வந்தவர்களே — இங்கு கண்புரை அறுவை சிகிச்சை செய்து கொண்ட ஒரு அண்டை வீட்டார், பல ஆண்டுகளாக நோயாளிகளைப் பரிந்துரைக்கும் ஒரு குடும்ப மருத்துவர், தன் தாயை அழைத்து வருவதற்கு முன் மருத்துவரைப் பற்றித் தேடிப் படித்த ஒரு மகன். இவ்வளவு பெரிய ஊரில் நற்பெயரைக் கட்டியெழுப்புவது மெதுவானது மற்றும் அதனைப் போலியாக உருவாக்குவது மிகவும் கடினம்.</span>
+            <span className="en">Since 2013, many of our patients have come through personal recommendations — from neighbours, family doctors, and families who have trusted us with their loved ones' vision.</span>
+            <span className="ta" lang="ta">2013 முதல், எங்களது பெரும்பாலான நோயாளிகள் தனிப்பட்ட பரிந்துரைகள் மூலமாகவே வந்துள்ளனர் — அண்டை வீட்டார், குடும்ப மருத்துவர்கள் மற்றும் தங்களுக்கு அன்பானவர்களின் பார்வையை எங்களிடம் நம்பி ஒப்படைத்த குடும்பங்கள் மூலமாக.</span>
           </p>
           <p className={styles.p}>
-            <span className="en">The practice takes retina work seriously enough to put it in its own name. Alongside that sits a steady volume of Cataract Surgery, Diabetic Eye Screening, Glaucoma Monitoring and Routine Examinations — the everyday work that keeps a district seeing.</span>
-            <span className="ta" lang="ta">இந்த மருத்துவமனை விழித்திரை (retina) சிகிச்சைக்கு அதிக முக்கியத்துவம் அளிக்கிறது, அதனாலேயே அதன் பெயரிலும் அது இடம்பெற்றுள்ளது. அத்துடன் தொடர்ந்து கண்புரை அறுவை சிகிச்சை, சர்க்கரை நோய் கண் பரிசோதனை, குளுக்கோமா கண்காணிப்பு மற்றும் வழக்கமான கண் பரிசோதனைகள் போன்ற மாவட்ட மக்களின் பார்வையைப் பாதுகாக்கும் அன்றாடப் பணிகளும் நடைபெறுகின்றன.</span>
+            <span className="en">Our practice brings together specialised Retina Care with essential eye care services including Cataract Surgery, Diabetic Eye Screening, Glaucoma Monitoring, and Routine Eye Examinations.</span>
+            <span className="ta" lang="ta">எங்கள் மருத்துவமனை சிறப்பு விழித்திரை சிகிச்சையுடன் (Retina Care), கண்புரை அறுவை சிகிச்சை, சர்க்கரை நோய் கண் பரிசோதனை, குளுக்கோமா கண்காணிப்பு மற்றும் வழக்கமான கண் பரிசோதனைகள் உள்ளிட்ட அத்தியாவசிய கண் பராமரிப்பு சேவைகளையும் ஒன்றிணைத்து வழங்குகிறது.</span>
+          </p>
+          <p className={styles.p}>
+            <span className="en">For us, good eye care is not just about treating a condition. It is about building a relationship you can rely on.</span>
+            <span className="ta" lang="ta">எங்களைப் பொறுத்தவரை, சிறந்த கண் பராமரிப்பு என்பது ஒரு பிரச்சனைக்குச் சிகிச்சை அளிப்பது மட்டுமல்ல. அது நீங்கள் முழுமையாக நம்பக்கூடிய ஒரு உறவை உருவாக்குவதாகும்.</span>
           </p>
         </Reveal>
 

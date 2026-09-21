@@ -67,12 +67,12 @@ export default function CostSection() {
           ))}
           <p className={styles.caption}>
             <span className="en">
-              Not sure whether yours is covered? Call and ask — it takes a
+              We accept 22 different schemes. Not sure whether yours is covered? Call and ask — it takes a
               minute and costs nothing.
             </span>
             {" "}
             <span className="ta" lang="ta">
-              உங்கள் காப்பீடு ஏற்கப்படுமா எனத் தெரியவில்லையா? அழைத்து கேளுங்கள் — இதற்கு ஒரு நிமிடம் மட்டுமே ஆகும், செலவு ஏதுமில்லை.
+              நாங்கள் 22 மருத்துவத் திட்டங்களை ஏற்கிறோம். உங்கள் காப்பீடு ஏற்கப்படுமா எனத் தெரியவில்லையா? அழைத்து கேளுங்கள் — இதற்கு ஒரு நிமிடம் மட்டுமே ஆகும், செலவு ஏதுமில்லை.
             </span>
           </p>
         </Reveal>

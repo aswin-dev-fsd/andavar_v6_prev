@@ -22,11 +22,15 @@
   border-left: none;
 }
 
-.number {
+.numberBlock {
   font-family: var(--font-head);
   font-size: clamp(28px, 3.4vw, 38px);
   font-weight: 700;
   color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+  margin-bottom: 6px;
 }
 
 .label {

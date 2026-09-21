@@ -15,16 +15,16 @@ export default function VisitInfoSection() {
             <div className={styles.val}>
               <span className="en">
                 No. 73, Palladam Road, Opposite LMHSS School, <br />
-                T. Kottampatti, Pollachi 642002
+                T. Kottampatti, Pollachi – 642002
               </span>
               <span className="ta" lang="ta">
                 எண். 73, பல்லடம் ரோடு, LMHSS பள்ளி எதிரில், <br />
-                டி. கோட்டாம்பட்டி, பொள்ளாச்சி 642002
+                டி. கொட்டாம்பட்டி, பொள்ளாச்சி – 642002
               </span>
             </div>
             <div className={styles.caption}>
-              <span className="en">The landmark is the school — everyone local knows it. We are directly opposite.</span>
-              <span className="ta" lang="ta">LMHSS பள்ளி தான் அடையாளம் — உள்ளூர் மக்கள் அனைவருக்கும் அது தெரியும். நாங்கள் அதற்கு நேர் எதிராகவே இருக்கிறோம்.</span>
+              <span className="en">Located directly opposite LMHSS School, a familiar landmark in Pollachi.</span>
+              <span className="ta" lang="ta">பொள்ளாச்சியில் நன்கு அறியப்பட்ட அடையாளமான LMHSS பள்ளிக்கு நேர் எதிரே அமைந்துள்ளது.</span>
             </div>
           </div>
           
@@ -36,9 +36,9 @@ export default function VisitInfoSection() {
             <div className={styles.val}>
               <span className="en">
                 Monday to Saturday <br />
-                Morning 10:00 AM – 2:00 PM <br />
-                Evening 5:00 PM – 7:00 PM <br />
-                Sunday closed
+                Morning: 10:00 AM – 2:00 PM <br />
+                Evening: 5:00 PM – 7:00 PM <br />
+                Sunday: Closed
               </span>
               <span className="ta" lang="ta">
                 திங்கள் முதல் சனிக்கிழமை வரை <br />
@@ -51,16 +51,16 @@ export default function VisitInfoSection() {
           
           <div className={styles.fact}>
             <span className="eyebrow">
-              <span className="en">Telephone</span>
-              <span className="ta" lang="ta">தொலைபேசி</span>
+              <span className="en">Contact</span>
+              <span className="ta" lang="ta">தொடர்புக்கு</span>
             </span>
             <div className={styles.val}>
               04259 221 000 <br />
               94420 56767
             </div>
             <div className={styles.caption}>
-              <span className="en">Call during consulting hours and someone will answer.</span>
-              <span className="ta" lang="ta">பரிசோதனை நேரங்களில் அழையுங்கள், நிச்சயமாக பதில் கிடைக்கும்.</span>
+              <span className="en">Call us during consulting hours for appointments and enquiries.</span>
+              <span className="ta" lang="ta">முன்பதிவுகள் மற்றும் விசாரணைகளுக்கு பரிசோதனை நேரங்களில் எங்களை அழைக்கவும்.</span>
             </div>
           </div>
         </Reveal>
@@ -68,11 +68,11 @@ export default function VisitInfoSection() {
         <Reveal className={styles.gettingHere} stagger={0.08} targets=":scope > *">
           <h2 className={styles.h2}>
             <span className="en">Getting here</span>
-            <span className="ta" lang="ta">இங்கு வருவதற்கு</span>
+            <span className="ta" lang="ta">எங்களை எளிதாக வந்தடையலாம்</span>
           </h2>
           <p className={styles.p}>
-            <span className="en">On Palladam Road at T. Kottampatti, directly opposite LMHSS School. Town buses along the Palladam Road route stop within walking distance, and there is space to park a two-wheeler or car outside.</span>
-            <span className="ta" lang="ta">டி. கோட்டாம்பட்டியில் உள்ள பல்லடம் ரோட்டில், LMHSS பள்ளிக்கு நேர் எதிராக அமைந்துள்ளது. பல்லடம் ரோடு வழியாகச் செல்லும் நகரப் பேருந்துகள் நடந்து வரும் தூரத்திலேயே நிற்கின்றன, மேலும் வெளியே இருசக்கர வாகனம் அல்லது காரை நிறுத்துவதற்கு இடம் உள்ளது.</span>
+            <span className="en">We are located on Palladam Road, T. Kottampatti, directly opposite LMHSS School. The centre is easily accessible by local transport, with parking available for two-wheelers and cars.</span>
+            <span className="ta" lang="ta">டி. கொட்டாம்பட்டியில், பல்லடம் சாலையில் LMHSS பள்ளிக்கு நேராக எதிரில் எங்கள் மருத்துவமனை அமைந்துள்ளது. பல்லடம் சாலை வழியாகச் செல்லும் நகரப் பேருந்துகளில் வந்து, எளிதாக நடந்து மருத்துவமனையை அடையலாம். இருசக்கர வாகனங்கள் மற்றும் கார்களை நிறுத்துவதற்கும் இடவசதி உள்ளது.</span>
           </p>
           <div className={styles.actions}>
             <MagneticButton href="https://maps.google.com/?q=Shri+Andavar+Eye+Care+and+Retina+Centre+Palladam+Road+Pollachi" external className={styles.btnPrimary}>

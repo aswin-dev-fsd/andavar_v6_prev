@@ -9,12 +9,12 @@ export default function AboutHero() {
       <div className={`container ${styles.grid}`}>
         <Reveal targets=":scope > *" stagger={0.1}>
           <h1 className={styles.h1}>
-            <span className="en">A small hospital that has stayed in one place.</span>
-            <span className="ta" lang="ta">ஒரே இடத்தில் நிலைத்திருக்கும் ஒரு சிறிய மருத்துவமனை.</span>
+            <span className="en">Eye Care Rooted in Pollachi Since 2013.</span>
+            <span className="ta" lang="ta">2013 முதல் பொள்ளாச்சியில் நம்பிக்கையான கண் சிகிச்சை</span>
           </h1>
           <p className={styles.lede}>
-            <span className="en">Shri Andavar Eye Care and Retina Centre has been on Palladam Road since 2013, run by the surgeon who founded it.</span>
-            <span className="ta" lang="ta">ஸ்ரீ ஆண்டவர் ஐ கேர் அண்ட் ரெட்டினா சென்டர் 2013 முதல் பல்லடம் ரோட்டில், அதனை நிறுவிய அறுவை சிகிச்சை நிபுணரால் தொடர்ந்து நடத்தப்பட்டு வருகிறது.</span>
+            <span className="en">Shri Andavar Eye Care and Retina Centre has been caring for patients on Palladam Road since 2013, led by the surgeon who founded the centre.</span>
+            <span className="ta" lang="ta">ஸ்ரீ ஆண்டவர் ஐ கேர் அண்ட் ரெட்டினா சென்டர் 2013 முதல் பல்லடம் சாலையில் செயல்பட்டு வருகிறது. மருத்துவமனையை நிறுவிய டாக்டர் ஏ. ரகுராம் அவர்களின் தலைமையில், பொள்ளாச்சி மற்றும் சுற்றுவட்டார மக்களுக்கு தொடர்ந்து தனிப்பட்ட கவனத்துடன் கண் சிகிச்சை வழங்கி வருகிறோம்.</span>
           </p>
         </Reveal>
       </div>

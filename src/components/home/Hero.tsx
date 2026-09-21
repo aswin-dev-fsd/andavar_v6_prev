@@ -43,21 +43,16 @@ export default function Hero() {
           </div>
 
           <h1 className={styles.h1}>
-            <span className="en">
-              Cataract and retina care in Pollachi.
-            </span>
-            <span className="ta" lang="ta">
-              பொள்ளாச்சியில் கண்புரை மற்றும் விழித்திரை சிகிச்சை.
-            </span>
+            <span className="en">Trusted Eye Care in Pollachi Since 2013.</span>
+            <span className="ta" lang="ta">பொள்ளாச்சியில் நம்பிக்கையான கண் சிகிச்சை</span>
           </h1>
 
           <p className={styles.lede}>
             <span className="en">
-              Shri Andavar Eye Care has looked after this district&apos;s eyes since
-              2013.
+              Shri Andavar Eye Care has been caring for the eyes of Pollachi and surrounding communities since 2013, with dedicated expertise in cataract and retina care.
             </span>
             <span className="ta" lang="ta">
-              ஸ்ரீ ஆண்டவர் கண் மருத்துவமனை 2013 முதல் இம்மாவட்டத்தின் கண் பாதுகாப்பில் சேவையாற்றி வருகிறது.
+              2013 முதல் பொள்ளாச்சி மற்றும் சுற்றுவட்டார மக்களுக்கு கண்புரை மற்றும் விழித்திரை சிகிச்சையை அக்கறையுடன் வழங்கி வருகிறது ஸ்ரீ ஆண்டவர் கண் மருத்துவமனை.
             </span>
           </p>
 

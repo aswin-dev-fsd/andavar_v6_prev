@@ -53,8 +53,8 @@ const TECHNOLOGY_IMAGES = [
   },
   {
     src: "/images/technician-performing-oct-eye-scan.webp",
-    altEn: "OCT Eye Scan",
-    altTa: "OCT கண் பரிசோதனை",
+    altEn: "A-Scan",
+    altTa: "ஏ-ஸ்கேன்",
   },
   {
     src: "/images/patient-glaucoma-screening-machine.webp",
@@ -73,8 +73,8 @@ const TECHNOLOGY_IMAGES = [
   },
   {
     src: "/images/doctor-slit-lamp-eye-examination.webp",
-    altEn: "Slit Lamp Examination",
-    altTa: "ஸ்லிட் லேம்ப் பரிசோதனை",
+    altEn: "YAG Laser Treatment",
+    altTa: "யாக் லேசர் சிகிச்சை",
   },
   {
     src: "/images/elderly-patient-vision-testing-trial-frames.webp",

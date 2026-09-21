@@ -47,17 +47,8 @@ export default function SurgeonSection() {
             <span className="en">Your surgeon</span> <span className="ta" lang="ta">உங்கள் மருத்துவர்</span>
           </span>
           <h2 className={styles.h2}>
-            <span className="en">Dr. A. Raghuram</span> <span className="ta" lang="ta">டாக்டர் A. ரகுராம்</span>
+            <span className="en">Dr. A. Raghuram</span> <span className="ta" lang="ta">டாக்டர் ஏ. ரகுராம்</span>
           </h2>
-          <p className={styles.lede}>
-            <span className="en">
-              At a large chain you are seen by whoever is on duty that day.
-            </span>
-            {" "}
-            <span className="ta" lang="ta">
-              பெரிய மருத்துவமனைகளில், அன்று பணியில் இருக்கும் மருத்துவரே உங்களைப் பார்ப்பார்.
-            </span>
-          </p>
         </Reveal>
 
         <Reveal className={styles.card} stagger={0.07}>

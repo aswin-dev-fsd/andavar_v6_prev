@@ -58,9 +58,13 @@ export default function VisionSlider() {
       <div className="container">
         <Reveal>
           <div className={styles.header}>
-            <h1 className={styles.title}>See the difference clear vision makes.</h1>
+            <h1 className={styles.title}>
+              <span className="en">See the difference clear vision makes.</span>
+              <span className="ta" lang="ta">தெளிவான பார்வை ஏற்படுத்தும் மாற்றத்தைக் காணுங்கள்.</span>
+            </h1>
             <p className={styles.subtitle}>
-              Drag the handle to compare before and after cataract surgery.
+              <span className="en">Drag the handle to compare before and after cataract surgery.</span>
+              <span className="ta" lang="ta">கண்புரை அறுவை சிகிச்சைக்கு முன் மற்றும் பின் உள்ள பார்வையை ஒப்பிட கைப்பிடியை இழுக்கவும்.</span>
             </p>
           </div>
         </Reveal>
@@ -87,7 +91,9 @@ export default function VisionSlider() {
                 className={styles.image}
                 priority
               />
-              <div className={`${styles.badge} ${styles.badgeRight}`}>After surgery</div>
+              <div className={`${styles.badge} ${styles.badgeRight}`}>
+                <span className="en">After surgery</span><span className="ta" lang="ta">அறுவை சிகிச்சைக்குப் பின்</span>
+              </div>
 
               {/* Overlay Image (With Cataract - Blurred) */}
               <div 
@@ -101,7 +107,9 @@ export default function VisionSlider() {
                   className={`${styles.image} ${styles.blurredImage}`}
                   priority
                 />
-                <div className={`${styles.badge} ${styles.badgeLeft}`}>With cataract</div>
+                <div className={`${styles.badge} ${styles.badgeLeft}`}>
+                  <span className="en">With cataract</span><span className="ta" lang="ta">கண்புரையுடன்</span>
+                </div>
               </div>
 
               {/* Slider Handle */}
@@ -123,8 +131,14 @@ export default function VisionSlider() {
             {/* Floating Info Card */}
             <div className={styles.infoCardWrapper}>
               <div className={styles.infoCard}>
-                <h3>A visual guide, not a medical result</h3>
-                <p>An illustration of how cataract surgery can lift the cloudiness and yellowing that many patients describe.</p>
+                <h3>
+                  <span className="en">A visual guide, not a medical result</span>
+                  <span className="ta" lang="ta">இது ஒரு காட்சி வழிகாட்டி மட்டுமே, மருத்துவ முடிவு அல்ல</span>
+                </h3>
+                <p>
+                  <span className="en">An illustration of how cataract surgery can lift the cloudiness and yellowing that many patients describe.</span>
+                  <span className="ta" lang="ta">நோயாளிகள் விவரிக்கும் மங்கலான மற்றும் மஞ்சள் நிறப் பார்வையை கண்புரை அறுவை சிகிச்சை எவ்வாறு தெளிவாக்குகிறது என்பதற்கான ஒரு எடுத்துக்காட்டு.</span>
+                </p>
               </div>
             </div>
           </div>

@@ -9,19 +9,22 @@ export default function VisitSection() {
       <div className={`container ${styles.grid}`}>
         <Reveal targets=":scope > *" stagger={0.09}>
           <span className={`eyebrow ${styles.eyebrow}`}>
-            <span className="en">Come and see us</span> <span className="ta" lang="ta">எங்களை வந்து காணுங்கள்</span>
+            <span className="en">Find Us in Pollachi</span> <span className="ta" lang="ta">எங்களை வந்து சந்தியுங்கள்</span>
           </span>
           <h2 className={styles.h2}>
-            <span className="en">Opposite LMHSS School, on Palladam Road.</span> <span className="ta" lang="ta">LMHSS பள்ளிக்கு எதிரில், பல்லடம் சாலையில்.</span>
+            <span className="en">Opposite LMHSS School, Palladam Road</span> <span className="ta" lang="ta">LMHSS பள்ளிக்கு எதிரில், பல்லடம் சாலையில்</span>
           </h2>
           <p className={styles.lede}>
             <span className="en">
-              In a town, the landmark does more work than the postcode. If you
-              know the school, you know where we are.
+              A familiar landmark makes us easy to find. If you know LMHSS School, you’ll know exactly where we are.
+              <br /><br />
+              Visit us for your eye care needs.
             </span>
             {" "}
             <span className="ta" lang="ta">
-              ஒரு சிறிய ஊரில், அஞ்சல் குறியீட்டை விட அடையாளமே அதிகம் பயன்படும். பள்ளி எங்குள்ளது எனத் தெரிந்தால், நாங்கள் எங்குள்ளோம் என்பதும் உங்களுக்குத் தெரியும்.
+              LMHSS பள்ளி பொள்ளாச்சியில் அனைவருக்கும் தெரிந்த ஒரு முக்கிய அடையாளம். பள்ளிக்கு நேராக எதிரிலேயே எங்கள் மருத்துவமனை அமைந்துள்ளது.
+              <br /><br />
+              உங்கள் கண் சிகிச்சைத் தேவைகளுக்கு எங்களை அணுகவும்.
             </span>
           </p>
           <div className={styles.actions}>
@@ -30,7 +33,7 @@ export default function VisitSection() {
               external
               className={styles.btnPrimary}
             >
-              <span className="en">◎ Open in Maps</span> <span className="ta" lang="ta">◎ மேப்ஸில் திறக்க</span>
+              <span className="en">◎ Open in Maps</span> <span className="ta" lang="ta">◎ வரைபடத்தில் பார்க்க (Maps)</span>
             </MagneticButton>
             <MagneticButton href="/about" className={styles.btnSecondary}>
               <span className="en">Visiting details</span> <span className="ta" lang="ta">பார்வை நேர விவரங்கள்</span>
@@ -45,12 +48,14 @@ export default function VisitSection() {
             </div>
             <div className={styles.rowValue}>
               <span className="en">
-                No. 73, Palladam Road, Opposite LMHSS School, T. Kottampatti,
-                Pollachi 642002
+                No. 73, Palladam Road,<br />
+                Opposite LMHSS School,<br />
+                T. Kottampatti, Pollachi – 642002
               </span>
               <span className="ta" lang="ta">
-                எண். 73, பல்லடம் ரோடு, LMHSS பள்ளி எதிரில், டி. கோட்டாம்பட்டி,
-                பொள்ளாச்சி 642002
+                எண். 73, பல்லடம் சாலை,<br />
+                LMHSS பள்ளிக்கு எதிரில்,<br />
+                T. கொட்டாம்பட்டி, பொள்ளாச்சி – 642002
               </span>
             </div>
           </div>
