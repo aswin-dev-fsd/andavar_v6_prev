@@ -4,8 +4,9 @@ All notable changes to the Shri Andavar Eye Care project.
 
 ## [2026-09-21]
 
-### Treatment Pages & Components
-- **New Specialized Pages (`/retina-care`, `/glaucoma`, `/diabetic-eye-care`):** Created full landing pages and dedicated hero/content components (`src/components/retina/`, `src/components/glaucoma/`, `src/components/diabetic/`) for specialized ophthalmic treatments.
+### Patient Stories & Hero Adjustments
+- **Stories Hero (`StoriesHero.tsx`):** Cleaned up hero section structure, simplified Tamil translations, removed breadcrumb clutter, and refined typography line-heights.
+- **Treatment Pages & Components:** Created full landing pages and dedicated hero/content components (`src/components/retina/`, `src/components/glaucoma/`, `src/components/diabetic/`) for specialized ophthalmic treatments.
 - **Navigation & Footer Updates:** Linked new treatment landing pages in `Footer.tsx` and updated hero component CSS in `StoriesHero` and `TreatmentHero`.
 - **Content & UI Adjustments:** Refined bilingual copy, layout spacing, counter mechanics, and section headings across `Hero`, `FactStrip`, `SurgeonSection`, `VisitSection`, `StorySection`, `VisitInfoSection`, and `AboutHero`.
 - **Cataract & Gallery Pages:** Updated `VisionSlider` component copy and layout structure in `GalleryHero` and `gallery/page.tsx`.
