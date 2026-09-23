@@ -29,7 +29,7 @@
 .imageWrapper {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 4 / 3;
   border-radius: var(--r-lg);
   overflow: hidden;
   box-shadow: var(--shadow-sm);

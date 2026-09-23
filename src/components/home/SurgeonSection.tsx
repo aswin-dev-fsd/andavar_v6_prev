@@ -1,5 +1,10 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Reveal from "@/components/Reveal";
+import MagneticButton from "@/components/MagneticButton";
+import SurgeonProfileModal from "@/components/surgeon/SurgeonProfileModal";
 import styles from "./SurgeonSection.module.css";
 
 const QUALIFICATIONS = [
@@ -30,6 +35,8 @@ const QUALIFICATIONS = [
 ];
 
 export default function SurgeonSection() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section className={styles.section}>
       <img src="/images/surgeon-performing-microscopic-eye-surgery.webp" alt="" className={styles.bgImage} aria-hidden="true" />
@@ -65,8 +72,43 @@ export default function SurgeonSection() {
               </div>
             </div>
           ))}
+          
+          <div style={{ marginTop: "30px" }}>
+            <button 
+              onClick={() => setIsModalOpen(true)}
+              style={{
+                background: "var(--accent)",
+                color: "var(--card)",
+                border: "none",
+                padding: "12px 24px",
+                borderRadius: "30px",
+                fontWeight: "600",
+                cursor: "pointer",
+                fontSize: "0.9rem",
+                letterSpacing: "0.02em",
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "8px",
+                transition: "transform 0.3s var(--ease), background 0.3s var(--ease)",
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.transform = "scale(1.02)"}
+              onMouseLeave={(e) => e.currentTarget.style.transform = "scale(1)"}
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              <span className="en">View Full Profile</span>
+              <span className="ta" lang="ta">முழு விவரங்களைக் காண்க</span>
+            </button>
+          </div>
         </Reveal>
       </div>
+
+      <SurgeonProfileModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </section>
   );
 }

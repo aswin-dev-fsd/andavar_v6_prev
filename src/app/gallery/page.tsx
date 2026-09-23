@@ -81,6 +81,16 @@ const TECHNOLOGY_IMAGES = [
     altEn: "Comprehensive Eye Exam",
     altTa: "முழுமையான கண் பரிசோதனை",
   },
+  {
+    src: "/images/oct.webp",
+    altEn: "OCT Scan",
+    altTa: "ஓசிடி ஸ்கேன்",
+  },
+  {
+    src: "/images/slit-lamp-examination.webp",
+    altEn: "Slit Lamp Examination",
+    altTa: "பிளவு விளக்கு பரிசோதனை",
+  },
 ];
 
 const COMMUNITY_IMAGES = [
